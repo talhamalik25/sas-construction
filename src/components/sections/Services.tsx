@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { Container } from "@/components/ui/Container";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { servicesData, type Service } from "@/data/services";
+import { servicesData } from "@/data/services";
 
 export function Services() {
   const [activeId, setActiveId] = useState<string>(servicesData[0].id);
@@ -26,7 +26,7 @@ export function Services() {
       if (!showcaseRef.current) return;
       gsap.fromTo(
         showcaseRef.current.querySelectorAll("[data-showcase-anim]"),
-        { opacity: 0.35, y: 10 },
+        { opacity: 0.4, y: 8 },
         { opacity: 1, y: 0, duration: 0.35, stagger: 0.05, ease: "power2.out" }
       );
     });
@@ -128,7 +128,7 @@ export function Services() {
                       {/* Numeral */}
                       <span
                         className={`font-mono text-sm xl:text-base font-semibold tracking-wider transition-colors duration-200 shrink-0 ${
-                          isActive ? "text-accent" : "text-muted/60 group-hover:text-primary"
+                          isActive ? "text-primary font-bold" : "text-muted group-hover:text-primary"
                         }`}
                       >
                         {service.numeral}
@@ -156,7 +156,7 @@ export function Services() {
                         className={`transition-all duration-200 ${
                           isActive
                             ? "text-primary translate-x-0.5 -translate-y-0.5"
-                            : "text-muted/40 group-hover:text-primary group-hover:translate-x-0.5"
+                            : "text-muted group-hover:text-primary group-hover:translate-x-0.5"
                         }`}
                         aria-hidden="true"
                       />
@@ -203,7 +203,7 @@ export function Services() {
                   />
                   {/* Category Pill Tag */}
                   <div className="absolute bottom-4 left-5 z-10 flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-semibold tracking-[0.14em] text-white/95 bg-primary/85 px-3 py-1 rounded-[2px] backdrop-blur-xs">
+                    <span className="text-[10px] uppercase font-semibold tracking-[0.14em] text-white bg-primary/90 px-3 py-1 rounded-[2px] backdrop-blur-xs">
                       Category {activeService.numeral}
                     </span>
                   </div>
@@ -272,7 +272,7 @@ export function Services() {
                     <div className="flex items-center gap-4 min-w-0 pr-3">
                       <span
                         className={`font-mono text-xs font-semibold tracking-wider transition-colors duration-200 ${
-                          isOpen ? "text-accent" : "text-muted/70 group-hover:text-primary"
+                          isOpen ? "text-primary font-bold" : "text-muted group-hover:text-primary"
                         }`}
                       >
                         {service.numeral}
@@ -320,7 +320,7 @@ export function Services() {
                           aria-hidden="true"
                         />
                         <div className="pointer-events-none absolute top-3 right-3 z-10 h-4 w-4 border-t border-r border-accent" aria-hidden="true" />
-                        <span className="absolute bottom-3 left-3 z-10 text-[9px] uppercase font-semibold tracking-[0.14em] text-white/95 bg-primary/85 px-2.5 py-0.5 rounded-[2px]">
+                        <span className="absolute bottom-3 left-3 z-10 text-[9px] uppercase font-semibold tracking-[0.14em] text-white bg-primary/90 px-2.5 py-0.5 rounded-[2px]">
                           Category {service.numeral}
                         </span>
                       </div>

@@ -1,0 +1,56 @@
+{
+  "baseURL": "http://localhost:3200",
+  "results": [
+    {
+      "viewport": "1440x900",
+      "overflow": false,
+      "axeViolations": 0,
+      "headingVerified": true,
+      "imagesLoaded": true,
+      "filtering": "passed",
+      "modalInteraction": "passed",
+      "reducedMotion": "passed"
+    },
+    {
+      "viewport": "1366x768",
+      "overflow": false,
+      "axeViolations": 0,
+      "headingVerified": true,
+      "imagesLoaded": true,
+      "filtering": "passed",
+      "modalInteraction": "passed",
+      "reducedMotion": "passed"
+    },
+    {
+      "viewport": "768x1024",
+      "overflow": false,
+      "axeViolations": 0,
+      "headingVerified": true,
+      "imagesLoaded": true,
+      "filtering": "passed",
+      "modalInteraction": "passed",
+      "reducedMotion": "passed"
+    },
+    {
+      "viewport": "390x844",
+      "overflow": false,
+      "axeViolations": 0,
+      "headingVerified": true,
+      "imagesLoaded": true,
+      "filtering": "passed",
+      "modalInteraction": "passed",
+      "reducedMotion": "passed"
+    },
+    {
+      "viewport": "320x740",
+      "overflow": false,
+      "axeViolations": 0,
+      "headingVerified": true,
+      "imagesLoaded": true,
+      "filtering": "passed",
+      "modalInteraction": "passed",
+      "reducedMotion": "passed"
+    }
+  ],
+  "problems": []
+}
