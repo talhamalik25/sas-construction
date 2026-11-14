@@ -1,0 +1,56 @@
+{
+  "baseURL": "http://localhost:3000",
+  "results": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    },
+    {
+      "width": 960,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    }
+  ],
+  "browserErrors": []
+}

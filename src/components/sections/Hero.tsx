@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { PreviewAction } from "@/components/ui/PreviewAction";
 import { heroImage } from "@/lib/constants";
@@ -10,17 +11,16 @@ export function Hero() {
         <div className="hero-grid">
           <div className="hero-copy">
             <p className="eyebrow"><span aria-hidden="true" />Built on hands-on experience</p>
-            <h1 id="hero-heading">Building Strong Foundations <span>for Tomorrow.</span></h1>
+            <h1 id="hero-heading"><span className="headline-line">Building Strong</span>{" "}<span className="headline-line">Foundations</span>{" "}<span className="headline-accent">for Tomorrow.</span></h1>
             <p className="hero-description">Over 20 years of experience in road construction, earthworks, infrastructure development and site preparation.</p>
             <div className="hero-actions">
               <PreviewAction destination="Projects" className="button button-primary">
-                Explore Our Projects <span aria-hidden="true">&#8599;</span>
+                Explore Our Projects <ArrowUpRight aria-hidden="true" />
               </PreviewAction>
               <PreviewAction destination="Contact" className="button button-text">
-                Get in Touch <span aria-hidden="true">&#8594;</span>
+                Get in Touch <ArrowRight aria-hidden="true" />
               </PreviewAction>
             </div>
-            <p className="action-note">Homepage preview. Projects and contact pages coming soon.</p>
             <div className="experience-note">
               <span className="experience-number">20<span>+</span></span>
               <p>Years of experience.<br /><span>A practical approach to every site.</span></p>
@@ -28,9 +28,8 @@ export function Hero() {
           </div>
           <figure className="hero-figure">
             <div className="hero-photo">
-              <Image src={heroImage.src} alt={heroImage.alt} fill priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 959px) calc(100vw - 80px), 46vw" />
-              <span className="photo-index" aria-hidden="true">SAS / 01</span>
-              <div className="photo-title" aria-hidden="true"><span>From the ground up.</span><span>Experience in every detail.</span></div>
+              <Image src={heroImage.src} alt={heroImage.alt} fill priority sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 959px) calc(100vw - 80px), (max-width: 1399px) 46vw, 583px" />
+              <div className="photo-title" aria-hidden="true"><span>From the ground up.</span><span>Preparation. Precision. Progress.</span></div>
             </div>
             <figcaption>
               <span>Representative imagery &middot; Not a SAS project site</span>
