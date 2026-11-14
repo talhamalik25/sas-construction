@@ -31,84 +31,11 @@
   ::selection { @apply bg-primary text-white; }
 }
 
-@layer components {
-  .site-container { @apply mx-auto w-full max-w-[1400px] px-5 md:px-10 xl:px-16; }
-  .skip-link { @apply fixed top-3 left-4 z-50 -translate-y-24 bg-primary px-5 py-3 text-white focus:translate-y-0; }
-  .site-header { @apply relative z-20 border-b border-primary/15 bg-surface; }
-  .header-inner { @apply flex min-h-24 flex-wrap items-center justify-between gap-x-6; }
-  .brand { @apply flex h-[88px] w-[164px] shrink-0 items-center overflow-hidden; }
-  .brand img { @apply h-auto w-full shrink-0; }
-  .menu-toggle { @apply flex min-h-11 items-center gap-3 text-sm font-medium text-primary; }
-  .navigation { @apply hidden w-full flex-col items-stretch gap-1 border-t border-primary/10 py-5; }
-  .navigation.is-open { @apply flex; }
-  .nav-link { @apply relative flex min-h-11 w-full items-center py-3 text-left text-sm font-medium text-muted transition-colors hover:text-primary; }
-  .nav-link.active { @apply text-primary; }
-  .nav-link.active::after { @apply absolute bottom-1 left-0 h-0.5 w-5 bg-accent content-['']; }
-  .button { @apply inline-flex min-h-13 items-center justify-center gap-6 rounded-[2px] px-6 py-3.5 text-sm font-medium transition-colors duration-200; }
-  .button svg { @apply size-[18px] shrink-0 transition-transform duration-200; }
-  .button:hover svg { @apply translate-x-0.5; }
-  .button-primary { @apply border border-primary bg-primary text-white hover:bg-[#193b32]; }
-  .button-outline { @apply border border-primary/25 bg-background text-primary hover:border-primary hover:bg-primary hover:text-white; }
-  .button-text { @apply px-1 text-primary underline decoration-accent decoration-2 underline-offset-8 hover:decoration-primary; }
-  .header-cta { @apply mt-3 whitespace-nowrap; }
-  .preview-action { @apply relative inline-flex flex-col items-start; }
-  .preview-dialog { @apply fixed inset-0 m-auto w-[calc(100%-40px)] max-w-md border border-primary/15 bg-background p-7 text-foreground shadow-xl; }
-  .preview-dialog::backdrop { @apply bg-foreground/40; }
-  .preview-dialog h2 { @apply pr-8 font-heading text-2xl font-semibold text-primary; }
-  .preview-dialog p { @apply my-5 text-sm leading-7 text-muted; }
-  .hero { @apply pt-8 pb-6 md:pt-10; }
-  .hero-copy { @apply relative min-w-0; }
-  .hero-kicker { @apply mb-7 flex flex-wrap items-center justify-between gap-x-5 gap-y-3 md:mb-9; }
-  .eyebrow { @apply flex items-center gap-3 text-[10px] leading-5 font-semibold tracking-[0.12em] text-primary uppercase md:text-[11px]; }
-  .eyebrow > span { @apply h-px w-7 shrink-0 bg-accent; }
-  .hero-tenure { @apply text-[11px] font-medium text-muted; }
-  .hero h1 { @apply font-heading text-[clamp(2.5rem,7vw,6.3rem)] leading-[1.04] font-semibold tracking-[-0.06em] text-foreground; }
-  .headline-line { @apply block; }
-  .headline-accent { @apply text-primary; }
-  .hero-intro { @apply mt-7 mb-8 flex flex-col justify-between gap-6 border-t border-primary/15 pt-6 md:mt-9 md:mb-10; }
-  .hero-description { @apply max-w-[520px] text-sm leading-[1.8] text-muted md:text-base; }
-  .hero-actions { @apply flex flex-wrap items-center gap-x-7 gap-y-4; }
-  .hero-figure { @apply relative m-0; }
-  .hero-photo { @apply relative isolate h-[400px] overflow-hidden bg-secondary md:h-[480px]; }
-  .hero-photo img { @apply object-cover object-[32%_35%]; }
-  .hero-photo::after { @apply pointer-events-none absolute inset-0 bg-linear-to-t from-primary/95 via-primary/10 to-transparent content-['']; }
-  .photo-caption-container { @apply absolute inset-x-0 bottom-7 z-10 flex items-end justify-between gap-6 md:bottom-10; }
-  .photo-title { @apply min-w-0 border-l border-accent pl-5 text-white; }
-  .photo-label { @apply mb-4 block text-[10px] font-medium tracking-[0.13em] uppercase md:text-xs; }
-  .photo-title > span:last-child { @apply block font-heading text-[clamp(1.75rem,3.2vw,3rem)] leading-[1.1] font-medium tracking-[-0.035em]; }
-  .photo-scope { @apply hidden text-right text-xs leading-6 text-white md:block; }
-  .image-registration { @apply pointer-events-none absolute top-8 right-8 z-10 h-5 w-5 border-t border-r border-accent; }
-  .image-credit { @apply flex flex-col justify-between gap-1 pt-4 text-[10px] leading-5 text-muted sm:flex-row sm:gap-4 sm:text-xs; }
-  .image-credit a { @apply inline-flex w-fit items-center gap-1 underline decoration-primary/30 underline-offset-4 hover:text-primary; }
-}
-
-@media (min-width: 960px) {
-  .header-inner { @apply min-h-26 flex-nowrap; }
-  .brand { @apply h-24 w-[184px]; }
-  .menu-toggle { @apply hidden; }
-  .navigation, .navigation.is-open { @apply flex w-auto flex-row items-center gap-6 border-0 py-0; }
-  .navigation .nav-link { @apply w-auto shrink-0; }
-  .navigation .preview-action { @apply static; }
-  .header-cta { @apply mt-0 ml-3; }
-  .hero-intro { @apply flex-row items-center gap-12; }
-  .hero-description { @apply max-w-[470px]; }
-  .hero-actions { @apply shrink-0; }
-  .hero-photo { @apply h-[clamp(380px,48svh,580px)]; }
-}
-
-@media (min-width: 960px) and (max-height: 850px) {
-  .hero { @apply pt-6; }
-  .hero-kicker { @apply mb-6; }
-  .hero h1 { @apply text-[clamp(3.75rem,6.2vw,5.4rem)]; }
-  .hero-intro { @apply mt-6 mb-7 pt-5; }
-}
-
-@media (max-width: 639px) {
-  .hero h1 { @apply text-[clamp(2.5rem,10.4vw,4.1rem)] tracking-[-0.045em]; }
-  .headline-accent { @apply block; }
-  .hero-tenure { @apply pl-10; }
-}
-
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
