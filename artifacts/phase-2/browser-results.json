@@ -1,0 +1,53 @@
+{
+  "baseURL": "http://localhost:3000",
+  "results": [
+    {
+      "viewport": "1440x900",
+      "overflow": false,
+      "axeViolations": 0,
+      "reducedMotion": "passed",
+      "scrollReveal": "passed",
+      "image": "loaded",
+      "keyboardCredit": "passed"
+    },
+    {
+      "viewport": "1366x768",
+      "overflow": false,
+      "axeViolations": 0,
+      "reducedMotion": "passed",
+      "scrollReveal": "passed",
+      "image": "loaded",
+      "keyboardCredit": "passed"
+    },
+    {
+      "viewport": "768x1024",
+      "overflow": false,
+      "axeViolations": 0,
+      "reducedMotion": "passed",
+      "scrollReveal": "passed",
+      "image": "loaded",
+      "keyboardCredit": "passed"
+    },
+    {
+      "viewport": "390x844",
+      "overflow": false,
+      "axeViolations": 0,
+      "reducedMotion": "passed",
+      "scrollReveal": "passed",
+      "image": "loaded",
+      "keyboardCredit": "passed"
+    },
+    {
+      "viewport": "320x740",
+      "overflow": false,
+      "axeViolations": 0,
+      "reducedMotion": "passed",
+      "scrollReveal": "passed",
+      "image": "loaded",
+      "keyboardCredit": "passed"
+    }
+  ],
+  "errors": [],
+  "approvedSources": "unchanged",
+  "noJavaScript": "passed"
+}
