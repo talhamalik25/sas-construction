@@ -1,5 +1,7 @@
 # Phase 1 implementation notes
 
+> Historical first-pass notes. The current Industrial Editorial implementation and verification results are documented in [PHASE_1_VISUAL_REPORT.md](PHASE_1_VISUAL_REPORT.md).
+
 ## Scope and files
 Read all seven original project Markdown files. Implemented only design tokens, typography, responsive header, hero, and reusable UI. No footer, other homepage sections, or additional routes were added, following the latest explicit scope.
 

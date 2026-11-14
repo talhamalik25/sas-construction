@@ -9,8 +9,8 @@ const results = [];
 const problems = [];
 await mkdir('artifacts/phase-1', { recursive: true });
 try {
-  for (const width of [1440, 960, 768, 390, 320]) {
-    const context = await browser.newContext({ viewport: { width, height: 1000 }, deviceScaleFactor: 1 });
+  for (const [width, height] of [[1440, 900], [1366, 768], [960, 900], [768, 1024], [390, 844], [320, 740]]) {
+    const context = await browser.newContext({ viewport: { width, height }, deviceScaleFactor: 1 });
     const page = await context.newPage();
     page.on('pageerror', error => problems.push(error.message));
     page.on('console', message => { if (message.type() === 'error') problems.push(message.text()); });
@@ -27,7 +27,12 @@ try {
     await page.keyboard.press('Enter');
     assert.equal(await page.evaluate(() => document.activeElement.id), 'main-content');
     await page.locator('h1').click();
-    await page.screenshot({ path: `artifacts/phase-1/home-${width}.png`, fullPage: true });
+    await page.evaluate(() => document.activeElement instanceof HTMLElement && document.activeElement.blur());
+    await page.waitForFunction(() => [...document.querySelectorAll('[data-hero-reveal]')].every(el => getComputedStyle(el).transform === 'none'));
+    assert.ok(!(await page.locator('body').innerText()).includes('Homepage preview'));
+    const captionFits = await page.locator('.photo-title').evaluate(el => { const caption = el.getBoundingClientRect(); const photo = el.closest('.hero-photo').getBoundingClientRect(); return caption.left >= photo.left && caption.right <= photo.right && caption.top >= photo.top && caption.bottom <= photo.bottom; });
+    assert.ok(captionFits, 'Image caption stays inside the photograph');
+    await page.screenshot({ path: `artifacts/phase-1/home-${width}x${height}.png`, fullPage: true });
     const accessibility = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     assert.deepEqual(accessibility.violations.map(v => `${v.id}: ${v.description}`), [], `Accessibility at ${width}px`);
     if (width < 960) {
@@ -43,7 +48,7 @@ try {
       await page.keyboard.press('Escape');
       assert.equal(await menu.getAttribute('aria-expanded'), 'true');
       assert.equal(await page.evaluate(() => document.activeElement.textContent.trim()), 'Projects');
-      await page.screenshot({ path: `artifacts/phase-1/menu-${width}.png`, fullPage: true });
+      await page.screenshot({ path: `artifacts/phase-1/menu-${width}x${height}.png`, fullPage: true });
       const menuAudit = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
       assert.equal(menuAudit.violations.length, 0);
       await page.keyboard.press('Escape');
@@ -62,9 +67,10 @@ try {
       assert.equal(await action.evaluate(element => document.activeElement === element), true);
     }
     await page.emulateMedia({ reducedMotion: 'reduce', colorScheme: 'dark' });
-    assert.equal(await page.locator('.hero-copy').evaluate(element => getComputedStyle(element).animationName), 'none');
+    assert.equal(await page.locator('[data-hero-reveal]').first().evaluate(element => getComputedStyle(element).transform), 'none');
+    assert.equal(await page.locator('.hero-photo img').evaluate(element => getComputedStyle(element).transform), 'none');
     assert.equal(await page.locator('body').evaluate(element => getComputedStyle(element).backgroundColor), 'rgb(250, 249, 246)');
-    results.push({ width, overflow: false, images: 'loaded', fonts: 'loaded', axeViolations: 0, interactions: 'passed', reducedMotion: 'passed', lightTheme: 'passed' });
+    results.push({ width, height, overflow: false, images: 'loaded', fonts: 'loaded', axeViolations: 0, interactions: 'passed', reducedMotion: 'passed', lightTheme: 'passed' });
     await context.close();
   }
   assert.deepEqual(problems, []);
@@ -73,3 +79,4 @@ try {
 } finally {
   await browser.close();
 }
+

@@ -3,6 +3,18 @@
   "results": [
     {
       "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "images": "loaded",
+      "fonts": "loaded",
+      "axeViolations": 0,
+      "interactions": "passed",
+      "reducedMotion": "passed",
+      "lightTheme": "passed"
+    },
+    {
+      "width": 1366,
+      "height": 768,
       "overflow": false,
       "images": "loaded",
       "fonts": "loaded",
@@ -13,6 +25,7 @@
     },
     {
       "width": 960,
+      "height": 900,
       "overflow": false,
       "images": "loaded",
       "fonts": "loaded",
@@ -23,6 +36,7 @@
     },
     {
       "width": 768,
+      "height": 1024,
       "overflow": false,
       "images": "loaded",
       "fonts": "loaded",
@@ -33,6 +47,7 @@
     },
     {
       "width": 390,
+      "height": 844,
       "overflow": false,
       "images": "loaded",
       "fonts": "loaded",
@@ -43,6 +58,7 @@
     },
     {
       "width": 320,
+      "height": 740,
       "overflow": false,
       "images": "loaded",
       "fonts": "loaded",
