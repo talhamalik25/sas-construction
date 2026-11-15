@@ -33,13 +33,9 @@ export function Projects() {
 
   useEffect(() => {
     if (!selectedProject) return;
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") {
-        setSelectedProject(null);
-      }
-    };
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => { document.body.style.overflow = previousOverflow; };
   }, [selectedProject]);
 
   // Filter projects by category
@@ -91,7 +87,7 @@ export function Projects() {
           <div
             className="mt-10 md:mt-12 flex flex-wrap items-center gap-2 md:gap-3"
             data-scroll-reveal
-            role="tablist"
+            role="group"
             aria-label="Filter projects by category"
           >
             {projectCategories.map((cat) => {
@@ -105,10 +101,9 @@ export function Projects() {
                 <button
                   key={cat.key}
                   type="button"
-                  role="tab"
-                  aria-selected={isActive}
+                  aria-pressed={isActive}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`inline-flex items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border ${
+                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border ${
                     isActive
                       ? "bg-primary text-white border-primary shadow-xs"
                       : "bg-surface text-muted border-primary/20 hover:border-primary hover:text-primary"
@@ -126,6 +121,7 @@ export function Projects() {
               );
             })}
           </div>
+          <p role="status" className="sr-only">Showing {filteredProjects.length} project records.</p>
 
           {/* FEATURED PROJECTS SHOWCASE (Prominent Editorial Compositions) */}
           {featuredProjects.length > 0 && (
@@ -194,7 +190,7 @@ export function Projects() {
                         <button
                           type="button"
                           onClick={() => setSelectedProject(project)}
-                          className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
+                          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
                         >
                           View Scope Details <ArrowUpRight size={14} aria-hidden="true" />
                         </button>
@@ -265,7 +261,7 @@ export function Projects() {
                           <button
                             type="button"
                             onClick={() => setSelectedProject(project)}
-                            className="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
+                            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
                           >
                             Details <ArrowUpRight size={13} aria-hidden="true" />
                           </button>
@@ -310,7 +306,7 @@ export function Projects() {
                       <button
                         type="button"
                         aria-expanded={isExpanded}
-                        aria-controls={`project-row-panel-${project.id}`}
+                        aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined}
                         onClick={() => toggleRow(project.id)}
                         className="w-full py-5 md:py-6 px-2 flex flex-col md:flex-row md:items-center justify-between gap-4 text-left group"
                       >
@@ -384,7 +380,7 @@ export function Projects() {
                               <button
                                 type="button"
                                 onClick={() => setSelectedProject(project)}
-                                className="inline-flex items-center gap-1 font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4"
+                                className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4"
                               >
                                 Full Scope Details <ArrowUpRight size={13} aria-hidden="true" />
                               </button>
@@ -420,7 +416,19 @@ export function Projects() {
       {/* Accessible Project Details Modal Dialog */}
       <dialog
         ref={dialogRef}
+        onCancel={() => setSelectedProject(null)}
         onClose={() => setSelectedProject(null)}
+        onKeyDown={event => {
+          if (event.key !== "Tab") return;
+          const controls = event.currentTarget.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex="0"]');
+          const first = controls[0];
+          const last = controls[controls.length - 1];
+          if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault(); last?.focus();
+          } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault(); first?.focus();
+          }
+        }}
         aria-labelledby="modal-project-title"
         aria-describedby="modal-project-desc"
         className="fixed inset-0 z-50 m-auto w-[calc(100%-32px)] max-w-2xl max-h-[90vh] overflow-y-auto border border-primary/15 bg-background p-6 md:p-8 text-foreground shadow-2xl backdrop:bg-foreground/45"
@@ -429,7 +437,7 @@ export function Projects() {
           <>
             <div className="flex items-start justify-between gap-4 pb-4 border-b border-primary/15">
               <div>
-                <span className="font-mono text-xs font-semibold text-accent uppercase tracking-wider">
+                <span className="font-mono text-xs font-semibold text-primary uppercase tracking-wider">
                   Project {selectedProject.numeral} &middot; {selectedProject.category}
                 </span>
                 <h3 id="modal-project-title" className="font-heading text-2xl md:text-3xl font-semibold text-primary mt-1">
@@ -440,7 +448,7 @@ export function Projects() {
                 type="button"
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close project details"
-                className="p-1.5 rounded-[2px] border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+                className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
               >
                 <X size={18} aria-hidden="true" />
               </button>
@@ -494,7 +502,7 @@ export function Projects() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="px-5 py-2.5 rounded-[2px] border border-primary/20 text-xs font-medium text-foreground hover:bg-secondary/40 transition-colors cursor-pointer"
+                className="min-h-11 px-5 py-2.5 rounded-[2px] border border-primary/20 text-xs font-medium text-foreground hover:bg-secondary/40 transition-colors cursor-pointer"
               >
                 Close
               </button>

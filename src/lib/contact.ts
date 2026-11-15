@@ -23,11 +23,22 @@ export const inquiryDelivery = {
   message: "Online enquiries are not available yet. Submission is disabled until a verified delivery destination is connected. Details entered here are not sent or saved.",
 } as const;
 
-/** WhatsApp must use international digits; phone must use international + format. */
+const whatsappNumberPattern = /^[1-9]\d{7,14}$/;
+
+function getWhatsAppBaseUrl(): string | null {
+  const number = contactDetails.whatsapp;
+  return number && whatsappNumberPattern.test(number) ? `https://wa.me/${number}` : null;
+}
+
+export function createWhatsAppLink(message: string): string | null {
+  const baseUrl = getWhatsAppBaseUrl();
+  return baseUrl ? `${baseUrl}?text=${encodeURIComponent(message)}` : null;
+}
+
+/** Phone must use international + format. */
 export function getContactHref(): string | null {
-  if (contactDetails.whatsapp && /^\+?[1-9]\d{7,14}$/.test(contactDetails.whatsapp)) {
-    return `https://wa.me/${contactDetails.whatsapp.replace(/^\+/, "")}`;
-  }
+  const whatsappUrl = getWhatsAppBaseUrl();
+  if (whatsappUrl) return whatsappUrl;
   if (contactDetails.email && /^[^\s@?&#]+@[^\s@?&#]+\.[^\s@?&#]+$/.test(contactDetails.email)) {
     return `mailto:${contactDetails.email}`;
   }

@@ -20,7 +20,7 @@ export const servicesData: Service[] = [
     shortTitle: "Road Construction",
     description:
       "Construction and development of internal roads, access routes and road networks for construction and development projects.",
-    scopes: ["Internal Road Networks", "Access Routes & Grading", "Base & Sub-Base Preparation"],
+    scopes: ["Road Formation", "Road Preparation", "Road Development"],
     image: {
       src: "/images/services/road-construction.jpg",
       alt: "Road construction machinery and pavers laying a road network on a development site",
@@ -34,7 +34,7 @@ export const servicesData: Service[] = [
     shortTitle: "Earthwork & Backfilling",
     description:
       "Site preparation, earth filling and backfilling operations supporting road construction and land development.",
-    scopes: ["Engineered Earth Filling", "Site Leveling & Backfilling", "Compacted Material Placement"],
+    scopes: ["Earth Filling", "Backfilling", "Material Placement"],
     image: {
       src: "/images/services/earthwork-backfilling.jpg",
       alt: "Earthmoving equipment and bulldozers leveling soil for site preparation",
@@ -48,7 +48,7 @@ export const servicesData: Service[] = [
     shortTitle: "Excavation & Cutting",
     description:
       "Excavation, hill cutting, land cutting and filling operations for preparing and developing construction sites.",
-    scopes: ["Hill & Terrain Cutting", "Trench & Foundation Digging", "Mass Earth Movement"],
+    scopes: ["Hill Cutting", "Excavation", "Land Preparation"],
     image: {
       src: "/images/services/excavation-cutting.jpg",
       alt: "Tracked excavator cutting into an earthmoving slope on an active site",
@@ -76,7 +76,7 @@ export const servicesData: Service[] = [
     shortTitle: "Paving & Compaction",
     description:
       "Road paving, paver installation, surface preparation and ground compaction activities.",
-    scopes: ["Heavy Roller Compaction", "Paver Installation & Surfacing", "Base Course Finishing"],
+    scopes: ["Ground Compaction", "Paver-related Work", "Surface Preparation"],
     image: {
       src: "/images/services/road-paving-compaction.jpg",
       alt: "Road roller compacting a newly laid base course layer on an infrastructure project",
@@ -90,7 +90,7 @@ export const servicesData: Service[] = [
     shortTitle: "Boundary Walls & Development",
     description:
       "Boundary wall construction and related development work for residential societies and other construction sites.",
-    scopes: ["Perimeter Masonry Walls", "Residential Society Enclosures", "Integrated Site Development"],
+    scopes: ["Boundary Wall Construction", "Site Preparation", "Site Development"],
     image: {
       src: "/images/services/boundary-walls-development.jpg",
       alt: "Perimeter boundary wall construction along an expansive site boundary",

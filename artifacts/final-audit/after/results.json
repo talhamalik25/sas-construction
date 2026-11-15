@@ -1,0 +1,642 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.0015797899034288192,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 74.89999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 77.19999999995343
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 94.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 101
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 89.10000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 89.30000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 101.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 114.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 177.80000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 171.10000000009313
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.0032207013165509264,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 18.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 17.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 30.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 26.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 24.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 22.399999999906868
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 26.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 33.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 143
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 139.20000000018626
+        }
+      ]
+    }
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.003032799222274779,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 19.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 20.399999999906868
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 27.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 25.100000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 24.100000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 23.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 25.4000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 33.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 164.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 161.0999999998603
+        }
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.003629878240947922,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 30.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 30.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 38.0999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 49.39999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 49.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 39.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 49.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 50.0999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 261.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 253
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.0011994775850325823,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 17.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 17.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 29.4000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 28.399999999906868
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 23.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 24.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 24.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 30.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 152.69999999995343
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 148.39999999990687
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.01778753284966645,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 19.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 19.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 22.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 33
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 31.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 25.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 27
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 33.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 146.89999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 142.69999999995343
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.000027311236623067775,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 20.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 20.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 34.39999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 30.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 26.0999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 28.200000000186265
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 28.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 33.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 248.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 241.9000000001397
+        }
+      ]
+    }
+  },
+  {
+    "width": 320,
+    "height": 740,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "smooth",
+      "skip": {
+        "top": 12,
+        "bottom": 13,
+        "translate": "none"
+      },
+      "duplicateIds": [],
+      "missingControls": [],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+      ],
+      "canonical": "https://sas-construction.vercel.app/",
+      "og": "SAS Construction | Roadwork, Earthwork & Site Development"
+    },
+    "projectArrowChanges": null,
+    "violations": [],
+    "dialogViolations": [],
+    "errors": [],
+    "performance": {
+      "cls": 0.00003853641172845143,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 19.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 20.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 29
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 27.899999999906868
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 22.899999999906868
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 23.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/05p9ql6e-tm1h.js",
+          "bytes": 12053,
+          "duration": 25.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2ya0xgq6_rgwt.js",
+          "bytes": 55047,
+          "duration": 34.89999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 157.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 152.5
+        }
+      ]
+    }
+  }
+]

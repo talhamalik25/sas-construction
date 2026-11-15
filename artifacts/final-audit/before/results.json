@@ -1,0 +1,858 @@
+[
+  {
+    "width": 1920,
+    "height": 1080,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.0015797899034288192,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 77.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 81.30000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 93.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 98.80000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 86.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 91.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 96.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 106.60000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 209
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 204
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.0032207013165509264,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 22.799999999813735
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 23.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 30.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 33.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 34.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 30.100000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 31.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 46.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 178.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 173.69999999995343
+        }
+      ]
+    }
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.003032799222274779,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 22.4000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 22.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 39.89999999990687
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 31.4000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 37.10000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 31
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 32.299999999813735
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 40.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 159.80000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 155.20000000018626
+        }
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.003629878240947922,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 22.200000000186265
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 24.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 38
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 35
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 30.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 34.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 33.0999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 39
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 187.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 183
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.0011994775850325823,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 23
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 24.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 35.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 42.0999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 29.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 29.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 31.200000000186265
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 40.10000000009313
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 164.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 159
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.01778753284966645,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 21.600000000093132
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 24.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 37.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 38
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 36.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 35.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 36.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 37.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 162.69999999995343
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 158.4000000001397
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "height": 812,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.000027311236623067775,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 17.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 18.799999999813735
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 29.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 29.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 26.5999999998603
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 25.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 28
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 30
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 139.30000000004657
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 134.9000000001397
+        }
+      ]
+    }
+  },
+  {
+    "width": 320,
+    "height": 740,
+    "initial": {
+      "overflow": false,
+      "smoothScroll": "auto",
+      "skip": {
+        "top": -84,
+        "bottom": -36,
+        "translate": "0px -96px"
+      },
+      "duplicateIds": [],
+      "missingControls": [
+        "service-panel-earthwork-backfilling",
+        "service-panel-excavation-cutting",
+        "service-panel-sewerage-water-lines",
+        "service-panel-road-paving-compaction",
+        "service-panel-boundary-walls-development",
+        "accordion-panel-earthwork-backfilling",
+        "accordion-panel-excavation-cutting",
+        "accordion-panel-sewerage-water-lines",
+        "accordion-panel-road-paving-compaction",
+        "accordion-panel-boundary-walls-development",
+        "project-row-panel-sassi-garden",
+        "project-row-panel-faizan-city",
+        "project-row-panel-gandhara-society",
+        "project-row-panel-gazian-society",
+        "project-row-panel-gulshan-e-maymar",
+        "project-row-panel-japan-city"
+      ],
+      "preloads": [
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 184px, 164px\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fservices%2Froad-construction.jpg&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw\">"
+      ],
+      "canonical": null,
+      "og": null
+    },
+    "projectArrowChanges": false,
+    "violations": [],
+    "dialogViolations": [
+      {
+        "id": "color-contrast",
+        "targets": [
+          [
+            ".text-accent.uppercase.tracking-wider"
+          ]
+        ]
+      }
+    ],
+    "errors": [],
+    "performance": {
+      "cls": 0.00003853641172845143,
+      "resources": [
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1pcw6gskne7pf.js",
+          "bytes": 2330,
+          "duration": 28.5
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/07hyzbqh0nng1.js",
+          "bytes": 9433,
+          "duration": 29.699999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 44.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 43.800000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 35.300000000046566
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 36
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/1an4-w-1agg5n.js",
+          "bytes": 12046,
+          "duration": 36.4000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/chunks/2to9mri3m6kw6.js",
+          "bytes": 54982,
+          "duration": 44.199999999953434
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
+          "bytes": 48556,
+          "duration": 238.9000000001397
+        },
+        {
+          "name": "http://localhost:3206/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
+          "bytes": 25136,
+          "duration": 233.5
+        }
+      ]
+    }
+  }
+]

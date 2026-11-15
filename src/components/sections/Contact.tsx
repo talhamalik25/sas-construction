@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, type FocusEvent } from "react";
-import { ArrowUpRight } from "lucide-react";
+import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
@@ -75,7 +75,7 @@ export function Contact() {
               </div>
             </div>
             <div className="mt-6 flex flex-col items-start gap-4 border-t border-primary/20 pt-6">
-              <button type="submit" disabled={!inquiryDelivery.configured} aria-describedby="inquiry-unavailable" className="inline-flex min-h-13 items-center gap-6 rounded-[2px] border border-primary/25 bg-secondary px-6 py-3.5 text-sm font-medium text-primary disabled:cursor-not-allowed">Send Project Inquiry <ArrowUpRight size={18} aria-hidden="true" /></button>
+              <CTA type="submit" disabled={!inquiryDelivery.configured} aria-describedby="inquiry-unavailable">Send Project Inquiry</CTA>
               <p className="text-xs leading-5 text-muted">Submission unavailable. No enquiry will be delivered.</p>
             </div>
           </form>

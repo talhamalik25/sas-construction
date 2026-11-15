@@ -1,15 +1,15 @@
 {
-  "inspectedAt": "2026-11-15T07:32:46.043Z",
+  "inspectedAt": "2026-11-15T07:48:55.461Z",
   "url": "https://sas-construction.vercel.app/",
   "status": 200,
   "headers": {
     "access-control-allow-origin": "*",
-    "age": "43113",
+    "age": "44083",
     "cache-control": "public, max-age=0, must-revalidate",
     "content-disposition": "inline",
     "content-encoding": "br",
     "content-type": "text/html; charset=utf-8",
-    "date": "Sun, 15 Nov 2026 07:32:43 GMT",
+    "date": "Sun, 15 Nov 2026 07:48:53 GMT",
     "etag": "W/\"21a6992d29cc64c25e2f67a11dd3ebf0\"",
     "link": "</>; rel=preconnect; crossorigin=\"\"",
     "server": "Vercel",
@@ -19,7 +19,7 @@
     "x-nextjs-prerender": "1",
     "x-nextjs-stale-time": "300",
     "x-vercel-cache": "HIT",
-    "x-vercel-id": "bom1::slhzj-1794727962544-4c064c2ce138"
+    "x-vercel-id": "bom1::wjjzf-1794728933175-700c85618780"
   },
   "projects": "SELECTED WORK / PROJECT EXPERIENCE\nBuilt Through Experience. Proven on the Ground.\n\nExplore a selection of road development, earthwork, infrastructure and site preparation projects undertaken throughout SAS Construction's working history.\n\nAll Projects\n9\nRoads & Paving\n4\nEarthwork & Preparation\n1\nUtilities & Drainage\n2\nSite Development\n2\nPROJECT 01\nFeatured Project\nSEWERAGE INFRASTRUCTURE\nOrangi, Karachi\nNLC Orangi\n\nScope: Sewerage Line Work\n\nTrenching, deep excavation and underground pipeline installation for major municipal sewerage line work.\n\nKEY EXECUTION SCOPES\nDeep Trench Excavation\nReinforced Concrete Pipeline Installation\nUtility Bedding & Backfilling\nRepresentative imagery · Registered site scope\nView Scope Details\nPROJECT 02\nROAD DEVELOPMENT / EARTHWORK\n·\nM9 Motorway Corridor\nFWO Motorway M9\n\nScope: Road Construction Backfilling\n\nLarge-scale earthwork, fill placement and compaction operations along the M9 Motorway road development corridor.\n\nHighway Embankment Backfilling\nHeavy Earthmoving & Spreading\nSub-Base Compaction\nRepresentative imagery\nDetails\nPROJECT 03\nEARTHWORK / SITE PREPARATION\n·\nKarachi Corridor (Location pending confirmation)\nASF City\n\nScope: Hill Cutting and Filling\n\nMass excavation, hill and terrain cutting, and engineered fill placement to prepare raw topography for site development.\n\nHill & Ridge Cutting\nMass Terrain Excavation\nEngineered Fill & Terrace Leveling\nRepresentative imagery\nDetails\nProject Register & Execution Scopes\n\nDetailed site preparation, paving and infrastructure assignments across our operating history.\n\n6 Recorded Scopes\n04\nSassi Garden\n\nRoad Filling and Compaction · Road Development\n\nLocation pending confirmation\n05\nFaizan City\n\nRoad Paver Installation · Road Paving\n\nLocation pending confirmation\n06\nGandhara Society\n\nRoad Cutting, Filling and Boundary Wall · Construction / Site Development\n\nLocation pending confirmation\n07\nGazian Society\n\nRoad Paver Installation · Road Paving\n\nLocation pending confirmation\n08\nGulshan-e-Maymar\n\nRoad, Sewerage and Water Line Work · Infrastructure Development\n\nGulshan-e-Maymar, Karachi\n09\nJapan City, Tando Allahyar\n\nBackfilling, Road and Park Development · Site Development\n\nTando Allahyar, Sindh\nProject records reflect client-provided project scopes. Imagery is representative of actual machinery and construction techniques on site.\n9 Documented Sites",
   "images": [
@@ -114,8 +114,8 @@
   "assets": [
     {
       "path": "/images/projects/m9-jamshoro-location.webp",
-      "status": 404,
-      "type": "text/html; charset=utf-8"
+      "status": 200,
+      "type": "image/webp"
     },
     {
       "path": "/images/projects/m9-jamshoro-location.json",

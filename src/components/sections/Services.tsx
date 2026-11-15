@@ -114,7 +114,7 @@ export function Services() {
                     type="button"
                     tabIndex={isActive ? 0 : -1}
                     aria-selected={isActive}
-                    aria-controls={`service-panel-${service.id}`}
+                  aria-controls="service-panel"
                     onClick={() => setActiveId(service.id)}
                     onMouseEnter={() => setActiveId(service.id)}
                     onKeyDown={(e) => handleKeyDown(e, index)}
@@ -174,7 +174,8 @@ export function Services() {
               <div
                 ref={showcaseRef}
                 role="tabpanel"
-                id={`service-panel-${activeService.id}`}
+                id="service-panel"
+                tabIndex={0}
                 aria-labelledby={`service-tab-${activeService.id}`}
                 className="border border-primary/15 bg-background shadow-xs overflow-hidden relative"
               >
@@ -189,7 +190,6 @@ export function Services() {
                     fill
                     sizes="(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw"
                     className="object-cover object-center transition-transform duration-500 ease-out"
-                    priority
                   />
                   {/* Subtle architectural vignette overlay */}
                   <div
@@ -265,7 +265,7 @@ export function Services() {
                     type="button"
                     id={`accordion-btn-${service.id}`}
                     aria-expanded={isOpen}
-                    aria-controls={`accordion-panel-${service.id}`}
+                    aria-controls={isOpen ? `accordion-panel-${service.id}` : undefined}
                     onClick={() => toggleMobileAccordion(service.id)}
                     className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 group"
                   >

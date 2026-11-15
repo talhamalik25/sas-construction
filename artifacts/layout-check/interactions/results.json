@@ -1,0 +1,75 @@
+{
+  "results": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 320,
+      "height": 740,
+      "menu": "passed",
+      "anchors": "passed",
+      "touchTargets": "passed",
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    }
+  ],
+  "errors": []
+}

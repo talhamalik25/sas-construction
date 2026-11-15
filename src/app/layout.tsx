@@ -2,13 +2,24 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { FloatingWhatsAppCTA } from "@/components/layout/FloatingWhatsAppCTA";
+import { siteUrl, siteDescription } from "@/lib/site";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/manrope";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
   title: "SAS Construction | Roadwork, Earthwork & Site Development",
-  description: "Over 20 years of experience in road construction, earthworks, infrastructure development and site preparation. SAS Construction, an independent construction contractor.",
+  description: siteDescription,
+  openGraph: {
+    type: "website", url: "/", siteName: "SAS Construction",
+    title: "SAS Construction | Roadwork, Earthwork & Site Development",
+    description: siteDescription,
+    images: [{ url: "/logo.png", width: 1536, height: 1024, alt: "SAS Construction" }],
+  },
+  twitter: { card: "summary", title: "SAS Construction", description: siteDescription, images: ["/logo.png"] },
   icons: { icon: "/logo.png", apple: "/logo.png" },
 };
 
@@ -17,7 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         <a
-          className="fixed top-3 left-4 z-50 -translate-y-24 bg-primary px-5 py-3 text-white transition-transform focus:translate-y-0"
+          className="skip-link fixed top-3 left-4 z-50 bg-primary px-5 py-3 text-white"
           href="#main-content"
         >
           Skip to content
@@ -25,6 +36,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Header />
         <main id="main-content" tabIndex={-1}>{children}</main>
         <Footer />
+        <FloatingWhatsAppCTA />
       </body>
     </html>
   );
