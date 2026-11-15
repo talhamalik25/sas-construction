@@ -1,102 +1,75 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import type { ProjectRecord, ProjectImage } from "@/data/projects";
+import { useState, type KeyboardEvent } from "react";
+import type { ProjectRecord } from "@/data/projects";
 
 interface ProjectMediaProps {
   project: ProjectRecord;
-  sizes: string;
+  sizes?: string;
   mode?: "card" | "dialog";
-  initialIndex?: number;
 }
 
 export function ProjectMedia({
   project,
-  sizes,
+  sizes = "(min-width: 1024px) 50vw, 100vw",
   mode = "card",
-  initialIndex = 0,
 }: ProjectMediaProps) {
-  const images: ProjectImage[] =
-    project.images && project.images.length > 0
-      ? project.images
-      : project.image
-        ? [project.image]
-        : [];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  // Normalize image data: support single or multi-image records
+  const images = project.images && project.images.length > 0
+    ? project.images
+    : project.image
+    ? [project.image]
+    : [];
 
   const hasMultiple = images.length > 1;
-  const currentPhoto = images[currentIndex];
+  const currentPhoto = images[currentIndex] || images[0];
 
-  const handlePrev = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  const handleNext = (e: React.MouseEvent) => {
-    e.stopPropagation();
+  const handleNext = () => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: KeyboardEvent<HTMLElement>) => {
     if (!hasMultiple) return;
     if (e.key === "ArrowLeft") {
       e.preventDefault();
-      setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
+      handlePrev();
     } else if (e.key === "ArrowRight") {
       e.preventDefault();
-      setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
+      handleNext();
+    } else if (e.key === "Home") {
+      e.preventDefault();
+      setCurrentIndex(0);
+    } else if (e.key === "End") {
+      e.preventDefault();
+      setCurrentIndex(images.length - 1);
     }
   };
 
+  // Fallback for any record without photographs
   if (!currentPhoto) {
     return (
-      <div
-        className="relative flex h-full min-h-[260px] flex-col justify-between overflow-hidden bg-secondary/80 p-6 sm:p-8 text-primary border border-primary/10 select-none"
-        data-project-panel={project.id}
-      >
-        {/* Architectural grid background styling */}
-        <div
-          className="pointer-events-none absolute inset-0 opacity-[0.04] bg-[radial-gradient(#254e43_1px,transparent_1px)] [background-size:16px_16px]"
-          aria-hidden="true"
-        />
-
-        {/* Four corner architectural crosshair marks */}
-        <span className="pointer-events-none absolute top-3 left-3 font-mono text-[10px] text-primary/40" aria-hidden="true">+</span>
-        <span className="pointer-events-none absolute top-3 right-3 font-mono text-[10px] text-primary/40" aria-hidden="true">+</span>
-        <span className="pointer-events-none absolute bottom-3 left-3 font-mono text-[10px] text-primary/40" aria-hidden="true">+</span>
-        <span className="pointer-events-none absolute bottom-3 right-3 font-mono text-[10px] text-primary/40" aria-hidden="true">+</span>
-
-        {/* Header Bar */}
-        <div className="relative z-10 flex items-center justify-between border-b border-primary/15 pb-3">
-          <div className="flex items-center gap-2">
-            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-            <span className="text-[10px] font-mono font-semibold uppercase tracking-[0.16em] text-primary/90">
-              Field Record № {project.numeral}
-            </span>
-          </div>
-          <span className="font-mono text-xs font-semibold px-2 py-0.5 rounded-[2px] bg-primary/10 text-primary">
-            {project.category}
+      <div className="relative flex h-full min-h-[220px] flex-col justify-between border-l-2 border-accent bg-secondary/80 p-6 text-foreground md:p-8">
+        <div>
+          <span className="font-mono text-xs uppercase tracking-wider text-primary">
+            Scope Record
           </span>
-        </div>
-
-        {/* Center Technical Scope Display */}
-        <div className="relative z-10 py-5">
-          <span className="mb-3 block h-0.5 w-8 bg-accent" aria-hidden="true" />
-          <p className="font-heading text-xl sm:text-2xl font-semibold leading-tight tracking-tight text-primary">
+          <p className="mt-2 font-heading text-lg font-semibold text-primary">
+            {project.title}
+          </p>
+          <p className="mt-1 font-mono text-xs text-muted">
             {project.scopeSupplied}
           </p>
-          <p className="mt-2 text-xs font-mono text-muted tracking-wide">
-            {project.location}
-          </p>
         </div>
-
-        {/* Footer Technical Stamp */}
-        <div className="relative z-10 flex flex-wrap items-center justify-between gap-2 border-t border-primary/15 pt-3 text-[10px] font-mono text-muted">
-          <span>SAS Construction Register</span>
-          <span className="text-primary/70">Verified Scope &middot; Photography Pending</span>
+        <div className="pt-4 text-[11px] leading-relaxed text-muted">
+          Physical execution record documented in contractor register. Site photography pending verified permission.
         </div>
       </div>
     );
@@ -113,8 +86,8 @@ export function ProjectMedia({
       aria-label={hasMultiple ? `Photo gallery for ${project.title}, image ${currentIndex + 1} of ${images.length}` : undefined}
     >
       <div
-        className={`relative w-full aspect-[16/10] bg-secondary overflow-hidden ${
-          isDialog ? "bg-charcoal/95" : ""
+        className={`relative w-full aspect-[16/10] overflow-hidden ${
+          isDialog ? "bg-charcoal/95" : "bg-secondary"
         }`}
       >
         <Image
@@ -122,7 +95,9 @@ export function ProjectMedia({
           alt={currentPhoto.alt}
           fill
           sizes={sizes}
-          className="object-contain transition-transform duration-500 hover:scale-[1.01]"
+          className={`${
+            isDialog ? "object-contain" : "object-cover object-center"
+          } transition-transform duration-500 hover:scale-[1.01]`}
           priority={currentIndex === 0 && project.featured}
         />
 
@@ -165,62 +140,120 @@ export function ProjectMedia({
           </>
         )}
 
-        {/* Classification Badge overlay */}
-        <div className="absolute top-3 left-3 z-10 pointer-events-none">
-          <span className="text-[9px] font-mono font-semibold uppercase tracking-wider text-white bg-primary/90 px-2 py-0.5 rounded-[2px] border border-white/10 backdrop-blur-xs">
-            {currentPhoto.classification === "A" ? "Project Photo" : "Location Reference"}
-          </span>
-        </div>
+        {/* Honest, concise badge ONLY for Location References (not actual SAS project photo) */}
+        {currentPhoto.classification === "B" && (
+          <div className="absolute top-3 left-3 z-10 pointer-events-none">
+            <span className="text-[10px] font-mono font-medium uppercase tracking-wider text-amber-200 bg-charcoal/90 px-2.5 py-1 rounded-[2px] border border-amber-300/30 backdrop-blur-xs">
+              Location Reference
+            </span>
+          </div>
+        )}
       </div>
 
-      {/* Mandatory Credit and Attribution Footer */}
-      <figcaption className="shrink-0 border-t border-primary/15 bg-surface px-4 py-3 text-[11px] leading-relaxed text-muted">
-        <div className="flex flex-wrap items-center justify-between gap-1">
-          <p className="font-semibold text-primary">
-            {currentPhoto.classification === "B"
-              ? "Location reference — not evidence of SAS execution"
-              : "Project photo"}
-          </p>
-          {hasMultiple && (
-            <div className="flex items-center gap-1" role="group" aria-label="Photo selection">
-              {images.map((_, idx) => (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    setCurrentIndex(idx);
-                  }}
-                  aria-label={`View photo ${idx + 1}`}
-                  className="flex min-h-[24px] min-w-[24px] items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+      {/* Credit and Attribution Presentation */}
+      {isDialog ? (
+        <figcaption className="shrink-0 border-t border-primary/15 bg-surface px-5 py-3.5 text-xs text-muted">
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <p className="font-semibold text-primary">
+              {currentPhoto.classification === "B"
+                ? "Location Reference — not evidence of SAS execution"
+                : "Authentic Project Photography"}
+            </p>
+            {hasMultiple && (
+              <div className="flex items-center gap-1" role="group" aria-label="Photo selection">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setCurrentIndex(idx);
+                    }}
+                    aria-label={`View photo ${idx + 1}`}
+                    className="flex min-h-[24px] min-w-[24px] items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                  >
+                    <span
+                      className={`h-1.5 rounded-full transition-all ${
+                        currentIndex === idx ? "w-3.5 bg-primary" : "w-1.5 bg-primary/30 hover:bg-primary/60"
+                      }`}
+                      aria-hidden="true"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          <p className="mt-1 text-sm text-foreground/90">{currentPhoto.caption}</p>
+          <p className="mt-1 text-[11px] text-muted">
+            {currentPhoto.sourceUrl ? (
+              <a
+                href={currentPhoto.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-primary"
+              >
+                Source: {currentPhoto.author}
+              </a>
+            ) : (
+              <span>Source: SAS Construction Field Records</span>
+            )}
+            {currentPhoto.license && currentPhoto.licenseUrl && (
+              <>
+                {" · "}
+                <a
+                  href={currentPhoto.licenseUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline underline-offset-2 hover:text-primary"
                 >
-                  <span
-                    className={`h-2 rounded-full transition-all ${
-                      currentIndex === idx ? "w-4 bg-primary" : "w-2 bg-primary/30 hover:bg-primary/60"
-                    }`}
-                    aria-hidden="true"
-                  />
-                </button>
-              ))}
-            </div>
-          )}
-        </div>
-        <p className="mt-1">{currentPhoto.caption}</p>
-        <p className="mt-1 text-[10px] text-muted">
-          {currentPhoto.sourceUrl ? (
-            <a
-              href={currentPhoto.sourceUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline underline-offset-2 hover:text-primary"
-            >
-              Photo: {currentPhoto.author}
-            </a>
-          ) : (
-            <span>Record: {currentPhoto.author || "SAS Construction"}</span>
-          )}
-          {currentPhoto.license && currentPhoto.licenseUrl && (
-            <>
+                  {currentPhoto.license}
+                </a>
+              </>
+            )}
+            {currentPhoto.changes && ` · ${currentPhoto.changes}`}
+          </p>
+        </figcaption>
+      ) : (
+        <figcaption className="shrink-0 border-t border-primary/10 bg-surface px-4 py-2.5 text-[11px] leading-relaxed text-muted">
+          <div className="flex flex-wrap items-center justify-between gap-1.5">
+            <p className="font-medium text-foreground/80 truncate max-w-[calc(100%-110px)]">
+              {currentPhoto.caption}
+            </p>
+            {hasMultiple && (
+              <div className="flex items-center gap-1 shrink-0" role="group" aria-label="Photo selection">
+                {images.map((_, idx) => (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setCurrentIndex(idx);
+                    }}
+                    aria-label={`View photo ${idx + 1}`}
+                    className="flex min-h-[24px] min-w-[24px] items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                  >
+                    <span
+                      className={`h-1.5 rounded-full transition-all ${
+                        currentIndex === idx ? "w-3.5 bg-primary" : "w-1.5 bg-primary/30 hover:bg-primary/60"
+                      }`}
+                      aria-hidden="true"
+                    />
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+          {currentPhoto.classification === "B" && (
+            <p className="mt-1 text-[10px] text-muted">
+              Location reference ·{" "}
+              <a
+                href={currentPhoto.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-2 hover:text-primary"
+              >
+                Photo: {currentPhoto.author}
+              </a>
               {" · "}
               <a
                 href={currentPhoto.licenseUrl}
@@ -230,41 +263,33 @@ export function ProjectMedia({
               >
                 {currentPhoto.license}
               </a>
-            </>
+              {currentPhoto.changes && ` · ${currentPhoto.changes}`}
+            </p>
           )}
-          {currentPhoto.changes && <>{" · "}{currentPhoto.changes}</>}
-        </p>
-
-        {/* Persistent licensed disclosure if project includes external attribution */}
-        {!currentPhoto.license && images.some((img) => img.license) && (
-          <p className="mt-1 text-[10px] text-muted">
-            {images
-              .filter((img) => img.license && img.licenseUrl)
-              .map((img) => (
-                <span key={img.src}>
-                  Location reference:{" "}
-                  <a
-                    href={img.sourceUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-primary"
-                  >
-                    Photo: {img.author}
-                  </a>
-                  {" · "}
-                  <a
-                    href={img.licenseUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="underline underline-offset-2 hover:text-primary"
-                  >
-                    {img.license}
-                  </a>
-                </span>
-              ))}
-          </p>
-        )}
-      </figcaption>
+          {currentPhoto.classification === "A" && images.some((img) => img.license) && (
+            <p className="mt-1 text-[11px] text-muted">
+              Location reference:{" "}
+              <a
+                href={images.find((img) => img.license)?.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-primary underline underline-offset-2 hover:text-foreground"
+              >
+                Photo: {images.find((img) => img.license)?.author}
+              </a>
+              {" · "}
+              <a
+                href={images.find((img) => img.license)?.licenseUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-primary underline underline-offset-2 hover:text-foreground"
+              >
+                CC BY-SA 4.0
+              </a>
+            </p>
+          )}
+        </figcaption>
+      )}
     </figure>
   );
 }

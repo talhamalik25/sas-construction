@@ -105,7 +105,7 @@ export function Projects() {
                   type="button"
                   aria-pressed={isActive}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-lg text-xs md:text-sm font-medium transition-all duration-200 border cursor-pointer ${
+                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border cursor-pointer ${
                     isActive
                       ? "bg-primary text-white border-primary shadow-xs"
                       : "bg-surface text-muted border-primary/20 hover:border-primary hover:text-primary"
@@ -113,7 +113,7 @@ export function Projects() {
                 >
                   <span>{cat.label}</span>
                   <span
-                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded-md ${
+                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded-[2px] ${
                       isActive ? "bg-white/20 text-white font-semibold" : "bg-secondary text-primary font-medium"
                     }`}
                   >
@@ -147,10 +147,10 @@ export function Projects() {
                     <div className="lg:col-span-5 p-7 lg:p-9 xl:p-10 flex flex-col justify-between">
                       <div>
                         {/* Meta Category & Location */}
-                        <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted mb-4">
+                        <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted mb-3">
                           <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold text-primary uppercase tracking-wider">
                             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
-                            {project.category}
+                            Project {project.numeral} &middot; {project.category}
                           </span>
                           <span className="inline-flex items-center gap-1 text-muted text-xs">
                             <MapPin size={13} className="text-primary shrink-0" aria-hidden="true" />
@@ -187,17 +187,18 @@ export function Projects() {
                       </div>
 
                       {/* Card Footer / Action */}
-                      <div className="mt-8 pt-6 border-t border-primary/10 flex items-center justify-between">
-                        <span className="text-[10px] font-mono text-muted leading-tight">
-                          Client Register Record
-                        </span>
+                      <div className="mt-8 pt-6 border-t border-primary/10 flex items-center justify-between gap-4">
                         <button
                           type="button"
                           onClick={() => setSelectedProject(project)}
-                          className="inline-flex min-h-11 items-center gap-1.5 rounded-lg text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
+                          className="inline-flex min-h-11 items-center gap-2 px-4 py-2 rounded-[2px] border border-primary/25 bg-background text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all cursor-pointer"
                         >
-                          View Scope Details <ArrowUpRight size={14} aria-hidden="true" />
+                          <span>View Scope Details</span>
+                          <ArrowUpRight size={14} aria-hidden="true" />
                         </button>
+                        <span className="font-mono text-[10px] text-muted">
+                          Record № {project.numeral}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -221,11 +222,10 @@ export function Projects() {
                       {/* Content */}
                       <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
                         <div>
-                          <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted mb-3">
+                          <div className="flex flex-wrap items-center justify-between gap-2 text-xs text-muted mb-3">
                             <span className="font-mono font-semibold text-primary text-[11px] uppercase tracking-wider">
-                              {project.category}
+                              Project {project.numeral} &middot; {project.category}
                             </span>
-                            <span>&middot;</span>
                             <span className="inline-flex items-center gap-1 text-muted text-xs">
                               <MapPin size={12} className="text-primary" aria-hidden="true" />
                               {project.location}
@@ -258,14 +258,18 @@ export function Projects() {
                         </div>
 
                         {/* Card Footer */}
-                        <div className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between">
+                        <div className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between gap-3">
                           <button
                             type="button"
                             onClick={() => setSelectedProject(project)}
-                            className="inline-flex min-h-11 items-center gap-1.5 rounded-lg text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
+                            className="inline-flex min-h-11 items-center gap-1.5 px-3.5 py-2 rounded-[2px] border border-primary/25 bg-background text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-all cursor-pointer"
                           >
-                            Details <ArrowUpRight size={13} aria-hidden="true" />
+                            <span>Details</span>
+                            <ArrowUpRight size={13} aria-hidden="true" />
                           </button>
+                          <span className="font-mono text-[10px] text-muted">
+                            Record № {project.numeral}
+                          </span>
                         </div>
                       </div>
                     </article>
@@ -309,7 +313,7 @@ export function Projects() {
                         aria-expanded={isExpanded}
                         aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined}
                         onClick={() => toggleRow(project.id)}
-                        className="w-full py-5 md:py-6 px-3 flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-lg text-left group cursor-pointer"
+                        className="w-full py-5 md:py-6 px-3 flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-[2px] text-left group cursor-pointer"
                       >
                         <div className="flex items-start md:items-center gap-4 md:gap-6 min-w-0">
                           {/* Numeral */}
@@ -337,7 +341,7 @@ export function Projects() {
                           </span>
 
                           <span
-                            className={`size-8 rounded-md flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
+                            className={`size-8 rounded-[2px] flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
                               isExpanded ? "bg-primary text-white rotate-180" : "bg-surface text-muted"
                             }`}
                             aria-hidden="true"
@@ -381,7 +385,7 @@ export function Projects() {
                               <button
                                 type="button"
                                 onClick={() => setSelectedProject(project)}
-                                className="inline-flex min-h-11 items-center gap-1 rounded-lg font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 cursor-pointer"
+                                className="inline-flex min-h-11 items-center gap-1 rounded-[2px] font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 cursor-pointer"
                               >
                                 Full Scope Details <ArrowUpRight size={13} aria-hidden="true" />
                               </button>
@@ -456,7 +460,7 @@ export function Projects() {
                 type="button"
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close project details"
-                className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+                className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
               >
                 <X size={18} aria-hidden="true" />
               </button>
@@ -504,24 +508,19 @@ export function Projects() {
                     ))}
                   </ul>
                 </div>
-
-                <div className="p-3.5 bg-secondary/40 rounded-[2px] border border-primary/15 text-xs text-muted">
-                  <p>
-                    <strong className="text-primary font-semibold">Provenance Note:</strong>{" "}
-                    {selectedProject.clientNote ?? "Details derived directly from contractor register."}{" "}
-                    {selectedProject.image?.caption ?? "Site photography pending verification and permission."}
-                  </p>
-                </div>
               </div>
             </div>
 
-            <div className="pt-4 border-t border-primary/15 flex items-center justify-end gap-3">
+            <div className="pt-4 border-t border-primary/15 flex items-center justify-between text-xs text-muted">
+              <span className="font-mono">
+                {selectedProject.clientNote ?? "Scope documented in client working register."}
+              </span>
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="min-h-11 px-5 py-2.5 rounded-lg border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider hover:bg-secondary/40 transition-colors cursor-pointer"
+                className="inline-flex min-h-11 items-center px-4 py-2 border border-primary/20 rounded-[2px] text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
               >
-                Close
+                Close Details
               </button>
             </div>
           </>

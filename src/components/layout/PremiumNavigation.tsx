@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { X, ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { navigation } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
@@ -52,7 +52,7 @@ export function PremiumNavigation() {
 
   return (
     <header className="relative z-20 border-b border-primary/15 bg-surface">
-      <Container className="flex h-[88px] items-center justify-between gap-6 min-[960px]:h-24">
+      <Container className="flex h-16 sm:h-[72px] min-[960px]:h-24 items-center justify-between gap-6">
         {/* Brand Logo */}
         <Link
           href="/"
@@ -64,9 +64,9 @@ export function PremiumNavigation() {
             alt="SAS Construction"
             width={1536}
             height={1024}
-            sizes="(min-width: 960px) 150px, 130px"
+            sizes="(min-width: 960px) 150px, 120px"
             preload
-            className="h-auto w-[130px] shrink-0 object-contain min-[960px]:w-[150px]"
+            className="h-auto w-[112px] sm:w-[126px] min-[960px]:w-[150px] shrink-0 object-contain"
           />
         </Link>
 
@@ -99,11 +99,11 @@ export function PremiumNavigation() {
           )}
         </nav>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu Button - Architectural Compact Toggle */}
         <button
           ref={toggle}
           type="button"
-          className="menu-toggle inline-flex min-h-11 items-center gap-3.5 border border-primary/25 bg-background py-2.5 pr-3 pl-4 text-xs font-semibold tracking-wider text-primary uppercase transition-colors hover:bg-secondary/40 hover:border-primary cursor-pointer min-[960px]:hidden rounded-lg"
+          className="menu-toggle inline-flex min-h-11 items-center gap-2.5 rounded-[2px] border border-primary/25 bg-background/90 px-3.5 py-2 text-xs font-mono font-medium tracking-[0.16em] uppercase text-primary transition-all duration-200 hover:border-primary hover:bg-secondary cursor-pointer min-[960px]:hidden"
           aria-expanded={open}
           aria-controls="mobile-navigation"
           aria-haspopup="dialog"
@@ -113,18 +113,19 @@ export function PremiumNavigation() {
           }}
         >
           <span>Menu</span>
-          <span className="border-l border-primary/20 pl-3">
-            <Menu size={18} aria-hidden="true" />
+          <span className="flex flex-col justify-center gap-1 w-3.5 h-3 shrink-0" aria-hidden="true">
+            <span className="h-[1.5px] w-full bg-primary" />
+            <span className="h-[1.5px] w-2.5 self-end bg-accent" />
           </span>
         </button>
       </Container>
 
-      {/* Accessible Mobile Menu Dialog */}
+      {/* Accessible Mobile Menu Drawer Dialog */}
       <dialog
         ref={dialog}
         id="mobile-navigation"
         aria-labelledby="mobile-menu-title"
-        className="mobile-menu"
+        className="mobile-menu fixed inset-y-0 right-0 z-60 m-0 flex h-dvh max-h-dvh w-[min(400px,calc(100%-24px))] max-w-none flex-col overflow-y-auto overscroll-contain border-0 border-l border-accent bg-background p-6 sm:p-7 text-foreground shadow-2xl"
         onCancel={() => {
           navigating.current = false;
           setOpen(false);
@@ -161,70 +162,77 @@ export function PremiumNavigation() {
           }
         }}
       >
-        <div className="flex items-center justify-between gap-4 border-b border-primary/20 pb-5">
-          <div>
-            <p id="mobile-menu-title" className="text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
-              SAS Construction
-            </p>
-            <span className="mt-1 block text-[10px] font-normal tracking-[0.12em] text-muted uppercase">
-              Field Execution &middot; 20+ Years
-            </span>
+        {/* Drawer Header */}
+        <div className="flex items-center justify-between gap-4 border-b border-primary/15 pb-4">
+          <div className="flex items-center gap-2.5">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
+            <div>
+              <p id="mobile-menu-title" className="font-heading text-sm font-semibold tracking-tight text-primary">
+                SAS Construction
+              </p>
+              <span className="block font-mono text-[9px] tracking-[0.14em] text-muted uppercase">
+                Field Contractor &middot; 20+ Years
+              </span>
+            </div>
           </div>
           <button
             type="button"
             autoFocus
             aria-label="Close menu"
             onClick={() => close()}
-            className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-primary/25 text-primary transition-colors hover:bg-secondary cursor-pointer"
+            className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
           >
-            <X size={20} aria-hidden="true" />
+            <X size={18} aria-hidden="true" />
           </button>
         </div>
 
-        <nav aria-label="Mobile navigation" className="my-6">
+        {/* Drawer Navigation List */}
+        <nav aria-label="Mobile navigation" className="my-5 space-y-1">
           <Link
             href="/"
             onClick={() => close(true)}
-            className="mobile-nav-link flex items-center justify-between min-h-[66px] max-[374px]:min-h-[58px] border-b border-primary/15 font-heading text-[clamp(22px,5vw,28px)] font-medium tracking-tight text-primary transition-colors hover:bg-secondary/40 px-2"
+            className="mobile-nav-link group flex items-center justify-between min-h-[58px] sm:min-h-[64px] border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
           >
-            <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-normal" aria-hidden="true">
+            <span className="mobile-nav-number font-mono text-xs tracking-wider text-accent font-semibold group-hover:text-primary transition-colors" aria-hidden="true">
               01
             </span>
-            <span>Home</span>
-            <ArrowUpRight size={18} className="text-muted shrink-0 ml-auto" aria-hidden="true" />
+            <span className="font-heading">Home</span>
+            <ArrowUpRight size={16} className="text-muted/60 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-auto" aria-hidden="true" />
           </Link>
           {navigation.map((item, i) => (
             <NavigationAction
               key={item}
               destination={item}
               onNavigate={() => close(true)}
-              className="mobile-nav-link flex items-center justify-between min-h-[66px] max-[374px]:min-h-[58px] border-b border-primary/15 font-heading text-[clamp(22px,5vw,28px)] font-medium tracking-tight text-primary transition-colors hover:bg-secondary/40 px-2"
+              className="mobile-nav-link group flex items-center justify-between min-h-[58px] sm:min-h-[64px] border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
             >
-              <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-normal" aria-hidden="true">
+              <span className="mobile-nav-number font-mono text-xs tracking-wider text-accent font-semibold group-hover:text-primary transition-colors" aria-hidden="true">
                 0{i + 2}
               </span>
-              <span>{item}</span>
-              <ArrowUpRight size={18} className="text-muted shrink-0 ml-auto" aria-hidden="true" />
+              <span className="font-heading">{item}</span>
+              <ArrowUpRight size={16} className="text-muted/60 group-hover:text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all shrink-0 ml-auto" aria-hidden="true" />
             </NavigationAction>
           ))}
         </nav>
 
-        <div className="mt-auto border-t border-primary/20 pt-6">
-          <p className="mb-4 text-xs leading-6 text-muted">
-            Start with your site.<br />Let&apos;s discuss the groundwork.
+        {/* Drawer Footer CTA */}
+        <div className="mt-auto border-t border-primary/15 pt-5 space-y-3">
+          <p className="text-xs leading-relaxed text-muted">
+            Direct on-site contractor coordination, machinery deployment, and execution across Sindh.
           </p>
           {quoteHref ? (
-            <CTA href={quoteHref} onClick={() => close(true)} className="w-full">
+            <CTA href={quoteHref} onClick={() => close(true)} className="w-full justify-center">
               Request a Quote
             </CTA>
           ) : (
-            <CTA destination="Contact" onNavigate={() => close(true)} className="w-full">
+            <CTA destination="Contact" onNavigate={() => close(true)} className="w-full justify-center">
               Request a Quote
             </CTA>
           )}
-          <p className="mt-5 text-[10px] uppercase tracking-[0.14em] text-muted font-mono">
-            Experience &middot; Coordination &middot; Execution
-          </p>
+          <div className="flex items-center justify-between pt-1 font-mono text-[9px] text-muted tracking-wider uppercase">
+            <span>Sindh, Pakistan</span>
+            <span className="text-primary font-medium">WhatsApp Available</span>
+          </div>
         </div>
       </dialog>
     </header>

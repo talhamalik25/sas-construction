@@ -31,6 +31,7 @@ export function FloatingWhatsAppCTA() {
       aria-label="Chat with SAS Construction on WhatsApp"
       title="Chat on WhatsApp"
       className="
+        floating-whatsapp
         group
         fixed
         bottom-[calc(20px+env(safe-area-inset-bottom,0px))]
@@ -42,19 +43,19 @@ export function FloatingWhatsAppCTA() {
         justify-center
         rounded-2xl
         border
-        border-[#D6B27A]/70
-        bg-[#254E43]
+        border-accent/70
+        bg-primary
         text-[#25D366]
-        shadow-[0_8px_25px_rgba(37,78,67,0.25)]
+        shadow-lg shadow-primary/25
         transition-all
         duration-300
         hover:-translate-y-1
-        hover:border-[#D6B27A]
-        hover:bg-[#1D3F36]
-        hover:shadow-[0_12px_30px_rgba(37,78,67,0.35)]
+        hover:border-accent
+        hover:bg-primary/90
+        hover:shadow-xl hover:shadow-primary/35
         focus-visible:outline-2
         focus-visible:outline-offset-4
-        focus-visible:outline-[#D6B27A]
+        focus-visible:outline-accent
         motion-reduce:transform-none
         motion-reduce:transition-none
         sm:bottom-7
@@ -72,7 +73,7 @@ export function FloatingWhatsAppCTA() {
           absolute
           right-1.5
           top-1.5
-          text-[#D6B27A]
+          text-accent
           opacity-0
           transition-opacity
           duration-200

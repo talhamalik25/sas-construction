@@ -50,7 +50,7 @@ export function CTA({
 
     // Premium single-color gold CTA
     dark:
-      "bg-accent text-primary border-accent hover:bg-[#E5C591] hover:border-[#E5C591] focus-visible:outline-accent disabled:border-muted disabled:bg-secondary disabled:text-muted",
+      "bg-accent text-primary border-accent hover:brightness-105 hover:border-accent focus-visible:outline-accent disabled:border-muted disabled:bg-secondary disabled:text-muted",
   }[variant];
 
   // Arrow styling

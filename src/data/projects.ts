@@ -253,7 +253,7 @@ export const projectsData: ProjectRecord[] = [
       "Backfilling, road and park-related work in Tando Allahyar, as supplied in the project register.",
     scopes: ["Backfilling", "Road Work", "Park-related Work"],
     image: {
-      src: "/images/projects/japan-city.webp",
+      src: "/images/projects/tando-alayar.jpg",
       alt: "Earthmoving machinery performing backfilling and road development at Japan City, Tando Allahyar",
       caption: "Mass backfilling and internal road development in Tando Allahyar, Sindh.",
       classification: "A",

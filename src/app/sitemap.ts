@@ -2,5 +2,12 @@ import type { MetadataRoute } from "next";
 import { siteUrl } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: `${siteUrl}/` }];
+  return [
+    {
+      url: `${siteUrl}/`,
+      lastModified: "2026-11-15",
+      changeFrequency: "monthly",
+      priority: 1.0,
+    },
+  ];
 }
