@@ -8,16 +8,31 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { workStages } from "@/data/approach";
 
+const stageSubtitles = [
+  "Scope & Site Evaluation",
+  "Plant & Ground Mobilization",
+  "On-Site Coordinated Work",
+  "Verification & Delivery",
+] as const;
+
 export function HowWeWork() {
   const timeline = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const media = gsap.matchMedia();
     media.add("(prefers-reduced-motion: no-preference)", () => {
       const context = gsap.context(() => {
         gsap.from("[data-progress-line]", {
-          scaleY: 0, transformOrigin: "top", ease: "none",
-          scrollTrigger: { trigger: timeline.current, start: "top 75%", end: "bottom 65%", scrub: 0.3 },
+          scaleY: 0,
+          transformOrigin: "top",
+          ease: "none",
+          scrollTrigger: {
+            trigger: timeline.current,
+            start: "top 75%",
+            end: "bottom 65%",
+            scrub: 0.3,
+          },
         });
       }, timeline);
       return () => context.revert();
@@ -26,25 +41,100 @@ export function HowWeWork() {
   }, []);
 
   return (
-    <section id="how-we-work" aria-labelledby="approach-heading" className="border-t border-primary/15 bg-secondary py-20 md:py-28 lg:py-32">
+    <section
+      id="how-we-work"
+      aria-labelledby="approach-heading"
+      className="border-t border-primary/15 bg-secondary/60 py-20 md:py-28 lg:py-32"
+    >
       <Container>
         <ScrollReveal>
-          <div className="grid gap-12 lg:grid-cols-12 lg:gap-20">
-            <div className="lg:col-span-5">
-              <SectionHeading eyebrow="Our approach" title="From Groundwork to Execution." id="approach-heading" />
-              <p className="mt-6 max-w-lg text-sm leading-[1.85] text-muted md:text-base" data-scroll-reveal>Every construction project begins with understanding the work on the ground. SAS Construction takes a hands-on approach to coordinating machinery, workforce and site activities throughout project execution.</p>
-              <p className="mt-8 border-t border-primary/20 pt-4 text-xs leading-6 text-muted">A proposed working approach, adapted to the agreed scope of each assignment.</p>
+          <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 xl:gap-20 items-start">
+            {/* Left Column — Section Lead */}
+            <div className="lg:col-span-5 lg:sticky lg:top-28">
+              <SectionHeading
+                eyebrow="Our Working Process"
+                title="From Groundwork to Execution."
+                id="approach-heading"
+              />
+              <p
+                className="mt-6 max-w-lg text-sm leading-[1.85] text-muted md:text-base"
+                data-scroll-reveal
+              >
+                Every construction assignment begins with understanding the physical conditions on site. SAS Construction coordinates machinery, workforce, and day-to-day operations through a methodical, hands-on process.
+              </p>
+
+              <div
+                className="mt-8 border-t border-primary/20 pt-5 space-y-2 text-xs text-muted"
+                data-scroll-reveal
+              >
+                <div className="flex items-center gap-2">
+                  <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
+                  <span className="font-mono text-primary font-medium">Adaptive Workflow:</span>
+                </div>
+                <p className="leading-relaxed">
+                  Tailored to the agreed contractual scope, terrain characteristics, and client project schedules.
+                </p>
+              </div>
             </div>
+
+            {/* Right Column — Process Timeline */}
             <div ref={timeline} className="relative lg:col-span-7">
-              <span aria-hidden="true" className="absolute inset-y-0 left-0 w-px bg-primary/20"><span data-progress-line className="block h-full w-px bg-primary" /></span>
-              <ol>
-              {workStages.map((stage, i) => (
-                <li key={stage.title} className="relative grid grid-cols-[3rem_1fr] gap-4 border-b border-primary/20 py-7 pl-6 first:pt-0 last:border-0 last:pb-0 md:grid-cols-[4rem_1fr] md:gap-6 md:pl-9" data-scroll-reveal>
-                  <span aria-hidden="true" className={`absolute ${i === 0 ? "top-2" : "top-9"} -left-1 size-2 bg-primary ring-4 ring-secondary`} />
-                  <span className="font-heading text-4xl font-medium tracking-[-0.06em] text-primary md:text-5xl" aria-hidden="true">0{i + 1}</span>
-                  <div><h3 className="font-heading text-xl font-semibold tracking-tight text-primary md:text-2xl">{stage.title}</h3><p className="mt-3 max-w-md text-sm leading-[1.85] text-muted">{stage.description}</p></div>
-                </li>
-              ))}
+              {/* Vertical Progress Line */}
+              <span
+                aria-hidden="true"
+                className="absolute inset-y-0 left-0 w-px bg-primary/20"
+              >
+                <span
+                  data-progress-line
+                  className="block h-full w-px bg-primary"
+                />
+              </span>
+
+              <ol className="space-y-0">
+                {workStages.map((stage, i) => (
+                  <li
+                    key={stage.title}
+                    className="relative grid grid-cols-[3rem_1fr] md:grid-cols-[4.5rem_1fr] gap-4 md:gap-6 border-b border-primary/20 py-8 pl-6 md:pl-10 first:pt-0 last:border-0 last:pb-0"
+                    data-scroll-reveal
+                  >
+                    {/* Timeline Node Point */}
+                    <span
+                      aria-hidden="true"
+                      className={`absolute ${
+                        i === 0 ? "top-2" : "top-10"
+                      } -left-1 size-2 rounded-full bg-primary ring-4 ring-secondary`}
+                    />
+
+                    {/* Step Numeral */}
+                    <div className="flex flex-col">
+                      <span
+                        className="font-mono text-xs font-semibold uppercase tracking-wider text-primary/80 mb-1"
+                        aria-hidden="true"
+                      >
+                        Phase
+                      </span>
+                      <span
+                        className="font-heading text-4xl md:text-5xl font-medium tracking-tight text-primary select-none"
+                        aria-hidden="true"
+                      >
+                        0{i + 1}
+                      </span>
+                    </div>
+
+                    {/* Step Content */}
+                    <div>
+                      <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-muted block mb-1">
+                        {stageSubtitles[i]}
+                      </span>
+                      <h3 className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-primary">
+                        {stage.title}
+                      </h3>
+                      <p className="mt-3 max-w-lg text-sm leading-[1.8] text-muted">
+                        {stage.description}
+                      </p>
+                    </div>
+                  </li>
+                ))}
               </ol>
             </div>
           </div>

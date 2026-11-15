@@ -35,7 +35,9 @@ export function Projects() {
     if (!selectedProject) return;
     const previousOverflow = document.body.style.overflow;
     document.body.style.overflow = "hidden";
-    return () => { document.body.style.overflow = previousOverflow; };
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
   }, [selectedProject]);
 
   // Filter projects by category
@@ -66,7 +68,7 @@ export function Projects() {
               data-scroll-reveal
             >
               <span className="h-px w-8 shrink-0 bg-accent" aria-hidden="true" />
-              <span>Selected Work / Project Experience</span>
+              <span>Project Register &middot; Field Scopes</span>
             </div>
             <h2
               id="projects-heading"
@@ -79,7 +81,7 @@ export function Projects() {
               className="mt-5 max-w-[660px] text-sm leading-[1.85] text-muted md:text-base"
               data-scroll-reveal
             >
-              A selection of construction assignments and work scopes shared by SAS Construction.
+              Documented construction assignments and field scopes executed across Sindh. All details reflect supplied contractor records.
             </p>
           </div>
 
@@ -103,7 +105,7 @@ export function Projects() {
                   type="button"
                   aria-pressed={isActive}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border ${
+                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border cursor-pointer ${
                     isActive
                       ? "bg-primary text-white border-primary shadow-xs"
                       : "bg-surface text-muted border-primary/20 hover:border-primary hover:text-primary"
@@ -112,7 +114,7 @@ export function Projects() {
                   <span>{cat.label}</span>
                   <span
                     className={`text-[10px] font-mono px-1.5 py-0.5 rounded-[2px] ${
-                      isActive ? "bg-white/20 text-white" : "bg-secondary text-primary"
+                      isActive ? "bg-white/20 text-white font-semibold" : "bg-secondary text-primary font-medium"
                     }`}
                   >
                     {count}
@@ -121,21 +123,23 @@ export function Projects() {
               );
             })}
           </div>
-          <p role="status" className="sr-only">Showing {filteredProjects.length} project records.</p>
+          <p role="status" className="sr-only">
+            Showing {filteredProjects.length} project records.
+          </p>
 
-          {/* FEATURED PROJECTS SHOWCASE (Prominent Editorial Compositions) */}
+          {/* FEATURED PROJECTS SHOWCASE */}
           {featuredProjects.length > 0 && (
-            <div className="mt-12 md:mt-16 space-y-12">
+            <div className="mt-12 md:mt-16 space-y-10 md:space-y-12">
               {/* Lead Featured Project (Project 01 - NLC Orangi) */}
               {featuredProjects.slice(0, 1).map((project) => (
                 <article
                   key={project.id}
-                  className="border border-primary/15 bg-surface overflow-hidden rounded-[2px]"
+                  className="border border-primary/15 bg-surface overflow-hidden rounded-[2px] shadow-xs"
                   data-scroll-reveal
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     {/* Media Column */}
-                    <div className="lg:col-span-7 relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden group">
+                    <div className="lg:col-span-7 relative w-full min-w-0 min-h-64 aspect-[16/10] bg-secondary overflow-hidden">
                       <ProjectMedia project={project} sizes="(min-width: 1024px) 60vw, 100vw" />
                     </div>
 
@@ -144,11 +148,11 @@ export function Projects() {
                       <div>
                         {/* Meta Category & Location */}
                         <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted mb-4">
-                          <span className="inline-flex items-center gap-1.5 font-medium text-primary uppercase tracking-wider text-[11px]">
+                          <span className="inline-flex items-center gap-1.5 font-mono text-[11px] font-semibold text-primary uppercase tracking-wider">
                             <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                             {project.category}
                           </span>
-                          <span className="inline-flex items-center gap-1 text-muted">
+                          <span className="inline-flex items-center gap-1 text-muted text-xs">
                             <MapPin size={13} className="text-primary shrink-0" aria-hidden="true" />
                             {project.location}
                           </span>
@@ -158,7 +162,7 @@ export function Projects() {
                         <h3 className="font-heading text-2xl lg:text-3xl font-semibold text-primary tracking-tight">
                           {project.title}
                         </h3>
-                        <p className="mt-1 font-medium text-sm text-foreground">
+                        <p className="mt-1 font-mono font-medium text-xs sm:text-sm text-foreground">
                           Scope: {project.scopeSupplied}
                         </p>
 
@@ -168,8 +172,8 @@ export function Projects() {
 
                         {/* Scope Bullets */}
                         <div className="mt-6 pt-5 border-t border-primary/10">
-                          <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-muted block mb-3">
-                            Client-supplied Scopes
+                          <span className="text-[10px] font-mono font-semibold uppercase tracking-[0.14em] text-muted block mb-3">
+                            Documented Scope
                           </span>
                           <ul className="space-y-2 text-xs font-medium text-foreground">
                             {project.scopes.map((scope) => (
@@ -184,13 +188,13 @@ export function Projects() {
 
                       {/* Card Footer / Action */}
                       <div className="mt-8 pt-6 border-t border-primary/10 flex items-center justify-between">
-                        <span className="text-[10px] text-muted leading-tight">
-                          Client-supplied scope
+                        <span className="text-[10px] font-mono text-muted leading-tight">
+                          Client Register Record
                         </span>
                         <button
                           type="button"
                           onClick={() => setSelectedProject(project)}
-                          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
+                          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
                         >
                           View Scope Details <ArrowUpRight size={14} aria-hidden="true" />
                         </button>
@@ -206,11 +210,11 @@ export function Projects() {
                   {featuredProjects.slice(1).map((project) => (
                     <article
                       key={project.id}
-                      className="border border-primary/15 bg-surface overflow-hidden rounded-[2px] flex flex-col justify-between"
+                      className="border border-primary/15 bg-surface overflow-hidden rounded-[2px] flex flex-col justify-between shadow-xs"
                       data-scroll-reveal
                     >
                       {/* Media */}
-                      <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden group">
+                      <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden">
                         <ProjectMedia project={project} sizes="(min-width: 1024px) 45vw, 100vw" />
                       </div>
 
@@ -218,7 +222,7 @@ export function Projects() {
                       <div className="p-6 md:p-8 flex-1 flex flex-col justify-between">
                         <div>
                           <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted mb-3">
-                            <span className="font-medium text-primary text-[11px] uppercase tracking-wider">
+                            <span className="font-mono font-semibold text-primary text-[11px] uppercase tracking-wider">
                               {project.category}
                             </span>
                             <span>&middot;</span>
@@ -231,7 +235,7 @@ export function Projects() {
                           <h3 className="font-heading text-xl md:text-2xl font-semibold text-primary tracking-tight">
                             {project.title}
                           </h3>
-                          <p className="mt-1 text-xs md:text-sm font-medium text-foreground">
+                          <p className="mt-1 text-xs md:text-sm font-mono font-medium text-foreground">
                             Scope: {project.scopeSupplied}
                           </p>
 
@@ -244,7 +248,7 @@ export function Projects() {
                             {project.scopes.map((s) => (
                               <span
                                 key={s}
-                                className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-secondary/60 px-2.5 py-1 rounded-[2px]"
+                                className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-secondary/70 border border-primary/10 px-2.5 py-1 rounded-[2px]"
                               >
                                 <span className="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
                                 <span>{s}</span>
@@ -255,13 +259,13 @@ export function Projects() {
 
                         {/* Card Footer */}
                         <div className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between">
-                          <span className="text-[10px] text-muted">
-                            {project.image ? "Location reference" : "Client-supplied scope"}
+                          <span className="text-[10px] font-mono text-muted">
+                            {project.image ? "Corridor Reference Photo" : "Client Register Record"}
                           </span>
                           <button
                             type="button"
                             onClick={() => setSelectedProject(project)}
-                            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors"
+                            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
                           >
                             Details <ArrowUpRight size={13} aria-hidden="true" />
                           </button>
@@ -274,7 +278,7 @@ export function Projects() {
             </div>
           )}
 
-          {/* CURATED PROJECT INDEX (Remaining 6 Projects — Alternating Rows & Expandable Detail) */}
+          {/* CURATED PROJECT INDEX (Remaining Projects) */}
           {remainingProjects.length > 0 && (
             <div className="mt-16 md:mt-20 pt-12 border-t border-primary/15">
               <div className="mb-8 flex items-center justify-between" data-scroll-reveal>
@@ -283,7 +287,7 @@ export function Projects() {
                     Project Register &amp; Work Scopes
                   </h3>
                   <p className="mt-1 text-xs md:text-sm text-muted">
-                    Client-supplied site preparation, paving and infrastructure work scopes.
+                    Client-supplied roadwork, earthmoving, and infrastructure assignments.
                   </p>
                 </div>
                 <span className="hidden sm:inline-block font-mono text-xs text-muted">
@@ -301,18 +305,18 @@ export function Projects() {
                   return (
                     <div
                       key={project.id}
-                      className="transition-colors duration-200 hover:bg-secondary/20"
+                      className="transition-colors duration-200 hover:bg-secondary/25"
                     >
                       <button
                         type="button"
                         aria-expanded={isExpanded}
                         aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined}
                         onClick={() => toggleRow(project.id)}
-                        className="w-full py-5 md:py-6 px-2 flex flex-col md:flex-row md:items-center justify-between gap-4 text-left group"
+                        className="w-full py-5 md:py-6 px-3 flex flex-col md:flex-row md:items-center justify-between gap-4 text-left group cursor-pointer"
                       >
                         <div className="flex items-start md:items-center gap-4 md:gap-6 min-w-0">
                           {/* Numeral */}
-                          <span className="font-mono text-xs md:text-sm font-semibold tracking-wider text-muted group-hover:text-primary transition-colors shrink-0 pt-0.5 md:pt-0">
+                          <span className="font-mono text-xs md:text-sm font-bold tracking-wider text-muted group-hover:text-primary transition-colors shrink-0 pt-0.5 md:pt-0">
                             {project.numeral}
                           </span>
 
@@ -350,7 +354,7 @@ export function Projects() {
                       {isExpanded && (
                         <div
                           id={`project-row-panel-${project.id}`}
-                          className="px-4 pb-8 pt-2 grid grid-cols-1 md:grid-cols-12 gap-6 items-center border-t border-primary/10 bg-secondary/15"
+                          className="px-4 pb-8 pt-4 grid grid-cols-1 md:grid-cols-12 gap-6 items-center border-t border-primary/10 bg-secondary/20"
                         >
                           <div className="md:col-span-4 relative w-full min-w-0 min-h-60 aspect-[16/10] overflow-hidden rounded-[2px] border border-primary/15 bg-secondary">
                             <ProjectMedia project={project} sizes="(min-width: 768px) 30vw, 100vw" />
@@ -365,7 +369,7 @@ export function Projects() {
                               {project.scopes.map((s) => (
                                 <span
                                   key={s}
-                                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-surface border border-primary/10 px-2.5 py-1 rounded-[2px]"
+                                  className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-surface border border-primary/15 px-2.5 py-1 rounded-[2px]"
                                 >
                                   <span className="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
                                   <span>{s}</span>
@@ -374,13 +378,13 @@ export function Projects() {
                             </div>
 
                             <div className="pt-2 flex flex-wrap items-center justify-between gap-3 text-xs">
-                              <span className="text-[11px] text-muted">
+                              <span className="text-[11px] font-mono text-muted">
                                 {project.clientNote ?? "Scope documented in client working register."}
                               </span>
                               <button
                                 type="button"
                                 onClick={() => setSelectedProject(project)}
-                                className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4"
+                                className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 cursor-pointer"
                               >
                                 Full Scope Details <ArrowUpRight size={13} aria-hidden="true" />
                               </button>
@@ -418,29 +422,36 @@ export function Projects() {
         ref={dialogRef}
         onCancel={() => setSelectedProject(null)}
         onClose={() => setSelectedProject(null)}
-        onKeyDown={event => {
+        onKeyDown={(event) => {
           if (event.key !== "Tab") return;
-          const controls = event.currentTarget.querySelectorAll<HTMLElement>('a[href], button:not([disabled]), [tabindex="0"]');
+          const controls = event.currentTarget.querySelectorAll<HTMLElement>(
+            'a[href], button:not([disabled]), [tabindex="0"]'
+          );
           const first = controls[0];
           const last = controls[controls.length - 1];
           if (event.shiftKey && document.activeElement === first) {
-            event.preventDefault(); last?.focus();
+            event.preventDefault();
+            last?.focus();
           } else if (!event.shiftKey && document.activeElement === last) {
-            event.preventDefault(); first?.focus();
+            event.preventDefault();
+            first?.focus();
           }
         }}
         aria-labelledby="modal-project-title"
         aria-describedby="modal-project-desc"
-        className="fixed inset-0 z-50 m-auto w-[calc(100%-32px)] max-w-2xl max-h-[90vh] overflow-y-auto border border-primary/15 bg-background p-6 md:p-8 text-foreground shadow-2xl backdrop:bg-foreground/45"
+        className="fixed inset-0 z-50 m-auto w-[calc(100%-32px)] max-w-2xl max-h-[90vh] overflow-y-auto border border-primary/20 bg-background p-6 md:p-8 text-foreground shadow-2xl backdrop:bg-foreground/50 rounded-[2px]"
       >
         {selectedProject && (
           <>
             <div className="flex items-start justify-between gap-4 pb-4 border-b border-primary/15">
               <div>
                 <span className="font-mono text-xs font-semibold text-primary uppercase tracking-wider">
-                  Project {selectedProject.numeral} &middot; {selectedProject.category}
+                  Project № {selectedProject.numeral} &middot; {selectedProject.category}
                 </span>
-                <h3 id="modal-project-title" className="font-heading text-2xl md:text-3xl font-semibold text-primary mt-1">
+                <h3
+                  id="modal-project-title"
+                  className="font-heading text-2xl md:text-3xl font-semibold text-primary mt-1"
+                >
                   {selectedProject.title}
                 </h3>
               </div>
@@ -469,7 +480,7 @@ export function Projects() {
                     {selectedProject.location}
                   </span>
                   <span className="font-semibold text-primary ml-auto">Scope:</span>
-                  <span className="text-muted">{selectedProject.scopeSupplied}</span>
+                  <span className="text-muted font-mono">{selectedProject.scopeSupplied}</span>
                 </div>
 
                 <p id="modal-project-desc" className="text-sm leading-[1.85] text-muted">
@@ -477,12 +488,15 @@ export function Projects() {
                 </p>
 
                 <div>
-                  <span className="text-xs font-semibold uppercase tracking-wider text-primary block mb-2">
+                  <span className="text-xs font-mono font-semibold uppercase tracking-wider text-primary block mb-2">
                     Client-supplied Scopes:
                   </span>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-foreground">
                     {selectedProject.scopes.map((s) => (
-                      <li key={s} className="flex items-center gap-2 bg-secondary/50 p-2 rounded-[2px]">
+                      <li
+                        key={s}
+                        className="flex items-center gap-2 bg-secondary/50 border border-primary/10 p-2.5 rounded-[2px]"
+                      >
                         <span className="h-1.5 w-1.5 rounded-full bg-accent shrink-0" aria-hidden="true" />
                         <span>{s}</span>
                       </li>
@@ -490,9 +504,11 @@ export function Projects() {
                   </ul>
                 </div>
 
-                <div className="p-3 bg-secondary/30 rounded-[2px] border border-primary/10 text-xs text-muted">
+                <div className="p-3.5 bg-secondary/40 rounded-[2px] border border-primary/15 text-xs text-muted">
                   <p>
-                    <strong>Provenance Note:</strong> {selectedProject.clientNote ?? "Details derived directly from contractor register."} {selectedProject.image?.caption ?? "Site photography pending verification and permission."}
+                    <strong className="text-primary font-semibold">Provenance Note:</strong>{" "}
+                    {selectedProject.clientNote ?? "Details derived directly from contractor register."}{" "}
+                    {selectedProject.image?.caption ?? "Site photography pending verification and permission."}
                   </p>
                 </div>
               </div>
@@ -502,7 +518,7 @@ export function Projects() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="min-h-11 px-5 py-2.5 rounded-[2px] border border-primary/20 text-xs font-medium text-foreground hover:bg-secondary/40 transition-colors cursor-pointer"
+                className="min-h-11 px-5 py-2.5 rounded-[2px] border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider hover:bg-secondary/40 transition-colors cursor-pointer"
               >
                 Close
               </button>

@@ -26,8 +26,8 @@ export function Services() {
       if (!showcaseRef.current) return;
       gsap.fromTo(
         showcaseRef.current.querySelectorAll("[data-showcase-anim]"),
-        { opacity: 0.4, y: 8 },
-        { opacity: 1, y: 0, duration: 0.35, stagger: 0.05, ease: "power2.out" }
+        { opacity: 0.5, y: 6 },
+        { opacity: 1, y: 0, duration: 0.3, stagger: 0.04, ease: "power2.out" }
       );
     });
 
@@ -77,7 +77,7 @@ export function Services() {
               data-scroll-reveal
             >
               <span className="h-px w-8 shrink-0 bg-accent" aria-hidden="true" />
-              <span>What We Do / Our Expertise</span>
+              <span>What We Do &middot; Contractor Expertise</span>
             </div>
             <h2
               id="services-heading"
@@ -90,7 +90,7 @@ export function Services() {
               className="mt-5 max-w-[660px] text-sm leading-[1.85] text-muted md:text-base"
               data-scroll-reveal
             >
-              From ground preparation to road development and essential infrastructure, SAS Construction delivers practical construction solutions backed by over two decades of hands-on experience.
+              From ground preparation and deep earthmoving to road development and essential infrastructure, SAS Construction delivers dependable, hands-on construction execution.
             </p>
           </div>
 
@@ -114,14 +114,14 @@ export function Services() {
                     type="button"
                     tabIndex={isActive ? 0 : -1}
                     aria-selected={isActive}
-                  aria-controls="service-panel"
+                    aria-controls="service-panel"
                     onClick={() => setActiveId(service.id)}
                     onMouseEnter={() => setActiveId(service.id)}
                     onKeyDown={(e) => handleKeyDown(e, index)}
-                    className={`group relative flex items-center justify-between text-left py-6 xl:py-7 px-5 -mx-5 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-primary ${
+                    className={`group relative flex items-center justify-between text-left py-6 xl:py-7 px-5 -mx-5 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-primary cursor-pointer rounded-[2px] ${
                       isActive
-                        ? "bg-secondary/40 border-l-2 border-accent"
-                        : "hover:bg-secondary/20"
+                        ? "bg-secondary/50 border-l-2 border-accent"
+                        : "hover:bg-secondary/25"
                     }`}
                   >
                     <div className="flex items-baseline gap-5 xl:gap-6 min-w-0 pr-4">
@@ -177,7 +177,7 @@ export function Services() {
                 id="service-panel"
                 tabIndex={0}
                 aria-labelledby={`service-tab-${activeService.id}`}
-                className="border border-primary/15 bg-background shadow-xs overflow-hidden relative"
+                className="border border-primary/15 bg-background shadow-xs overflow-hidden relative rounded-[2px]"
               >
                 {/* Visual Imagery Frame */}
                 <div
@@ -189,7 +189,7 @@ export function Services() {
                     alt={activeService.image.alt}
                     fill
                     sizes="(min-width: 1280px) 580px, (min-width: 1024px) 480px, 100vw"
-                    className="object-cover object-center transition-transform duration-500 ease-out"
+                    className="object-cover object-center transition-transform duration-700 ease-out hover:scale-105"
                   />
                   {/* Subtle architectural vignette overlay */}
                   <div
@@ -203,8 +203,8 @@ export function Services() {
                   />
                   {/* Category Pill Tag */}
                   <div className="absolute bottom-4 left-5 z-10 flex items-center gap-2">
-                    <span className="text-[10px] uppercase font-semibold tracking-[0.14em] text-white bg-primary/90 px-3 py-1 rounded-[2px] backdrop-blur-xs">
-                      Category {activeService.numeral}
+                    <span className="text-[10px] uppercase font-mono font-semibold tracking-[0.16em] text-white bg-primary/95 px-3 py-1 rounded-[2px] backdrop-blur-xs border border-white/10">
+                      Discipline {activeService.numeral}
                     </span>
                   </div>
                 </div>
@@ -232,7 +232,7 @@ export function Services() {
                     {activeService.scopes.map((scope) => (
                       <span
                         key={scope}
-                        className="inline-flex items-center gap-2 text-xs font-medium text-primary bg-secondary/60 px-3 py-1.5 rounded-[2px]"
+                        className="inline-flex items-center gap-2 text-xs font-medium text-primary bg-secondary/70 border border-primary/10 px-3 py-1.5 rounded-[2px]"
                       >
                         <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
                         <span>{scope}</span>
@@ -245,7 +245,7 @@ export function Services() {
                     data-showcase-anim
                     className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between text-[11px] text-muted"
                   >
-                    <span>Representative imagery &middot; Hands-on field execution</span>
+                    <span>Representative imagery &middot; Direct on-site management</span>
                     <span className="font-mono font-medium text-primary">
                       {activeService.numeral} / 06
                     </span>
@@ -267,7 +267,7 @@ export function Services() {
                     aria-expanded={isOpen}
                     aria-controls={isOpen ? `accordion-panel-${service.id}` : undefined}
                     onClick={() => toggleMobileAccordion(service.id)}
-                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 group"
+                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 group cursor-pointer"
                   >
                     <div className="flex items-center gap-4 min-w-0 pr-3">
                       <span
@@ -319,9 +319,12 @@ export function Services() {
                           className="pointer-events-none absolute inset-0 bg-linear-to-t from-primary/80 via-transparent to-transparent"
                           aria-hidden="true"
                         />
-                        <div className="pointer-events-none absolute top-3 right-3 z-10 h-4 w-4 border-t border-r border-accent" aria-hidden="true" />
-                        <span className="absolute bottom-3 left-3 z-10 text-[9px] uppercase font-semibold tracking-[0.14em] text-white bg-primary/90 px-2.5 py-0.5 rounded-[2px]">
-                          Category {service.numeral}
+                        <div
+                          className="pointer-events-none absolute top-3 right-3 z-10 h-4 w-4 border-t border-r border-accent"
+                          aria-hidden="true"
+                        />
+                        <span className="absolute bottom-3 left-3 z-10 text-[9px] uppercase font-mono font-semibold tracking-[0.14em] text-white bg-primary/95 px-2.5 py-0.5 rounded-[2px]">
+                          Discipline {service.numeral}
                         </span>
                       </div>
 
@@ -329,7 +332,7 @@ export function Services() {
                         {service.scopes.map((scope) => (
                           <span
                             key={scope}
-                            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-secondary/60 px-2.5 py-1 rounded-[2px]"
+                            className="inline-flex items-center gap-1.5 text-xs font-medium text-primary bg-secondary/70 border border-primary/10 px-2.5 py-1 rounded-[2px]"
                           >
                             <span className="h-1 w-1 rounded-full bg-accent" aria-hidden="true" />
                             <span>{scope}</span>
@@ -338,7 +341,7 @@ export function Services() {
                       </div>
 
                       <div className="text-[10px] text-muted pt-2 border-t border-primary/10">
-                        <span>Representative imagery &middot; Hands-on field execution</span>
+                        <span>Representative imagery &middot; Direct on-site management</span>
                       </div>
                     </div>
                   )}

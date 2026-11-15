@@ -1,0 +1,161 @@
+[
+  {
+    "viewport": {
+      "width": 1920,
+      "height": 1080,
+      "name": "1920"
+    },
+    "metrics": {
+      "docWidth": 1920,
+      "scrollWidth": 1920,
+      "hasOverflow": false,
+      "overflowingCount": 0,
+      "overflowing": []
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 1440,
+      "height": 900,
+      "name": "1440"
+    },
+    "metrics": {
+      "docWidth": 1440,
+      "scrollWidth": 1440,
+      "hasOverflow": false,
+      "overflowingCount": 0,
+      "overflowing": []
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 1366,
+      "height": 768,
+      "name": "1366"
+    },
+    "metrics": {
+      "docWidth": 1366,
+      "scrollWidth": 1366,
+      "hasOverflow": false,
+      "overflowingCount": 0,
+      "overflowing": []
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 1024,
+      "height": 768,
+      "name": "1024"
+    },
+    "metrics": {
+      "docWidth": 1024,
+      "scrollWidth": 1024,
+      "hasOverflow": false,
+      "overflowingCount": 0,
+      "overflowing": []
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 768,
+      "height": 1024,
+      "name": "768"
+    },
+    "metrics": {
+      "docWidth": 768,
+      "scrollWidth": 768,
+      "hasOverflow": false,
+      "overflowingCount": 1,
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "pointer-events-none absolute inset-y-0 right-[12%] -z-10 w-[28%] skew-x-[-20deg] border-x border-background/10"
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "name": "390"
+    },
+    "metrics": {
+      "docWidth": 390,
+      "scrollWidth": 390,
+      "hasOverflow": false,
+      "overflowingCount": 2,
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "pointer-events-none absolute inset-y-0 right-[12%] -z-10 w-[28%] skew-x-[-20deg] border-x border-background/10"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "absolute inset-y-0 left-1/2 border-l border-background/10"
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 375,
+      "height": 812,
+      "name": "375"
+    },
+    "metrics": {
+      "docWidth": 375,
+      "scrollWidth": 375,
+      "hasOverflow": false,
+      "overflowingCount": 2,
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "pointer-events-none absolute inset-y-0 right-[12%] -z-10 w-[28%] skew-x-[-20deg] border-x border-background/10"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "absolute inset-y-0 left-1/2 border-l border-background/10"
+        }
+      ]
+    },
+    "violations": []
+  },
+  {
+    "viewport": {
+      "width": 320,
+      "height": 740,
+      "name": "320"
+    },
+    "metrics": {
+      "docWidth": 320,
+      "scrollWidth": 320,
+      "hasOverflow": false,
+      "overflowingCount": 2,
+      "overflowing": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "pointer-events-none absolute inset-y-0 right-[12%] -z-10 w-[28%] skew-x-[-20deg] border-x border-background/10"
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "class": "absolute inset-y-0 left-1/2 border-l border-background/10"
+        }
+      ]
+    },
+    "violations": []
+  }
+]

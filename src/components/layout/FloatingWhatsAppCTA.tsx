@@ -3,10 +3,15 @@ import { createWhatsAppLink } from "@/lib/contact";
 
 function WhatsAppIcon() {
   return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" className="size-[23px] shrink-0">
+    <svg
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+      focusable="false"
+      className="size-5 shrink-0 text-[#25D366]"
+    >
       <path
         fill="currentColor"
-        d="M20.52 3.48A11.87 11.87 0 0 0 12.06 0C5.48 0 .13 5.35.13 11.93c0 2.1.55 4.15 1.6 5.96L.03 24l6.26-1.64a11.9 11.9 0 0 0 5.77 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.48-8.42ZM12.07 21.8h-.01a9.88 9.88 0 0 1-5.03-1.37l-.36-.21-3.72.98.99-3.63-.23-.37a9.87 9.87 0 0 1-1.52-5.27c0-5.45 4.44-9.89 9.9-9.89a9.82 9.82 0 0 1 7 2.9 9.82 9.82 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88Zm5.43-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.18.2-.35.22-.65.07-.3-.15-1.26-.47-2.4-1.49-.89-.79-1.49-1.77-1.66-2.07-.18-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.22 5.1 4.52.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35Z"
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
       />
     </svg>
   );
@@ -14,46 +19,52 @@ function WhatsAppIcon() {
 
 export function FloatingWhatsAppCTA() {
   const href = createWhatsAppLink(
-    "Hello SAS Construction, I would like to discuss a construction project.",
+    "Hello SAS Construction, I would like to discuss a construction project."
   );
-  // An unavailable floating control obscures content without offering an action.
-  // The Contact section already explains why enquiry delivery is unavailable.
-  if (!href) return null;
-  const className =
-    "group inline-flex min-h-14 items-center justify-center gap-[11px] rounded-[20px] border border-accent bg-primary px-[18px] text-[13px] font-semibold leading-[1.2] text-background no-underline shadow-lg transition-[background-color,box-shadow,transform] duration-200 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-accent hover:-translate-y-0.5 hover:bg-foreground hover:shadow-xl disabled:cursor-not-allowed disabled:border-muted disabled:bg-secondary disabled:text-muted disabled:shadow-md max-[374px]:min-h-[52px] max-[374px]:gap-[9px] max-[374px]:px-3 max-[374px]:text-xs";
+
+  const buttonClasses =
+    "group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-[2px] border border-accent/70 bg-primary px-3.5 py-2 text-xs sm:text-[13px] font-semibold tracking-wide text-background shadow-md transition-all duration-200 hover:bg-foreground hover:border-accent hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent disabled:cursor-not-allowed disabled:border-primary/40 disabled:bg-primary/95 disabled:text-background/90";
+
   const content = (
     <>
-      <WhatsAppIcon />
-      <span>Chat on WhatsApp</span>
+      <span className="flex size-6 items-center justify-center rounded-[2px] bg-white/10 p-0.5">
+        <WhatsAppIcon />
+      </span>
+      <span className="hidden sm:inline">Chat on WhatsApp</span>
+      <span className="sm:hidden">WhatsApp</span>
       <ArrowUpRight
         aria-hidden="true"
-        className="size-[17px] shrink-0 text-accent transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-disabled:text-muted"
+        size={14}
+        className="text-accent transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-disabled:text-accent/60 motion-reduce:transform-none"
       />
     </>
   );
 
   return (
-    <div className="fixed bottom-[calc(16px+env(safe-area-inset-bottom,0px))] right-[clamp(16px,calc((100vw-1320px)/2),32px)] z-30 max-w-[calc(100vw-32px)]">
+    <aside
+      aria-label="Direct messaging"
+      className="fixed bottom-[calc(16px+env(safe-area-inset-bottom,0px))] right-4 sm:right-6 md:right-8 z-30"
+    >
       {href ? (
         <a
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${className} whitespace-nowrap`}
+          className={`${buttonClasses} whitespace-nowrap`}
         >
           {content}
         </a>
       ) : (
         <button
           type="button"
-          className={`${className} whitespace-nowrap`}
+          className={`${buttonClasses} whitespace-nowrap`}
           disabled
-          aria-label="Chat on WhatsApp, unavailable until verified contact details are provided"
-          title="WhatsApp is unavailable until verified contact details are provided."
+          aria-label="Chat on WhatsApp, currently unavailable pending verified contact details"
+          title="WhatsApp enquiry channel will be activated once verified contact details are provided."
         >
           {content}
         </button>
       )}
-    </div>
+    </aside>
   );
 }
