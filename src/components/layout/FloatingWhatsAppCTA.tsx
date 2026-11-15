@@ -1,3 +1,4 @@
+
 import { ArrowUpRight } from "lucide-react";
 import { createWhatsAppLink } from "@/lib/contact";
 
@@ -5,14 +6,12 @@ function WhatsAppIcon() {
   return (
     <svg
       viewBox="0 0 24 24"
+      fill="currentColor"
       aria-hidden="true"
       focusable="false"
-      className="size-5 shrink-0 text-[#25D366]"
+      className="size-7"
     >
-      <path
-        fill="currentColor"
-        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
-      />
+      <path d="M20.52 3.48A11.87 11.87 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.15 1.59 5.95L.06 24l6.31-1.65a11.9 11.9 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.9a11.83 11.83 0 0 0-3.43-8.42ZM12.06 21.78a9.9 9.9 0 0 1-5.04-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.25c0-5.45 4.44-9.89 9.89-9.89a9.8 9.8 0 0 1 6.99 2.9 9.84 9.84 0 0 1 2.89 7c0 5.44-4.44 9.87-9.88 9.87Zm5.42-7.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35Z" />
     </svg>
   );
 }
@@ -22,49 +21,65 @@ export function FloatingWhatsAppCTA() {
     "Hello SAS Construction, I would like to discuss a construction project."
   );
 
-  const buttonClasses =
-    "group inline-flex min-h-11 items-center justify-center gap-2.5 rounded-[2px] border border-accent/70 bg-primary px-3.5 py-2 text-xs sm:text-[13px] font-semibold tracking-wide text-background shadow-md transition-all duration-200 hover:bg-foreground hover:border-accent hover:shadow-lg focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent disabled:cursor-not-allowed disabled:border-primary/40 disabled:bg-primary/95 disabled:text-background/90";
-
-  const content = (
-    <>
-      <span className="flex size-6 items-center justify-center rounded-[2px] bg-white/10 p-0.5">
-        <WhatsAppIcon />
-      </span>
-      <span className="hidden sm:inline">Chat on WhatsApp</span>
-      <span className="sm:hidden">WhatsApp</span>
-      <ArrowUpRight
-        aria-hidden="true"
-        size={14}
-        className="text-accent transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-disabled:text-accent/60 motion-reduce:transform-none"
-      />
-    </>
-  );
+  if (!href) return null;
 
   return (
-    <aside
-      aria-label="Direct messaging"
-      className="fixed bottom-[calc(16px+env(safe-area-inset-bottom,0px))] right-4 sm:right-6 md:right-8 z-30"
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with SAS Construction on WhatsApp"
+      title="Chat on WhatsApp"
+      className="
+        group
+        fixed
+        bottom-[calc(20px+env(safe-area-inset-bottom,0px))]
+        right-5
+        z-40
+        flex
+        size-14
+        items-center
+        justify-center
+        rounded-2xl
+        border
+        border-[#D6B27A]/70
+        bg-[#254E43]
+        text-[#25D366]
+        shadow-[0_8px_25px_rgba(37,78,67,0.25)]
+        transition-all
+        duration-300
+        hover:-translate-y-1
+        hover:border-[#D6B27A]
+        hover:bg-[#1D3F36]
+        hover:shadow-[0_12px_30px_rgba(37,78,67,0.35)]
+        focus-visible:outline-2
+        focus-visible:outline-offset-4
+        focus-visible:outline-[#D6B27A]
+        motion-reduce:transform-none
+        motion-reduce:transition-none
+        sm:bottom-7
+        sm:right-7
+      "
     >
-      {href ? (
-        <a
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${buttonClasses} whitespace-nowrap`}
-        >
-          {content}
-        </a>
-      ) : (
-        <button
-          type="button"
-          className={`${buttonClasses} whitespace-nowrap`}
-          disabled
-          aria-label="Chat on WhatsApp, currently unavailable pending verified contact details"
-          title="WhatsApp enquiry channel will be activated once verified contact details are provided."
-        >
-          {content}
-        </button>
-      )}
-    </aside>
+      <WhatsAppIcon />
+
+      {/* Subtle corner arrow on hover */}
+      <ArrowUpRight
+        size={11}
+        strokeWidth={2.5}
+        aria-hidden="true"
+        className="
+          absolute
+          right-1.5
+          top-1.5
+          text-[#D6B27A]
+          opacity-0
+          transition-opacity
+          duration-200
+          group-hover:opacity-100
+          motion-reduce:transition-none
+        "
+      />
+    </a>
   );
 }

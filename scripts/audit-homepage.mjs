@@ -96,7 +96,7 @@ try {
         await expect(dialog).toHaveCount(0);
         await expect(trigger).toBeFocused();
       };
-      const featured = projects.locator('article button');
+      const featured = projects.locator('article').getByRole('button', { name: 'Details' });
       for (let i=0;i<3;i++) await checkDialog(featured.nth(i));
       const rows = projects.locator('button[aria-expanded]');
       for (let i=0;i<6;i++) {
@@ -104,7 +104,7 @@ try {
         await checkDialog(projects.getByRole('button',{name:'Full Scope Details',exact:true}));
         await rows.nth(i).click();
       }
-      await expect(projects.locator('img')).toHaveCount(1);
+      assert.ok(await projects.locator('img').count() >= 3);
       await expect(projects.getByRole('link',{name:'CC BY-SA 4.0'})).toBeVisible();
       await page.emulateMedia({reducedMotion:'reduce'});
       assert.equal(await page.evaluate(()=>getComputedStyle(document.documentElement).scrollBehavior),'auto');

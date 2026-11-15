@@ -105,7 +105,7 @@ export function Projects() {
                   type="button"
                   aria-pressed={isActive}
                   onClick={() => setActiveCategory(cat.key)}
-                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-[2px] text-xs md:text-sm font-medium transition-all duration-200 border cursor-pointer ${
+                  className={`inline-flex min-h-11 items-center gap-2.5 px-4 py-2.5 rounded-lg text-xs md:text-sm font-medium transition-all duration-200 border cursor-pointer ${
                     isActive
                       ? "bg-primary text-white border-primary shadow-xs"
                       : "bg-surface text-muted border-primary/20 hover:border-primary hover:text-primary"
@@ -113,7 +113,7 @@ export function Projects() {
                 >
                   <span>{cat.label}</span>
                   <span
-                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded-[2px] ${
+                    className={`text-[10px] font-mono px-1.5 py-0.5 rounded-md ${
                       isActive ? "bg-white/20 text-white font-semibold" : "bg-secondary text-primary font-medium"
                     }`}
                   >
@@ -139,7 +139,7 @@ export function Projects() {
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     {/* Media Column */}
-                    <div className="lg:col-span-7 relative w-full min-w-0 min-h-64 aspect-[16/10] bg-secondary overflow-hidden">
+                    <div className="lg:col-span-7 relative w-full min-w-0 bg-secondary overflow-hidden">
                       <ProjectMedia project={project} sizes="(min-width: 1024px) 60vw, 100vw" />
                     </div>
 
@@ -194,7 +194,7 @@ export function Projects() {
                         <button
                           type="button"
                           onClick={() => setSelectedProject(project)}
-                          className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
+                          className="inline-flex min-h-11 items-center gap-1.5 rounded-lg text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
                         >
                           View Scope Details <ArrowUpRight size={14} aria-hidden="true" />
                         </button>
@@ -214,7 +214,7 @@ export function Projects() {
                       data-scroll-reveal
                     >
                       {/* Media */}
-                      <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden">
+                      <div className="relative w-full min-w-0 bg-secondary overflow-hidden">
                         <ProjectMedia project={project} sizes="(min-width: 1024px) 45vw, 100vw" />
                       </div>
 
@@ -259,13 +259,10 @@ export function Projects() {
 
                         {/* Card Footer */}
                         <div className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between">
-                          <span className="text-[10px] font-mono text-muted">
-                            {project.image ? "Corridor Reference Photo" : "Client Register Record"}
-                          </span>
                           <button
                             type="button"
                             onClick={() => setSelectedProject(project)}
-                            className="inline-flex min-h-11 items-center gap-1.5 text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
+                            className="inline-flex min-h-11 items-center gap-1.5 rounded-lg text-xs font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 transition-colors cursor-pointer"
                           >
                             Details <ArrowUpRight size={13} aria-hidden="true" />
                           </button>
@@ -312,7 +309,7 @@ export function Projects() {
                         aria-expanded={isExpanded}
                         aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined}
                         onClick={() => toggleRow(project.id)}
-                        className="w-full py-5 md:py-6 px-3 flex flex-col md:flex-row md:items-center justify-between gap-4 text-left group cursor-pointer"
+                        className="w-full py-5 md:py-6 px-3 flex flex-col md:flex-row md:items-center justify-between gap-4 rounded-lg text-left group cursor-pointer"
                       >
                         <div className="flex items-start md:items-center gap-4 md:gap-6 min-w-0">
                           {/* Numeral */}
@@ -340,7 +337,7 @@ export function Projects() {
                           </span>
 
                           <span
-                            className={`size-8 rounded-[2px] flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
+                            className={`size-8 rounded-md flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
                               isExpanded ? "bg-primary text-white rotate-180" : "bg-surface text-muted"
                             }`}
                             aria-hidden="true"
@@ -356,7 +353,7 @@ export function Projects() {
                           id={`project-row-panel-${project.id}`}
                           className="px-4 pb-8 pt-4 grid grid-cols-1 md:grid-cols-12 gap-6 items-center border-t border-primary/10 bg-secondary/20"
                         >
-                          <div className="md:col-span-4 relative w-full min-w-0 min-h-60 aspect-[16/10] overflow-hidden rounded-[2px] border border-primary/15 bg-secondary">
+                          <div className="md:col-span-4 relative w-full min-w-0 overflow-hidden rounded-[2px] border border-primary/15 bg-secondary">
                             <ProjectMedia project={project} sizes="(min-width: 768px) 30vw, 100vw" />
                           </div>
 
@@ -384,7 +381,7 @@ export function Projects() {
                               <button
                                 type="button"
                                 onClick={() => setSelectedProject(project)}
-                                className="inline-flex min-h-11 items-center gap-1 font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 cursor-pointer"
+                                className="inline-flex min-h-11 items-center gap-1 rounded-lg font-semibold text-primary hover:text-foreground underline decoration-accent decoration-2 underline-offset-4 cursor-pointer"
                               >
                                 Full Scope Details <ArrowUpRight size={13} aria-hidden="true" />
                               </button>
@@ -459,7 +456,7 @@ export function Projects() {
                 type="button"
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close project details"
-                className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+                className="flex size-11 shrink-0 items-center justify-center rounded-lg border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
               >
                 <X size={18} aria-hidden="true" />
               </button>
@@ -467,8 +464,12 @@ export function Projects() {
 
             <div className="py-6 space-y-6">
               {/* Modal Image */}
-              <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] overflow-hidden rounded-[2px] bg-secondary border border-primary/15">
-                <ProjectMedia project={selectedProject} sizes="(max-width: 768px) 100vw, 700px" />
+              <div className="relative w-full min-w-0 overflow-hidden rounded-[2px] bg-charcoal border border-primary/15">
+                <ProjectMedia
+                  project={selectedProject}
+                  mode="dialog"
+                  sizes="(max-width: 768px) 100vw, 700px"
+                />
               </div>
 
               {/* Scope & Description */}
@@ -518,7 +519,7 @@ export function Projects() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="min-h-11 px-5 py-2.5 rounded-[2px] border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider hover:bg-secondary/40 transition-colors cursor-pointer"
+                className="min-h-11 px-5 py-2.5 rounded-lg border border-primary/20 text-xs font-semibold text-primary uppercase tracking-wider hover:bg-secondary/40 transition-colors cursor-pointer"
               >
                 Close
               </button>

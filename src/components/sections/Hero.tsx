@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { CTA } from "@/components/ui/CTA";
 import { HeroMotion } from "@/components/ui/HeroMotion";
@@ -98,14 +97,12 @@ export function Hero() {
 
           {/* Mandatory Provenance & Photo Attribution */}
           <Container className="flex flex-col justify-between gap-1 pt-3 text-[10px] leading-5 text-muted sm:flex-row sm:gap-4 sm:text-xs">
-            <span>Representative imagery &middot; Not a SAS project site</span>
             <a
               href={heroImage.source}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex w-fit items-center gap-1 underline decoration-primary/30 underline-offset-4 hover:text-primary"
             >
-              Photography: {heroImage.photographer} / Unsplash <ArrowUpRight size={13} aria-hidden="true" />
             </a>
           </Container>
         </figure>

@@ -1,0 +1,42 @@
+[
+  {
+    "width": 1440,
+    "featuredCount": 3,
+    "dialogImageFit": "contain",
+    "violations": 0,
+    "dialogViolations": 0,
+    "consoleErrors": []
+  },
+  {
+    "width": 1024,
+    "featuredCount": 3,
+    "dialogImageFit": "contain",
+    "violations": 0,
+    "dialogViolations": 0,
+    "consoleErrors": []
+  },
+  {
+    "width": 768,
+    "featuredCount": 3,
+    "dialogImageFit": "contain",
+    "violations": 0,
+    "dialogViolations": 0,
+    "consoleErrors": []
+  },
+  {
+    "width": 390,
+    "featuredCount": 3,
+    "dialogImageFit": "contain",
+    "violations": 0,
+    "dialogViolations": 0,
+    "consoleErrors": []
+  },
+  {
+    "width": 320,
+    "featuredCount": 3,
+    "dialogImageFit": "contain",
+    "violations": 0,
+    "dialogViolations": 0,
+    "consoleErrors": []
+  }
+]

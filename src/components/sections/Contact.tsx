@@ -1,11 +1,11 @@
 "use client";
 
-import { useState, type FocusEvent } from "react";
+import { useState, type FocusEvent, type FormEvent } from "react";
 import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { inquiryDelivery } from "@/lib/contact";
+import { createWhatsAppLink, inquiryDelivery } from "@/lib/contact";
 
 const workTypes = [
   "Road Construction & Development",
@@ -19,12 +19,20 @@ const workTypes = [
   "Other / To be discussed",
 ];
 
-const fields = [
+const contactFields = [
   { id: "full-name", label: "Full Name", type: "text", autoComplete: "name", required: true, maxLength: 120 },
   { id: "phone", label: "Phone Number", type: "tel", autoComplete: "tel", required: true, maxLength: 30 },
   { id: "email", label: "Email Address", type: "email", autoComplete: "email", required: false, maxLength: 254 },
-  { id: "location", label: "Project Location", type: "text", autoComplete: "off", required: true, maxLength: 200 },
 ] as const;
+
+const projectLocationField = {
+  id: "location",
+  label: "Project Location",
+  type: "text",
+  autoComplete: "off",
+  required: true,
+  maxLength: 200,
+} as const;
 
 type FieldElement = HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement;
 
@@ -46,14 +54,92 @@ function fieldError(field: FieldElement): string {
 
 export function Contact() {
   const [errors, setErrors] = useState<Record<string, string>>({});
+  const [submissionFeedback, setSubmissionFeedback] = useState<{
+    kind: "opened" | "error";
+    message: string;
+  } | null>(null);
+  const contactWhatsAppHref = createWhatsAppLink(
+    "Hello SAS Construction, I would like to discuss your services."
+  );
 
   function validate(event: FocusEvent<FieldElement>) {
     const field = event.currentTarget;
     setErrors((previous) => ({ ...previous, [field.id]: fieldError(field) }));
   }
 
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const form = event.currentTarget;
+    const controls = Array.from(form.elements).filter(
+      (element): element is FieldElement =>
+        element instanceof HTMLInputElement ||
+        element instanceof HTMLSelectElement ||
+        element instanceof HTMLTextAreaElement
+    );
+    const nextErrors: Record<string, string> = {};
+    let firstInvalid: FieldElement | null = null;
+
+    for (const field of controls) {
+      const error = fieldError(field);
+      if (!error) continue;
+      nextErrors[field.id] = error;
+      if (!firstInvalid) firstInvalid = field;
+    }
+
+    setErrors(nextErrors);
+    setSubmissionFeedback(null);
+    if (firstInvalid) {
+      firstInvalid.focus();
+      setSubmissionFeedback({
+        kind: "error",
+        message: "Please correct the highlighted fields before continuing.",
+      });
+      return;
+    }
+
+    const formData = new FormData(form);
+    const value = (name: string) => String(formData.get(name) ?? "").trim();
+    const email = value("inquiry-email");
+    const message = [
+      "Hello SAS Construction, I would like to discuss a construction project and request a quotation.",
+      "",
+      `Name: ${value("inquiry-full-name")}`,
+      `Phone/WhatsApp: ${value("inquiry-phone")}`,
+      ...(email ? [`Email: ${email}`] : []),
+      `Project Location: ${value("inquiry-location")}`,
+      `Type of Work: ${value("inquiry-work")}`,
+      "",
+      "Project Details:",
+      value("inquiry-details"),
+    ].join("\n");
+    const whatsappHref = createWhatsAppLink(message);
+
+    if (!whatsappHref) {
+      setSubmissionFeedback({
+        kind: "error",
+        message: "WhatsApp is unavailable. Your details remain in this form.",
+      });
+      return;
+    }
+
+    const whatsappWindow = window.open(whatsappHref, "_blank");
+    if (!whatsappWindow) {
+      setSubmissionFeedback({
+        kind: "error",
+        message: "Your browser blocked the WhatsApp window. Your details remain in this form; allow pop-ups and try again.",
+      });
+      return;
+    }
+
+    whatsappWindow.opener = null;
+    setSubmissionFeedback({
+      kind: "opened",
+      message: "WhatsApp opened with a draft. Review the details there and press Send in WhatsApp.",
+    });
+  }
+
   const controlClass =
-    "mt-2 block min-h-13 w-full rounded-[2px] border border-primary/25 bg-background px-4 py-3 text-base text-foreground transition-colors focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary aria-invalid:border-primary aria-invalid:ring-1 aria-invalid:ring-primary";
+    "mt-2 block min-h-14 w-full rounded-lg border border-primary/15 bg-white px-4 py-3 text-sm text-foreground shadow-sm transition-[border-color,box-shadow] duration-200 placeholder:text-muted/70 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 aria-invalid:border-primary aria-invalid:ring-2 aria-invalid:ring-primary/15";
 
   function errorMessage(id: string) {
     return (
@@ -79,51 +165,61 @@ export function Contact() {
                 Share your site location, project requirements, and scope of work. SAS Construction will evaluate how our equipment and teams can support your timeline.
               </p>
 
-              {/* Status Notice Box */}
-              <div
-                id="inquiry-unavailable"
-                className="mt-10 border-l-2 border-accent bg-background p-6 rounded-[2px] border border-primary/10 shadow-xs"
-                data-scroll-reveal
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <span className="size-2 rounded-full bg-accent" aria-hidden="true" />
-                  <span className="font-mono text-xs font-semibold uppercase tracking-wider text-primary">
-                    Transmission Status
-                  </span>
-                </div>
-                <h3 className="font-heading text-lg font-semibold text-primary">
-                  Enquiries are not open yet
-                </h3>
-                <p className="mt-2.5 text-sm leading-[1.8] text-muted">
-                  {inquiryDelivery.message}
-                </p>
-              </div>
             </div>
 
             {/* Right Column — Structured Form */}
             <form
               aria-label="Project inquiry"
-              aria-describedby="inquiry-unavailable"
+              aria-describedby="inquiry-channel-info"
               noValidate
-              onSubmit={(event) => event.preventDefault()}
-              className="lg:col-span-7 bg-background/50 p-6 sm:p-8 md:p-10 border border-primary/15 rounded-[2px]"
+              onSubmit={handleSubmit}
+              className="lg:col-span-7 rounded-xl border border-primary/15 bg-white p-6 shadow-lg shadow-primary/5 sm:p-8 md:p-10"
             >
-              <div className="mb-7 flex items-center justify-between border-b border-primary/20 pb-4 text-xs text-muted">
-                <span>Project inquiry preview</span>
-                <span className="font-mono text-[11px]">All fields required unless marked optional</span>
+              <div className="mb-8 flex flex-col gap-5 border-b border-primary/15 pb-6 sm:flex-row sm:items-start sm:justify-between">
+                <div>
+                  <p className="mb-3 flex items-center gap-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-primary">
+                    <span aria-hidden="true" className="h-px w-6 bg-accent" />
+                    Project inquiry
+                  </p>
+                  <h3 className="font-heading text-2xl font-semibold tracking-tight text-primary sm:text-3xl">
+                    Tell us about the work.
+                  </h3>
+                  <p className="mt-2 max-w-lg text-sm leading-6 text-muted">
+                    A few details help describe the site and the scope you have in mind.
+                  </p>
+                </div>
+                <span className="inline-flex w-fit shrink-0 items-center gap-2 rounded-full border border-accent/50 bg-secondary/50 px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-wider text-primary">
+                  <span aria-hidden="true" className="size-1.5 rounded-full bg-accent" />
+                  WhatsApp draft
+                </span>
               </div>
 
-              <div className="grid gap-x-6 gap-y-5 sm:grid-cols-2">
-                {fields.map((field) => {
+              <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
+                <div className="flex items-center gap-3 border-b border-primary/10 pb-3 sm:col-span-2">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-md bg-primary font-mono text-xs font-semibold text-white">
+                    01
+                  </span>
+                  <div>
+                    <h4 className="text-sm font-semibold text-primary">Your details</h4>
+                    <p className="mt-0.5 text-xs text-muted">How to reach you about the project</p>
+                  </div>
+                </div>
+
+                {contactFields.map((field) => {
                   const id = `inquiry-${field.id}`;
                   return (
                     <div key={id}>
-                      <label htmlFor={id} className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wider font-mono">
+                      <label htmlFor={id} className="text-sm font-medium text-foreground">
                         {field.label}
-                        {!field.required && <span className="font-normal text-muted lowercase"> (optional)</span>}
+                        {field.required ? (
+                          <span className="ml-1 text-primary" aria-hidden="true">*</span>
+                        ) : (
+                          <span className="ml-1.5 text-xs font-normal text-muted">Optional</span>
+                        )}
                       </label>
                       <input
                         id={id}
+                        name={id}
                         type={field.type}
                         autoComplete={field.autoComplete}
                         required={field.required}
@@ -143,12 +239,52 @@ export function Contact() {
                   );
                 })}
 
+                <div className="flex items-center gap-3 border-b border-primary/10 pb-3 sm:col-span-2 sm:mt-2">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-md bg-primary font-mono text-xs font-semibold text-white">
+                    02
+                  </span>
+                  <div>
+                    <h4 className="text-sm font-semibold text-primary">Project brief</h4>
+                    <p className="mt-0.5 text-xs text-muted">Location, work type, and key requirements</p>
+                  </div>
+                </div>
+
                 <div className="sm:col-span-2">
-                  <label htmlFor="inquiry-work" className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wider font-mono">
+                  <label htmlFor="inquiry-location" className="text-sm font-medium text-foreground">
+                    {projectLocationField.label}
+                    <span className="ml-1 text-primary" aria-hidden="true">*</span>
+                  </label>
+                  <input
+                    id="inquiry-location"
+                    name="inquiry-location"
+                    type={projectLocationField.type}
+                    autoComplete={projectLocationField.autoComplete}
+                    required={projectLocationField.required}
+                    maxLength={projectLocationField.maxLength}
+                    className={controlClass}
+                    onBlur={validate}
+                    onChange={(event) => {
+                      if (errors["inquiry-location"]) {
+                        setErrors((previous) => ({
+                          ...previous,
+                          "inquiry-location": fieldError(event.target),
+                        }));
+                      }
+                    }}
+                    aria-invalid={Boolean(errors["inquiry-location"])}
+                    aria-describedby="inquiry-location-error"
+                  />
+                  {errorMessage("inquiry-location")}
+                </div>
+
+                <div className="sm:col-span-2">
+                  <label htmlFor="inquiry-work" className="text-sm font-medium text-foreground">
                     Type of Construction Work
+                    <span className="ml-1 text-primary" aria-hidden="true">*</span>
                   </label>
                   <select
                     id="inquiry-work"
+                    name="inquiry-work"
                     required
                     defaultValue=""
                     className={controlClass}
@@ -170,15 +306,17 @@ export function Contact() {
                 </div>
 
                 <div className="sm:col-span-2">
-                  <label htmlFor="inquiry-details" className="text-xs sm:text-sm font-semibold text-primary uppercase tracking-wider font-mono">
+                  <label htmlFor="inquiry-details" className="text-sm font-medium text-foreground">
                     Project Details
+                    <span className="ml-1 text-primary" aria-hidden="true">*</span>
                   </label>
                   <textarea
                     id="inquiry-details"
+                    name="inquiry-details"
                     required
                     rows={5}
                     maxLength={5000}
-                    className={`${controlClass} resize-y`}
+                    className={`${controlClass} min-h-40 resize-y leading-6`}
                     onBlur={validate}
                     onChange={(event) => {
                       if (errors["inquiry-details"]) {
@@ -192,23 +330,35 @@ export function Contact() {
                     aria-describedby="inquiry-details-hint inquiry-details-error"
                   />
                   <p id="inquiry-details-hint" className="mt-2 text-xs leading-5 text-muted">
-                    Describe the site, approximate ground dimensions, and specific work requirements.
+                    Include the site, scope, and any requirements you would like to discuss.
                   </p>
                   {errorMessage("inquiry-details")}
                 </div>
               </div>
 
-              <div className="mt-8 flex flex-col items-start gap-3 border-t border-primary/20 pt-6">
+              <div className="mt-8 flex flex-col items-start gap-3 border-t border-primary/15 pt-6">
                 <CTA
                   type="submit"
-                  disabled={!inquiryDelivery.configured}
-                  aria-describedby="inquiry-unavailable"
                 >
-                  Send Project Inquiry
+                  Continue to WhatsApp
                 </CTA>
-                <p className="text-xs leading-5 text-muted">
-                  Submission currently unavailable. No enquiry will be delivered or stored.
+                <p className="flex items-start gap-2 text-xs leading-5 text-muted">
+                  <span aria-hidden="true" className="mt-1 size-1.5 shrink-0 rounded-full bg-accent" />
+                  WhatsApp opens with a draft for you to review and send. This website does not send messages automatically.
                 </p>
+                {submissionFeedback && (
+                  <p
+                    role={submissionFeedback.kind === "error" ? "alert" : "status"}
+                    aria-live={submissionFeedback.kind === "error" ? "assertive" : "polite"}
+                    className={`w-full rounded-lg border-l-2 bg-secondary/50 p-4 text-sm leading-6 ${
+                      submissionFeedback.kind === "error"
+                        ? "border-primary text-primary"
+                        : "border-accent text-foreground"
+                    }`}
+                  >
+                    {submissionFeedback.message}
+                  </p>
+                )}
               </div>
             </form>
           </div>

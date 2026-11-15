@@ -68,25 +68,19 @@ export function Footer() {
           </div>
 
           {/* Direct Engagement */}
+
           <div className="md:col-span-4 lg:col-span-3">
-            <p className="mb-4 text-[11px] font-mono font-semibold uppercase tracking-[0.16em] text-primary">
+            <p className="mb-4 font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-primary">
               Direct Inquiries
             </p>
-            <NavigationAction
-              destination="Contact"
-              className="group inline-flex min-h-11 items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary underline decoration-accent decoration-2 underline-offset-8 hover:text-foreground transition-colors"
-            >
-              <span>Discuss Your Project</span>
-              <ArrowUpRight
-                size={16}
-                aria-hidden="true"
-                className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-              />
-            </NavigationAction>
-            <p className="mt-4 text-xs leading-6 text-muted">
-              Online transmissions await client-confirmed contact destination.
+
+            <p className="max-w-xs text-sm leading-7 text-muted">
+              Have questions about our construction services?
+              Reach out to SAS Construction through our
+              WhatsApp contact option.
             </p>
           </div>
+
         </div>
 
         {/* Bottom Bar */}

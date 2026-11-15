@@ -7,21 +7,11 @@ export const contactDetails: {
   socialLinks: { label: string; url: string }[];
 } = {
   phone: null,
-  whatsapp: null,
+  whatsapp: "923312718673",
   email: null,
   address: null,
   socialLinks: [],
 };
-
-export const contactUnavailableMessage =
-  "Enquiries are unavailable until verified contact details are provided.";
-
-/** A verified delivery integration must be implemented before submission can be enabled.
- * Adding a phone or email above alone must never enable form submission. */
-export const inquiryDelivery = {
-  configured: false,
-  message: "Online enquiries are not available yet. Submission is disabled until a verified delivery destination is connected. Details entered here are not sent or saved.",
-} as const;
 
 const whatsappNumberPattern = /^[1-9]\d{7,14}$/;
 
@@ -29,6 +19,16 @@ function getWhatsAppBaseUrl(): string | null {
   const number = contactDetails.whatsapp;
   return number && whatsappNumberPattern.test(number) ? `https://wa.me/${number}` : null;
 }
+
+export const contactUnavailableMessage =
+  "Enquiries are unavailable until verified contact details are provided.";
+
+export const inquiryDelivery = {
+  get configured() {
+    return getWhatsAppBaseUrl() !== null;
+  },
+  message: "Submitting opens a prefilled WhatsApp draft for you to review and send. No message is sent automatically.",
+} as const;
 
 export function createWhatsAppLink(message: string): string | null {
   const baseUrl = getWhatsAppBaseUrl();

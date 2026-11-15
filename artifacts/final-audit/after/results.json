@@ -14,7 +14,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -24,57 +27,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.0020127196763278033,
+      "cls": 0.0019046914528426807,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 23
+          "duration": 32.09999999962747
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 26.100000000558794
+          "duration": 35.69999999925494
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 32.40000000037253
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
-          "bytes": 45598,
-          "duration": 30.59999999962747
+          "duration": 52.59999999962747
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 29.200000000186265
+          "duration": 42.30000000074506
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 53
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 27.700000000186265
+          "duration": 42.70000000111759
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 34.700000000186265
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 47.30000000074506
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 42.700000000186265
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 56.5
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 220.90000000037253
+          "duration": 188.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 211.29999999981374
+          "duration": 183.40000000037253
         }
       ]
     }
@@ -94,7 +97,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -104,57 +110,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.004230010860741384,
+      "cls": 0.003999550650639789,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 19.200000000186265
+          "duration": 23.799999998882413
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 21
+          "duration": 27.200000001117587
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
           "bytes": 45598,
-          "duration": 26.700000000186265
+          "duration": 37.70000000111759
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 34.10000000055879
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
-          "bytes": 3904,
-          "duration": 24.40000000037253
+          "duration": 39.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 24.5
+          "duration": 28.299999998882413
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 27
+          "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 29.300000000745058
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 36
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 35.30000000074506
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 41.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 209.5
+          "duration": 199.2000000011176
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 208.09999999962747
+          "duration": 194.2000000011176
         }
       ]
     }
@@ -174,7 +180,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -184,57 +193,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.004804364970330557,
+      "cls": 0.004504240899587799,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 24.800000000745058
+          "duration": 27
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 26.700000000186265
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
-          "bytes": 45598,
-          "duration": 32.60000000055879
+          "duration": 32
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 33.90000000037253
+          "duration": 51.19999999925494
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 33.09999999962747
+          "duration": 34.80000000074506
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 47.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 32.799999999813735
+          "duration": 34.30000000074506
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 35.30000000074506
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 35.90000000037253
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 43.700000000186265
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 54.399999998509884
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 234.29999999981374
+          "duration": 242.5
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 228.09999999962747
+          "duration": 234
         }
       ]
     }
@@ -254,7 +263,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -264,57 +276,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.00604242035963883,
+      "cls": 0.005508345280153056,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 23.90000000037253
+          "duration": 30.899999998509884
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 24.299999999813735
+          "duration": 34.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
           "bytes": 45598,
-          "duration": 42.69999999925494
+          "duration": 64.19999999925494
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 43.5
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
-          "bytes": 3904,
-          "duration": 27.799999999813735
+          "duration": 65.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 29.5
+          "duration": 39.59999999962747
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 33.5
+          "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
+          "bytes": 3904,
+          "duration": 42.80000000074506
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 44.700000000186265
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 46
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 65.69999999925494
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 203.8999999994412
+          "duration": 259.6000000014901
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 198
+          "duration": 253.40000000037253
         }
       ]
     }
@@ -334,7 +346,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -344,57 +359,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.0013382524872819583,
+      "cls": 0.0011025300870339076,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 26.5
+          "duration": 21.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 29.100000000558794
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
-          "bytes": 45598,
-          "duration": 41.39999999944121
+          "duration": 22.700000001117587
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 50.19999999925494
+          "duration": 39.70000000111759
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 37.29999999888241
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 39.40000000037253
+          "duration": 31.59999999962747
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 41
+          "duration": 32.19999999925494
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 38.90000000037253
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 33.59999999962747
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 55
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 37.5
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 230.79999999981374
+          "duration": 191.80000000074506
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 223.5
+          "duration": 185.5
         }
       ]
     }
@@ -414,7 +429,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -424,57 +442,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.00047627471896005284,
+      "cls": 0.00017308077461572442,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 19.90000000037253
+          "duration": 26.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 23.800000000745058
+          "duration": 33
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 36.700000000186265
+          "duration": 48.59999999962747
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
           "bytes": 45598,
-          "duration": 33.799999999813735
+          "duration": 44.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
           "bytes": 4205,
-          "duration": 24.5
+          "duration": 38.59999999962747
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 27.59999999962747
+          "duration": 38.79999999888241
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 28.300000000745058
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 40.5
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 36.90000000037253
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 51.30000000074506
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 274.20000000018626
+          "duration": 165.2999999988824
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 267.20000000018626
+          "duration": 157.2999999988824
         }
       ]
     }
@@ -494,7 +512,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -504,57 +525,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.0005351354275360561,
+      "cls": 0.00019447107023546636,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 19.59999999962747
+          "duration": 27.799999998882413
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 21.700000000186265
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
-          "bytes": 72002,
-          "duration": 35.200000000186265
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
-          "bytes": 4205,
-          "duration": 24.5
+          "duration": 30.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
           "bytes": 45598,
-          "duration": 34.200000000186265
+          "duration": 42.09999999962747
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
+          "bytes": 72002,
+          "duration": 44.69999999925494
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 38.5
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 24.59999999962747
+          "duration": 37.5
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 26.09999999962747
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 42.70000000111759
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 36.59999999962747
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 44.90000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 202.40000000037253
+          "duration": 225.89999999850988
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 196.69999999925494
+          "duration": 218.5
         }
       ]
     }
@@ -574,7 +595,10 @@
       "missingControls": [],
       "preloads": [
         "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Flogo.png&amp;w=32&amp;q=75 32w, /_next/image?url=%2Flogo.png&amp;w=48&amp;q=75 48w, /_next/image?url=%2Flogo.png&amp;w=64&amp;q=75 64w, /_next/image?url=%2Flogo.png&amp;w=96&amp;q=75 96w, /_next/image?url=%2Flogo.png&amp;w=128&amp;q=75 128w, /_next/image?url=%2Flogo.png&amp;w=256&amp;q=75 256w, /_next/image?url=%2Flogo.png&amp;w=384&amp;q=75 384w, /_next/image?url=%2Flogo.png&amp;w=640&amp;q=75 640w, /_next/image?url=%2Flogo.png&amp;w=750&amp;q=75 750w, /_next/image?url=%2Flogo.png&amp;w=828&amp;q=75 828w, /_next/image?url=%2Flogo.png&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Flogo.png&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Flogo.png&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Flogo.png&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Flogo.png&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 960px) 150px, 130px\">",
-        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">"
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=640&amp;q=90 640w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=750&amp;q=90 750w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=828&amp;q=90 828w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1080&amp;q=90 1080w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1200&amp;q=90 1200w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=1920&amp;q=90 1920w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=2048&amp;q=90 2048w, /_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&amp;w=3840&amp;q=90 3840w\" imagesizes=\"100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 60vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">",
+        "<link rel=\"preload\" as=\"image\" imagesrcset=\"/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=384&amp;q=75 384w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&amp;w=3840&amp;q=75 3840w\" imagesizes=\"(min-width: 1024px) 45vw, 100vw\">"
       ],
       "canonical": "https://sas-construction.vercel.app/",
       "og": "SAS Construction | Roadwork, Earthwork & Site Development"
@@ -584,57 +608,57 @@
     "dialogViolations": [],
     "errors": [],
     "performance": {
-      "cls": 0.0007550811210281226,
+      "cls": 0.0002744005090394449,
       "resources": [
         {
           "name": "http://localhost:3208/_next/static/chunks/1pcw6gskne7pf.js",
           "bytes": 2330,
-          "duration": 16.600000000558794
+          "duration": 27.40000000037253
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/07hyzbqh0nng1.js",
           "bytes": 9433,
-          "duration": 18.399999999441206
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
-          "bytes": 4205,
-          "duration": 21
-        },
-        {
-          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
-          "bytes": 45598,
-          "duration": 25.59999999962747
+          "duration": 32.20000000111759
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/3iz8_hoapa1o_.js",
           "bytes": 72002,
-          "duration": 31
+          "duration": 49.5
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/1hy9p0hfrq0w2.js",
+          "bytes": 45598,
+          "duration": 50.30000000074506
+        },
+        {
+          "name": "http://localhost:3208/_next/static/chunks/turbopack-2u1d16houkiyo.js",
+          "bytes": 4205,
+          "duration": 35.29999999888241
         },
         {
           "name": "http://localhost:3208/_next/static/chunks/0wj0noag-9_fs.js",
           "bytes": 3904,
-          "duration": 24.300000000745058
+          "duration": 37
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/0tyv5to7darr7.js",
-          "bytes": 13269,
-          "duration": 26
+          "name": "http://localhost:3208/_next/static/chunks/430s-zd-77ny0.js",
+          "bytes": 13712,
+          "duration": 36.40000000037253
         },
         {
-          "name": "http://localhost:3208/_next/static/chunks/3jrtsjiuavnr-.js",
-          "bytes": 55772,
-          "duration": 33.799999999813735
+          "name": "http://localhost:3208/_next/static/chunks/27a1qxb15--fx.js",
+          "bytes": 58112,
+          "duration": 48.5
         },
         {
           "name": "http://localhost:3208/_next/static/media/inter-latin-wght-normal.0gsaq8ukbf34m.woff2",
           "bytes": 48556,
-          "duration": 162.6000000005588
+          "duration": 234.2000000011176
         },
         {
           "name": "http://localhost:3208/_next/static/media/manrope-latin-wght-normal.1p_a2k8qd5zhp.woff2",
           "bytes": 25136,
-          "duration": 158.29999999981374
+          "duration": 226.10000000149012
         }
       ]
     }
