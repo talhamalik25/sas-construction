@@ -5,7 +5,7 @@ import { CTA } from "@/components/ui/CTA";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
-import { createWhatsAppLink, inquiryDelivery } from "@/lib/contact";
+import { createWhatsAppLink } from "@/lib/contact";
 
 const workTypes = [
   "Road Construction & Development",
@@ -58,9 +58,6 @@ export function Contact() {
     kind: "opened" | "error";
     message: string;
   } | null>(null);
-  const contactWhatsAppHref = createWhatsAppLink(
-    "Hello SAS Construction, I would like to discuss your services."
-  );
 
   function validate(event: FocusEvent<FieldElement>) {
     const field = event.currentTarget;

@@ -63,6 +63,10 @@
 }
 
 /* Accessible mobile drawer dialog transition */
+.mobile-menu:not([open]) {
+  display: none !important;
+}
+
 .mobile-menu {
   opacity: 0;
   transform: translateX(24px);
@@ -74,6 +78,7 @@
 }
 
 .mobile-menu[open] {
+  display: flex !important;
   opacity: 1;
   transform: translateX(0);
 }

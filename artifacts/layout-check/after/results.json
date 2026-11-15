@@ -49,27 +49,27 @@
       "links": [
         {
           "text": "01Home",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "02About",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "03Services",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "04Projects",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "05Contact",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         }
       ]
@@ -87,27 +87,27 @@
       "links": [
         {
           "text": "01Home",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "02About",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "03Services",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "04Projects",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         },
         {
           "text": "05Contact",
-          "height": 66,
+          "height": 58,
           "display": "flex"
         }
       ]
@@ -125,27 +125,27 @@
       "links": [
         {
           "text": "01Home",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "02About",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "03Services",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "04Projects",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "05Contact",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         }
       ]
@@ -163,27 +163,27 @@
       "links": [
         {
           "text": "01Home",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "02About",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "03Services",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "04Projects",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         },
         {
           "text": "05Contact",
-          "height": 66,
+          "height": 64,
           "display": "flex"
         }
       ]

@@ -131,12 +131,14 @@ export function AboutExperience() {
                 </div>
 
                 <figcaption className="mt-3 flex flex-col gap-1 text-[10px] leading-5 text-muted">
+                  <span>Representative imagery &middot; Not a SAS project site</span>
                   <a
                     href="https://unsplash.com/photos/a-yellow-excavator-digging-in-dirt-at-a-construction-site-jPsmNCgLghU"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex min-h-6 w-fit items-center gap-1 underline decoration-primary/30 underline-offset-4 hover:text-primary"
                   >
+                    Photography: Defrino Maasy / Unsplash
                   </a>
                 </figcaption>
               </figure>

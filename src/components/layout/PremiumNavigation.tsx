@@ -125,7 +125,7 @@ export function PremiumNavigation() {
         ref={dialog}
         id="mobile-navigation"
         aria-labelledby="mobile-menu-title"
-        className="mobile-menu fixed inset-y-0 right-0 z-60 m-0 flex h-dvh max-h-dvh w-[min(400px,calc(100%-24px))] max-w-none flex-col overflow-y-auto overscroll-contain border-0 border-l border-accent bg-background p-6 sm:p-7 text-foreground shadow-2xl"
+        className="mobile-menu hidden open:flex fixed inset-y-0 right-0 z-60 m-0 h-dvh max-h-dvh w-[min(400px,calc(100%-24px))] max-w-none flex-col overflow-y-auto overscroll-contain border-0 border-l border-accent bg-background p-6 sm:p-7 text-foreground shadow-2xl"
         onCancel={() => {
           navigating.current = false;
           setOpen(false);

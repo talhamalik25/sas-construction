@@ -215,8 +215,8 @@ export function ProjectMedia({
         </figcaption>
       ) : (
         <figcaption className="shrink-0 border-t border-primary/10 bg-surface px-4 py-2.5 text-[11px] leading-relaxed text-muted">
-          <div className="flex flex-wrap items-center justify-between gap-1.5">
-            <p className="font-medium text-foreground/80 truncate max-w-[calc(100%-110px)]">
+          <div className="flex items-center justify-between gap-2">
+            <p className="font-medium text-foreground/80 leading-normal">
               {currentPhoto.caption}
             </p>
             {hasMultiple && (
