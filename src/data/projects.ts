@@ -17,10 +17,16 @@ export interface ProjectRecord {
   featured: boolean;
   description: string;
   scopes: string[];
-  image: {
+  image?: {
     src: string;
     alt: string;
     caption: string;
+    classification: "A" | "B";
+    sourceUrl: string;
+    author: string;
+    license: string;
+    licenseUrl: string;
+    changes: string;
   };
   clientNote?: string;
 }
@@ -41,27 +47,29 @@ export const projectsData: ProjectRecord[] = [
     scopeSupplied: "Sewerage Line Work",
     category: "Sewerage Infrastructure",
     categoryKey: "utilities-drainage",
-    location: "Orangi, Karachi",
-    locationConfirmed: true,
+    location: "Orangi, Karachi (inferred from title)",
+    locationConfirmed: false,
     featured: true,
     description:
-      "Trenching, deep excavation and underground pipeline installation for major municipal sewerage line work.",
-    scopes: [
-      "Deep Trench Excavation",
-      "Reinforced Concrete Pipeline Installation",
-      "Utility Bedding & Backfilling",
-    ],
-    image: {
-      src: "/images/projects/nlc-orangi.jpg",
-      alt: "Excavator and crew installing reinforced concrete sewerage pipes into a prepared trench",
-      caption: "Representative imagery · Trenching and municipal drainage pipeline installation.",
-    },
-    clientNote: "Title and scope based on client project register. NLC is a project reference label.",
+      "Sewerage line work, as supplied in the SAS Construction project register.",
+    scopes: ["Sewerage Line Work"],
+    clientNote: "Title and scope based on client project register. NLC is a project reference label; exact site and contractual role are unconfirmed.",
   },
   {
     id: "fwo-m9",
     numeral: "02",
     title: "FWO Motorway M9",
+    image: {
+      src: "/images/projects/m9-jamshoro-location.webp",
+      alt: "Road junction viewed from the M9 Jamshoro toll-plaza flyover, photographed in 2016",
+      caption: "M9 corridor at Jamshoro, 2016. SAS work location within the corridor is unconfirmed.",
+      classification: "B",
+      sourceUrl: "https://commons.wikimedia.org/wiki/File:National_highway_(M-9)_Jamsshoro_Toll_Plaza_Overfly.jpg",
+      author: "Jogi don",
+      license: "CC BY-SA 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+      changes: "Resized and converted to WebP; no crop."
+    },
     scopeSupplied: "Road Construction Backfilling",
     category: "Road Development / Earthwork",
     categoryKey: "roads-paving",
@@ -69,18 +77,9 @@ export const projectsData: ProjectRecord[] = [
     locationConfirmed: true,
     featured: true,
     description:
-      "Large-scale earthwork, fill placement and compaction operations along the M9 Motorway road development corridor.",
-    scopes: [
-      "Highway Embankment Backfilling",
-      "Heavy Earthmoving & Spreading",
-      "Sub-Base Compaction",
-    ],
-    image: {
-      src: "/images/projects/fwo-m9.jpg",
-      alt: "Heavy bulldozers and rollers backfilling and leveling earth along a motorway corridor",
-      caption: "Representative imagery · Large-scale motorway backfilling and ground stabilization.",
-    },
-    clientNote: "Title and scope based on client project register. FWO is a project reference label.",
+      "Road construction-related backfilling along the M9 Motorway corridor, as supplied in the project register.",
+    scopes: ["Road Construction Backfilling"],
+    clientNote: "Title and scope based on client project register. FWO is a project reference label; work package and contractual role are unconfirmed.",
   },
   {
     id: "asf-city",
@@ -89,21 +88,12 @@ export const projectsData: ProjectRecord[] = [
     scopeSupplied: "Hill Cutting and Filling",
     category: "Earthwork / Site Preparation",
     categoryKey: "earthwork-preparation",
-    location: "Karachi Corridor (Location pending confirmation)",
+    location: "Location pending confirmation",
     locationConfirmed: false,
     featured: true,
     description:
-      "Mass excavation, hill and terrain cutting, and engineered fill placement to prepare raw topography for site development.",
-    scopes: [
-      "Hill & Ridge Cutting",
-      "Mass Terrain Excavation",
-      "Engineered Fill & Terrace Leveling",
-    ],
-    image: {
-      src: "/images/projects/asf-city.jpg",
-      alt: "Hydraulic excavator cutting into rugged terrain and terracing a hillside slope",
-      caption: "Representative imagery · Hill excavation, terrain cutting and bulk material movement.",
-    },
+      "Hill cutting and filling, as supplied in the project register. Exact site boundaries remain to be confirmed.",
+    scopes: ["Hill Cutting","Filling"],
     clientNote: "Exact project boundary and sector to be confirmed with client.",
   },
   {
@@ -117,41 +107,23 @@ export const projectsData: ProjectRecord[] = [
     locationConfirmed: false,
     featured: false,
     description:
-      "Sub-base material placement, road formation filling and heavy vibratory roller compaction for internal access roads.",
-    scopes: [
-      "Road Base Filling",
-      "Vibratory Roller Compaction",
-      "Subgrade Stabilization",
-    ],
-    image: {
-      src: "/images/projects/sassi-garden.jpg",
-      alt: "Heavy tandem steel roller compacting road base course on a residential scheme road",
-      caption: "Representative imagery · Road filling and compaction execution.",
-    },
+      "Road filling and compaction, as supplied in the project register.",
+    scopes: ["Road Filling","Compaction"],
     clientNote: "Location and society name to be verified with client.",
   },
   {
     id: "faizan-city",
     numeral: "05",
     title: "Faizan City",
-    scopeSupplied: "Road Paver Installation",
+    scopeSupplied: "Road Paver Work",
     category: "Road Paving",
     categoryKey: "roads-paving",
     location: "Location pending confirmation",
     locationConfirmed: false,
     featured: false,
     description:
-      "Base preparation, sand screeding and manual placement of heavy-duty interlocking paving blocks for internal streets.",
-    scopes: [
-      "Interlocking Paver Laying",
-      "Sand Bedding & Edge Restraints",
-      "Surface Leveling & Compaction",
-    ],
-    image: {
-      src: "/images/projects/faizan-city.jpg",
-      alt: "Construction crew laying interlocking concrete pavers on a new road roadway",
-      caption: "Representative imagery · Interlocking paver installation and surface finishing.",
-    },
+      "Road paver work, as supplied in the project register. Paver type remains to be confirmed.",
+    scopes: ["Road Paver Work"],
     clientNote: "Paver specifications and society location to be confirmed with client.",
   },
   {
@@ -165,41 +137,23 @@ export const projectsData: ProjectRecord[] = [
     locationConfirmed: false,
     featured: false,
     description:
-      "Perimeter masonry boundary wall construction combined with internal road cutting and site leveling operations.",
-    scopes: [
-      "Masonry Boundary Wall Construction",
-      "Internal Road Cutting & Grading",
-      "Perimeter Earthwork Leveling",
-    ],
-    image: {
-      src: "/images/projects/gandhara-society.jpg",
-      alt: "Concrete masonry boundary wall along site perimeter with earthmoving grading nearby",
-      caption: "Representative imagery · Boundary wall construction and integrated road cutting.",
-    },
+      "Road cutting, filling and boundary wall work, as supplied in the project register.",
+    scopes: ["Road Cutting","Filling","Boundary Wall"],
     clientNote: "Exact society spelling and site boundary to be confirmed with client.",
   },
   {
     id: "gazian-society",
     numeral: "07",
     title: "Gazian Society",
-    scopeSupplied: "Road Paver Installation",
+    scopeSupplied: "Road Paver Work",
     category: "Road Paving",
     categoryKey: "roads-paving",
     location: "Location pending confirmation",
     locationConfirmed: false,
     featured: false,
     description:
-      "Surface leveling, curb-stone laying and interlocking paver block installation across residential society road routes.",
-    scopes: [
-      "Paver Block Surfacing",
-      "Curb Stone Installation",
-      "Subgrade Compaction",
-    ],
-    image: {
-      src: "/images/projects/gazian-society.webp",
-      alt: "Interlocking paver road construction and curb stones along a residential scheme route",
-      caption: "Representative imagery · Paver block surfacing and road alignment.",
-    },
+      "Road paver work, as supplied in the project register. Society spelling and paver type remain to be confirmed.",
+    scopes: ["Road Paver Work"],
     clientNote: "Society spelling to be confirmed with client.",
   },
   {
@@ -213,41 +167,23 @@ export const projectsData: ProjectRecord[] = [
     locationConfirmed: true,
     featured: false,
     description:
-      "Integrated site infrastructure execution including utility trenching, water supply line laying, sewerage and road preparation.",
-    scopes: [
-      "Water Supply Pipeline Installation",
-      "Sewerage Network Trenching",
-      "Roadway Preparation & Backfilling",
-    ],
-    image: {
-      src: "/images/projects/gulshan-maymar.webp",
-      alt: "Underground utility trenching and dual pipeline installation on an infrastructure site",
-      caption: "Representative imagery · Integrated water, sewerage and road infrastructure.",
-    },
-    clientNote: "Specific sector details to be confirmed with client.",
+      "Road, sewerage and water line work, as supplied in the project register.",
+    scopes: ["Road Work","Sewerage Work","Water Line Work"],
+    clientNote: "Sector and components directly performed by SAS remain to be confirmed.",
   },
   {
     id: "japan-city",
     numeral: "09",
     title: "Japan City, Tando Allahyar",
-    scopeSupplied: "Backfilling, Road and Park Development",
+    scopeSupplied: "Backfilling, Road and Park-related Work",
     category: "Site Development",
     categoryKey: "site-development",
     location: "Tando Allahyar, Sindh",
     locationConfirmed: true,
     featured: false,
     description:
-      "Bulk earth backfilling, site leveling, internal road formation and ground development for community park areas.",
-    scopes: [
-      "Bulk Material Backfilling",
-      "Internal Road Formation",
-      "Park Area Land Preparation",
-    ],
-    image: {
-      src: "/images/projects/japan-city.jpg",
-      alt: "Bulldozer and heavy trucks backfilling and spreading earth for master-planned site development",
-      caption: "Representative imagery · Land backfilling and development preparation in Sindh.",
-    },
-    clientNote: "Confirmed city: Tando Allahyar, Sindh. Project name to be reconciled with owner.",
+      "Backfilling, road and park-related work in Tando Allahyar, as supplied in the project register.",
+    scopes: ["Backfilling","Road Work","Park-related Work"],
+    clientNote: "Client-supplied city: Tando Allahyar, Sindh. Project name to be reconciled with owner.",
   },
 ];

@@ -6,7 +6,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { navigation } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
-import { PreviewAction } from "@/components/ui/PreviewAction";
+import { NavigationAction } from "@/components/ui/NavigationAction";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -72,20 +72,22 @@ export function Header() {
             Home
           </Link>
           {navigation.map((item) => (
-            <PreviewAction
+            <NavigationAction
               key={item}
               destination={item}
+              onNavigate={() => setOpen(false)}
               className="relative flex min-h-11 w-full items-center py-3 text-left text-sm font-medium text-muted transition-colors hover:text-primary min-[960px]:w-auto min-[960px]:shrink-0"
             >
               {item}
-            </PreviewAction>
+            </NavigationAction>
           ))}
-          <PreviewAction
+          <NavigationAction
             destination="Contact"
+            onNavigate={() => setOpen(false)}
             className="mt-3 inline-flex min-h-13 items-center justify-center gap-6 whitespace-nowrap rounded-[2px] border border-primary/25 bg-background px-6 py-3.5 text-sm font-medium text-primary transition-colors duration-200 hover:border-primary hover:bg-primary hover:text-white min-[960px]:mt-0 min-[960px]:ml-3 [&>svg]:size-[18px] [&>svg]:shrink-0 [&>svg]:transition-transform [&>svg]:duration-200 hover:[&>svg]:translate-x-0.5"
           >
             Request a Quote <ArrowUpRight aria-hidden="true" />
-          </PreviewAction>
+          </NavigationAction>
         </nav>
       </Container>
     </header>

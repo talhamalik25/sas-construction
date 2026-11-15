@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
 import "@fontsource-variable/inter";
 import "@fontsource-variable/manrope";
 import "./globals.css";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </a>
         <Header />
         <main id="main-content" tabIndex={-1}>{children}</main>
+        <Footer />
       </body>
     </html>
   );

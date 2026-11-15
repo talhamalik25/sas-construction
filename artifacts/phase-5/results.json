@@ -1,0 +1,46 @@
+{
+  "baseURL": "http://localhost:3205",
+  "results": [
+    {
+      "width": 1440,
+      "navigation": "passed",
+      "validation": "passed",
+      "deliveryDisabled": true,
+      "networkSubmissions": 0,
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 768,
+      "navigation": "passed",
+      "validation": "passed",
+      "deliveryDisabled": true,
+      "networkSubmissions": 0,
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 390,
+      "navigation": "passed",
+      "validation": "passed",
+      "deliveryDisabled": true,
+      "networkSubmissions": 0,
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    },
+    {
+      "width": 320,
+      "navigation": "passed",
+      "validation": "passed",
+      "deliveryDisabled": true,
+      "networkSubmissions": 0,
+      "axeViolations": 0,
+      "overflow": false,
+      "reducedMotion": "passed"
+    }
+  ],
+  "errors": []
+}

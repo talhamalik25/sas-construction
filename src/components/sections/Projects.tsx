@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { ProjectMedia } from "@/components/sections/ProjectMedia";
 import { ArrowUpRight, ChevronDown, MapPin, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/ui/Container";
@@ -83,7 +83,7 @@ export function Projects() {
               className="mt-5 max-w-[660px] text-sm leading-[1.85] text-muted md:text-base"
               data-scroll-reveal
             >
-              Explore a selection of road development, earthwork, infrastructure and site preparation projects undertaken throughout SAS Construction&apos;s working history.
+              A selection of construction assignments and work scopes shared by SAS Construction.
             </p>
           </div>
 
@@ -139,30 +139,8 @@ export function Projects() {
                 >
                   <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                     {/* Media Column */}
-                    <div className="lg:col-span-7 relative aspect-[16/10] bg-secondary overflow-hidden group">
-                      <Image
-                        src={project.image.src}
-                        alt={project.image.alt}
-                        fill
-                        sizes="(min-width: 1024px) 60vw, 100vw"
-                        className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                      />
-                      <div
-                        className="pointer-events-none absolute inset-0 bg-linear-to-t from-primary/85 via-primary/10 to-transparent"
-                        aria-hidden="true"
-                      />
-                      <div
-                        className="pointer-events-none absolute top-4 right-4 z-10 h-5 w-5 border-t border-r border-accent"
-                        aria-hidden="true"
-                      />
-                      <div className="absolute bottom-4 left-5 z-10 flex items-center gap-2">
-                        <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-white bg-primary/90 px-3 py-1 rounded-[2px]">
-                          Project {project.numeral}
-                        </span>
-                        <span className="text-[10px] font-medium text-white/90 bg-black/40 backdrop-blur-xs px-2.5 py-1 rounded-[2px]">
-                          Featured Project
-                        </span>
-                      </div>
+                    <div className="lg:col-span-7 relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden group">
+                      <ProjectMedia project={project} sizes="(min-width: 1024px) 60vw, 100vw" />
                     </div>
 
                     {/* Content Column */}
@@ -195,7 +173,7 @@ export function Projects() {
                         {/* Scope Bullets */}
                         <div className="mt-6 pt-5 border-t border-primary/10">
                           <span className="text-[10px] font-semibold uppercase tracking-[0.12em] text-muted block mb-3">
-                            Key Execution Scopes
+                            Client-supplied Scopes
                           </span>
                           <ul className="space-y-2 text-xs font-medium text-foreground">
                             {project.scopes.map((scope) => (
@@ -211,7 +189,7 @@ export function Projects() {
                       {/* Card Footer / Action */}
                       <div className="mt-8 pt-6 border-t border-primary/10 flex items-center justify-between">
                         <span className="text-[10px] text-muted leading-tight">
-                          Representative imagery &middot; Registered site scope
+                          Client-supplied scope
                         </span>
                         <button
                           type="button"
@@ -236,27 +214,8 @@ export function Projects() {
                       data-scroll-reveal
                     >
                       {/* Media */}
-                      <div className="relative aspect-[16/10] bg-secondary overflow-hidden group">
-                        <Image
-                          src={project.image.src}
-                          alt={project.image.alt}
-                          fill
-                          sizes="(min-width: 1024px) 45vw, 100vw"
-                          className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.02]"
-                        />
-                        <div
-                          className="pointer-events-none absolute inset-0 bg-linear-to-t from-primary/85 via-primary/10 to-transparent"
-                          aria-hidden="true"
-                        />
-                        <div
-                          className="pointer-events-none absolute top-4 right-4 z-10 h-4 w-4 border-t border-r border-accent"
-                          aria-hidden="true"
-                        />
-                        <div className="absolute bottom-3 left-4 z-10 flex items-center gap-2">
-                          <span className="font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-white bg-primary/90 px-2.5 py-1 rounded-[2px]">
-                            Project {project.numeral}
-                          </span>
-                        </div>
+                      <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] bg-secondary overflow-hidden group">
+                        <ProjectMedia project={project} sizes="(min-width: 1024px) 45vw, 100vw" />
                       </div>
 
                       {/* Content */}
@@ -301,7 +260,7 @@ export function Projects() {
                         {/* Card Footer */}
                         <div className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between">
                           <span className="text-[10px] text-muted">
-                            Representative imagery
+                            {project.image ? "Location reference" : "Client-supplied scope"}
                           </span>
                           <button
                             type="button"
@@ -325,10 +284,10 @@ export function Projects() {
               <div className="mb-8 flex items-center justify-between" data-scroll-reveal>
                 <div>
                   <h3 className="font-heading text-xl md:text-2xl font-semibold text-primary tracking-tight">
-                    Project Register &amp; Execution Scopes
+                    Project Register &amp; Work Scopes
                   </h3>
                   <p className="mt-1 text-xs md:text-sm text-muted">
-                    Detailed site preparation, paving and infrastructure assignments across our operating history.
+                    Client-supplied site preparation, paving and infrastructure work scopes.
                   </p>
                 </div>
                 <span className="hidden sm:inline-block font-mono text-xs text-muted">
@@ -397,15 +356,8 @@ export function Projects() {
                           id={`project-row-panel-${project.id}`}
                           className="px-4 pb-8 pt-2 grid grid-cols-1 md:grid-cols-12 gap-6 items-center border-t border-primary/10 bg-secondary/15"
                         >
-                          <div className="md:col-span-4 relative aspect-[16/10] overflow-hidden rounded-[2px] border border-primary/15 bg-secondary">
-                            <Image
-                              src={project.image.src}
-                              alt={project.image.alt}
-                              fill
-                              sizes="(min-width: 768px) 30vw, 100vw"
-                              className="object-cover object-center"
-                            />
-                            <div className="pointer-events-none absolute top-2 right-2 z-10 h-3 w-3 border-t border-r border-accent" aria-hidden="true" />
+                          <div className="md:col-span-4 relative w-full min-w-0 min-h-60 aspect-[16/10] overflow-hidden rounded-[2px] border border-primary/15 bg-secondary">
+                            <ProjectMedia project={project} sizes="(min-width: 768px) 30vw, 100vw" />
                           </div>
 
                           <div className="md:col-span-8 space-y-3">
@@ -455,11 +407,11 @@ export function Projects() {
             <div className="flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" aria-hidden="true" />
               <span>
-                Project records reflect client-provided project scopes. Imagery is representative of actual machinery and construction techniques on site.
+                Project scopes are supplied by SAS Construction. Location references do not document SAS execution. Other records await verified, permitted site photography.
               </span>
             </div>
             <span className="font-mono text-primary font-medium shrink-0">
-              {projectsData.length} Documented Sites
+              {projectsData.length} Client-supplied Records
             </span>
           </div>
         </ScrollReveal>
@@ -496,15 +448,8 @@ export function Projects() {
 
             <div className="py-6 space-y-6">
               {/* Modal Image */}
-              <div className="relative aspect-[16/10] overflow-hidden rounded-[2px] bg-secondary border border-primary/15">
-                <Image
-                  src={selectedProject.image.src}
-                  alt={selectedProject.image.alt}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 700px"
-                  className="object-cover object-center"
-                />
-                <div className="pointer-events-none absolute top-3 right-3 z-10 h-4 w-4 border-t border-r border-accent" aria-hidden="true" />
+              <div className="relative w-full min-w-0 min-h-60 aspect-[16/10] overflow-hidden rounded-[2px] bg-secondary border border-primary/15">
+                <ProjectMedia project={selectedProject} sizes="(max-width: 768px) 100vw, 700px" />
               </div>
 
               {/* Scope & Description */}
@@ -525,7 +470,7 @@ export function Projects() {
 
                 <div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-primary block mb-2">
-                    Documented Scopes &amp; Operations:
+                    Client-supplied Scopes:
                   </span>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-foreground">
                     {selectedProject.scopes.map((s) => (
@@ -539,7 +484,7 @@ export function Projects() {
 
                 <div className="p-3 bg-secondary/30 rounded-[2px] border border-primary/10 text-xs text-muted">
                   <p>
-                    <strong>Provenance Note:</strong> {selectedProject.clientNote ?? "Details derived directly from contractor register."} {selectedProject.image.caption}
+                    <strong>Provenance Note:</strong> {selectedProject.clientNote ?? "Details derived directly from contractor register."} {selectedProject.image?.caption ?? "Site photography pending verification and permission."}
                   </p>
                 </div>
               </div>

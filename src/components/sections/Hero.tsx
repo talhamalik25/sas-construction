@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
-import { PreviewAction } from "@/components/ui/PreviewAction";
+import { NavigationAction } from "@/components/ui/NavigationAction";
 import { HeroMotion } from "@/components/ui/HeroMotion";
 import { heroImage } from "@/lib/constants";
 
@@ -42,18 +42,18 @@ export function Hero() {
                 Over 20 years of experience in road construction, earthworks, infrastructure development and site preparation.
               </p>
               <div className="flex flex-wrap items-center gap-x-7 gap-y-4 min-[960px]:shrink-0">
-                <PreviewAction
+                <NavigationAction
                   destination="Projects"
                   className="inline-flex min-h-13 items-center justify-center gap-6 rounded-[2px] border border-primary bg-primary px-6 py-3.5 text-sm font-medium text-white transition-colors duration-200 hover:bg-[#193b32] [&>svg]:size-[18px] [&>svg]:shrink-0 [&>svg]:transition-transform [&>svg]:duration-200 hover:[&>svg]:translate-x-0.5"
                 >
                   Explore Our Projects <ArrowUpRight aria-hidden="true" />
-                </PreviewAction>
-                <PreviewAction
+                </NavigationAction>
+                <NavigationAction
                   destination="Contact"
                   className="inline-flex min-h-13 items-center justify-center gap-6 px-1 text-sm font-medium text-primary underline decoration-accent decoration-2 underline-offset-8 transition-colors duration-200 hover:decoration-primary [&>svg]:size-[18px] [&>svg]:shrink-0 [&>svg]:transition-transform [&>svg]:duration-200 hover:[&>svg]:translate-x-0.5"
                 >
                   Get in Touch <ArrowRight aria-hidden="true" />
-                </PreviewAction>
+                </NavigationAction>
               </div>
             </div>
           </div>

@@ -1,5 +1,12 @@
 export const navigation = ["About", "Services", "Projects", "Contact"] as const;
 
+export const sectionDestinations = {
+  About: "/#about-experience",
+  Services: "/#services",
+  Projects: "/#projects",
+  Contact: "/#contact",
+} as const;
+
 export const heroImage = {
   src: "/images/representative-earthworks-panorama.webp",
   alt: "Aerial view of construction machinery preparing a sandy site",

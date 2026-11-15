@@ -1,0 +1,152 @@
+{
+  "inspectedAt": "2026-11-15T07:32:46.043Z",
+  "url": "https://sas-construction.vercel.app/",
+  "status": 200,
+  "headers": {
+    "access-control-allow-origin": "*",
+    "age": "43113",
+    "cache-control": "public, max-age=0, must-revalidate",
+    "content-disposition": "inline",
+    "content-encoding": "br",
+    "content-type": "text/html; charset=utf-8",
+    "date": "Sun, 15 Nov 2026 07:32:43 GMT",
+    "etag": "W/\"21a6992d29cc64c25e2f67a11dd3ebf0\"",
+    "link": "</>; rel=preconnect; crossorigin=\"\"",
+    "server": "Vercel",
+    "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+    "vary": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "x-matched-path": "/",
+    "x-nextjs-prerender": "1",
+    "x-nextjs-stale-time": "300",
+    "x-vercel-cache": "HIT",
+    "x-vercel-id": "bom1::slhzj-1794727962544-4c064c2ce138"
+  },
+  "projects": "SELECTED WORK / PROJECT EXPERIENCE\nBuilt Through Experience. Proven on the Ground.\n\nExplore a selection of road development, earthwork, infrastructure and site preparation projects undertaken throughout SAS Construction's working history.\n\nAll Projects\n9\nRoads & Paving\n4\nEarthwork & Preparation\n1\nUtilities & Drainage\n2\nSite Development\n2\nPROJECT 01\nFeatured Project\nSEWERAGE INFRASTRUCTURE\nOrangi, Karachi\nNLC Orangi\n\nScope: Sewerage Line Work\n\nTrenching, deep excavation and underground pipeline installation for major municipal sewerage line work.\n\nKEY EXECUTION SCOPES\nDeep Trench Excavation\nReinforced Concrete Pipeline Installation\nUtility Bedding & Backfilling\nRepresentative imagery · Registered site scope\nView Scope Details\nPROJECT 02\nROAD DEVELOPMENT / EARTHWORK\n·\nM9 Motorway Corridor\nFWO Motorway M9\n\nScope: Road Construction Backfilling\n\nLarge-scale earthwork, fill placement and compaction operations along the M9 Motorway road development corridor.\n\nHighway Embankment Backfilling\nHeavy Earthmoving & Spreading\nSub-Base Compaction\nRepresentative imagery\nDetails\nPROJECT 03\nEARTHWORK / SITE PREPARATION\n·\nKarachi Corridor (Location pending confirmation)\nASF City\n\nScope: Hill Cutting and Filling\n\nMass excavation, hill and terrain cutting, and engineered fill placement to prepare raw topography for site development.\n\nHill & Ridge Cutting\nMass Terrain Excavation\nEngineered Fill & Terrace Leveling\nRepresentative imagery\nDetails\nProject Register & Execution Scopes\n\nDetailed site preparation, paving and infrastructure assignments across our operating history.\n\n6 Recorded Scopes\n04\nSassi Garden\n\nRoad Filling and Compaction · Road Development\n\nLocation pending confirmation\n05\nFaizan City\n\nRoad Paver Installation · Road Paving\n\nLocation pending confirmation\n06\nGandhara Society\n\nRoad Cutting, Filling and Boundary Wall · Construction / Site Development\n\nLocation pending confirmation\n07\nGazian Society\n\nRoad Paver Installation · Road Paving\n\nLocation pending confirmation\n08\nGulshan-e-Maymar\n\nRoad, Sewerage and Water Line Work · Infrastructure Development\n\nGulshan-e-Maymar, Karachi\n09\nJapan City, Tando Allahyar\n\nBackfilling, Road and Park Development · Site Development\n\nTando Allahyar, Sindh\nProject records reflect client-provided project scopes. Imagery is representative of actual machinery and construction techniques on site.\n9 Documented Sites",
+  "images": [
+    {
+      "alt": "Excavator and crew installing reinforced concrete sewerage pipes into a prepared trench",
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.jpg&w=3840&q=75"
+    },
+    {
+      "alt": "Heavy bulldozers and rollers backfilling and leveling earth along a motorway corridor",
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.jpg&w=3840&q=75"
+    },
+    {
+      "alt": "Hydraulic excavator cutting into rugged terrain and terracing a hillside slope",
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.jpg&w=3840&q=75"
+    }
+  ],
+  "navigation": [
+    {
+      "tag": "A",
+      "text": "",
+      "href": "/"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Menu",
+      "href": null
+    },
+    {
+      "tag": "A",
+      "text": "Home",
+      "href": "/"
+    },
+    {
+      "tag": "BUTTON",
+      "text": "About",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Back to homepage",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Services",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Back to homepage",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Projects",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Back to homepage",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Contact",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Back to homepage",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Request a Quote ",
+      "href": null
+    },
+    {
+      "tag": "BUTTON",
+      "text": "Back to homepage",
+      "href": null
+    }
+  ],
+  "expandedRecords": [
+    "Sub-base material placement, road formation filling and heavy vibratory roller compaction for internal access roads.\n\nRoad Base Filling\nVibratory Roller Compaction\nSubgrade Stabilization\nLocation and society name to be verified with client.\nFull Scope Details",
+    "Base preparation, sand screeding and manual placement of heavy-duty interlocking paving blocks for internal streets.\n\nInterlocking Paver Laying\nSand Bedding & Edge Restraints\nSurface Leveling & Compaction\nPaver specifications and society location to be confirmed with client.\nFull Scope Details",
+    "Perimeter masonry boundary wall construction combined with internal road cutting and site leveling operations.\n\nMasonry Boundary Wall Construction\nInternal Road Cutting & Grading\nPerimeter Earthwork Leveling\nExact society spelling and site boundary to be confirmed with client.\nFull Scope Details",
+    "Surface leveling, curb-stone laying and interlocking paver block installation across residential society road routes.\n\nPaver Block Surfacing\nCurb Stone Installation\nSubgrade Compaction\nSociety spelling to be confirmed with client.\nFull Scope Details",
+    "Integrated site infrastructure execution including utility trenching, water supply line laying, sewerage and road preparation.\n\nWater Supply Pipeline Installation\nSewerage Network Trenching\nRoadway Preparation & Backfilling\nSpecific sector details to be confirmed with client.\nFull Scope Details",
+    "Bulk earth backfilling, site leveling, internal road formation and ground development for community park areas.\n\nBulk Material Backfilling\nInternal Road Formation\nPark Area Land Preparation\nConfirmed city: Tando Allahyar, Sindh. Project name to be reconciled with owner.\nFull Scope Details"
+  ],
+  "assets": [
+    {
+      "path": "/images/projects/m9-jamshoro-location.webp",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/images/projects/m9-jamshoro-location.json",
+      "status": 404,
+      "type": "text/html; charset=utf-8"
+    },
+    {
+      "path": "/images/projects/nlc-orangi.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/about",
+      "status": 404
+    },
+    {
+      "path": "/services",
+      "status": 404
+    },
+    {
+      "path": "/projects",
+      "status": 404
+    },
+    {
+      "path": "/contact",
+      "status": 404
+    }
+  ],
+  "navigationDialog": "About coming soon\n\nOur about page is being prepared. Please check back soon.\n\nBack to homepage",
+  "githubDeploymentsStatus": 200,
+  "deployments": []
+}
