@@ -18,7 +18,7 @@ export function Hero() {
             </p>
             <span className="hidden text-xs text-muted md:block">Independent contractor · Pakistan</span>
           </div>
-          <div className="grid items-end gap-7 lg:grid-cols-[1.55fr_1fr] lg:gap-16">
+          <div className="grid items-end gap-7 lg:grid-cols-[1.2fr_1fr] lg:gap-10 xl:gap-16">
             <h1 id="hero-heading" data-hero-reveal className="font-heading text-display font-semibold text-foreground">
               Building strong<br />
               <span className="text-primary">foundations.</span>

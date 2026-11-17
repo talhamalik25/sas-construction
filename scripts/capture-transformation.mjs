@@ -32,4 +32,5 @@ for (const [width, height] of [[1920,1080],[1440,900],[1366,768],[1024,768],[768
   console.log(`${stage}: ${width}x${height}`);
   await page.close();
 }
-await writeFile(`${dir}
+await writeFile(`${dir}/results.json`, JSON.stringify(results,null,2));
+await browser.close();

@@ -1,3 +1,5 @@
+import { projectsData } from "@/data/projects";
+
 export interface Service {
   id: string;
   numeral: string;
@@ -12,6 +14,13 @@ export interface Service {
   };
 }
 
+// Reuse the SAS photographs explicitly approved by the client on 17 November 2026.
+// Project captions remain tied to their original records; no third-party service stock is needed.
+function servicePhoto(projectId: string): Service["image"] {
+  const photo = projectsData.find(project => project.id === projectId)!.image;
+  return { src: photo.src, alt: photo.alt, caption: photo.caption };
+}
+
 export const servicesData: Service[] = [
   {
     id: "road-construction",
@@ -21,11 +30,7 @@ export const servicesData: Service[] = [
     description:
       "Construction and development of internal roads, access routes and road networks for construction and development projects.",
     scopes: ["Road Formation", "Road Preparation", "Road Development"],
-    image: {
-      src: "/images/services/road-construction.jpg",
-      alt: "Road construction machinery and pavers laying a road network on a development site",
-      caption: "Road network formation, grading and sub-base execution.",
-    },
+    image: servicePhoto("fwo-m9"),
   },
   {
     id: "earthwork-backfilling",
@@ -35,11 +40,7 @@ export const servicesData: Service[] = [
     description:
       "Site preparation, earth filling and backfilling operations supporting road construction and land development.",
     scopes: ["Earth Filling", "Backfilling", "Material Placement"],
-    image: {
-      src: "/images/services/earthwork-backfilling.jpg",
-      alt: "Earthmoving equipment and bulldozers leveling soil for site preparation",
-      caption: "Engineered earth placement, backfilling and site leveling.",
-    },
+    image: servicePhoto("japan-city"),
   },
   {
     id: "excavation-cutting",
@@ -49,11 +50,7 @@ export const servicesData: Service[] = [
     description:
       "Excavation, hill cutting, land cutting and filling operations for preparing and developing construction sites.",
     scopes: ["Hill Cutting", "Excavation", "Land Preparation"],
-    image: {
-      src: "/images/services/excavation-cutting.jpg",
-      alt: "Tracked excavator cutting into an earthmoving slope on an active site",
-      caption: "Heavy cutting, mass excavation and site topography preparation.",
-    },
+    image: servicePhoto("asf-city"),
   },
   {
     id: "sewerage-water-lines",
@@ -63,11 +60,7 @@ export const servicesData: Service[] = [
     description:
       "Construction and installation work related to sewerage networks and water supply lines.",
     scopes: ["Sewerage Line Trenching", "Underground Utility Infrastructure", "Water Supply Pipeline Networks"],
-    image: {
-      src: "/images/services/sewerage-water-lines.jpg",
-      alt: "Excavation trench with pipeline infrastructure installation in progress",
-      caption: "Trenching and installation for underground utility lines.",
-    },
+    image: servicePhoto("nlc-orangi"),
   },
   {
     id: "road-paving-compaction",
@@ -77,11 +70,7 @@ export const servicesData: Service[] = [
     description:
       "Road paving, paver installation, surface preparation and ground compaction activities.",
     scopes: ["Ground Compaction", "Paver-related Work", "Surface Preparation"],
-    image: {
-      src: "/images/services/road-paving-compaction.jpg",
-      alt: "Road roller compacting a newly laid base course layer on an infrastructure project",
-      caption: "Vibratory compaction, surface finishing and paver installation.",
-    },
+    image: servicePhoto("faizan-city"),
   },
   {
     id: "boundary-walls-development",
@@ -91,10 +80,6 @@ export const servicesData: Service[] = [
     description:
       "Boundary wall construction and related development work for residential societies and other construction sites.",
     scopes: ["Boundary Wall Construction", "Site Preparation", "Site Development"],
-    image: {
-      src: "/images/services/boundary-walls-development.jpg",
-      alt: "Perimeter boundary wall construction along an expansive site boundary",
-      caption: "Boundary wall structures and site perimeter development.",
-    },
+    image: servicePhoto("gandhara-society"),
   },
 ];

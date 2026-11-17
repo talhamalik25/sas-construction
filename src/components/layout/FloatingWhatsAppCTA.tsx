@@ -31,7 +31,7 @@ export function FloatingWhatsAppCTA() {
       aria-label="Chat with SAS Construction on WhatsApp"
       title="Chat on WhatsApp"
       className="
-        floating-whatsapp [body:has(dialog[open])_&]:invisible [body:has(dialog[open])_&]:pointer-events-none
+        floating-whatsapp [body:has(dialog[open])_&]:invisible [body:has(dialog[open])_&]:pointer-events-none [body:has(#contact_form:focus-within)_&]:invisible
         group
         fixed
         bottom-[calc(20px+env(safe-area-inset-bottom,0px))]

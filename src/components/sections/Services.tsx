@@ -227,7 +227,7 @@ export function Services() {
                     data-showcase-anim
                     className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between text-[11px] text-muted"
                   >
-                    <span>Representative construction imagery</span>
+                    <span>SAS Construction project photography</span>
                     <span className="font-mono font-medium text-primary">
                       {activeService.numeral} / 06
                     </span>
@@ -323,7 +323,7 @@ export function Services() {
                       </div>
 
                       <div className="text-[10px] text-muted pt-2 border-t border-primary/10">
-                        <span>Representative construction imagery</span>
+                        <span>SAS Construction project photography</span>
                       </div>
                     </div>
                   )}

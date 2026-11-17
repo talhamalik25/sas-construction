@@ -132,8 +132,8 @@ export function Projects() {
             first?.focus();
           }
         }}
-        aria-labelledby="modal-project-title"
-        aria-describedby="modal-project-desc"
+        aria-labelledby={selectedProject ? "modal-project-title" : undefined}
+        aria-describedby={selectedProject ? "modal-project-desc" : undefined}
         className="fixed inset-0 z-50 m-auto w-[calc(100%-32px)] max-w-2xl max-h-[90vh] overflow-y-auto border border-primary/20 bg-background p-6 md:p-8 text-foreground shadow-2xl backdrop:bg-foreground/50 rounded-[2px]"
       >
         {selectedProject && (

@@ -1,0 +1,94 @@
+[
+  {
+    "viewport": "1920x1080",
+    "checks": [
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "1440x900",
+    "checks": [
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "1366x768",
+    "checks": [
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "1024x768",
+    "checks": [
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "768x1024",
+    "checks": [
+      "Menu focus wrap, Escape/return, navigation close, scroll lock, floating CTA hidden",
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "390x844",
+    "checks": [
+      "Menu focus wrap, Escape/return, navigation close, scroll lock, floating CTA hidden",
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "375x812",
+    "checks": [
+      "Menu focus wrap, Escape/return, navigation close, scroll lock, floating CTA hidden",
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  },
+  {
+    "viewport": "320x740",
+    "checks": [
+      "Menu focus wrap, Escape/return, navigation close, scroll lock, floating CTA hidden",
+      "All six services and keyboard/accordion operation",
+      "Five filter counts, nine project dialogs, focus/return, M9 selection/uncropped license",
+      "Form required/phone validation, blocked popup recovery, correct WhatsApp draft (window.open intercepted; no message sent)",
+      "No document overflow, valid ARIA references, reduced-motion scroll"
+    ],
+    "violations": [],
+    "errors": []
+  }
+]

@@ -8,13 +8,6 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { workStages } from "@/data/approach";
 
-const stageSubtitles = [
-  "Scope & Site Evaluation",
-  "Plant & Ground Mobilization",
-  "On-Site Coordinated Work",
-  "Verification & Delivery",
-] as const;
-
 export function HowWeWork() {
   const timeline = useRef<HTMLDivElement>(null);
 
@@ -123,9 +116,6 @@ export function HowWeWork() {
 
                     {/* Step Content */}
                     <div>
-                      <span className="text-[10px] font-mono uppercase tracking-[0.16em] text-muted block mb-1">
-                        {stageSubtitles[i]}
-                      </span>
                       <h3 className="font-heading text-xl md:text-2xl font-semibold tracking-tight text-primary">
                         {stage.title}
                       </h3>
