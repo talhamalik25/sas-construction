@@ -119,7 +119,7 @@ export function PremiumNavigation() {
         <button
           ref={toggle}
           type="button"
-          className="menu-toggle inline-flex min-h-11 items-center gap-2.5 rounded-[2px] border border-primary/25 bg-background/90 px-3.5 py-2 text-xs font-mono font-medium tracking-[0.16em] uppercase text-primary transition-all duration-200 hover:border-primary hover:bg-secondary cursor-pointer min-[1024px]:hidden"
+          className="menu-toggle inline-flex min-h-11 items-center gap-2.5 rounded-full border border-primary/25 bg-background/90 px-3.5 py-2 text-xs font-mono font-medium tracking-[0.16em] uppercase text-primary transition-all duration-200 hover:border-primary hover:bg-secondary cursor-pointer min-[1024px]:hidden"
           aria-expanded={open}
           aria-controls="mobile-navigation"
           aria-haspopup="dialog"
@@ -196,7 +196,7 @@ export function PremiumNavigation() {
             autoFocus
             aria-label="Close menu"
             onClick={() => close()}
-            className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
+            className="flex size-11 shrink-0 items-center justify-center rounded-full border border-primary/20 text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
           >
             <X size={18} aria-hidden="true" />
           </button>
@@ -207,7 +207,7 @@ export function PremiumNavigation() {
           <Link
             href="/"
             onClick={() => close(true)}
-            className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
+            className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-xl"
           >
             <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-medium group-hover:text-primary transition-colors" aria-hidden="true">
               01
@@ -220,7 +220,7 @@ export function PremiumNavigation() {
               key={item}
               destination={item}
               onNavigate={() => close(true)}
-              className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
+              className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-xl"
             >
               <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-medium group-hover:text-primary transition-colors" aria-hidden="true">
                 0{i + 2}

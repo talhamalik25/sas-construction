@@ -1,0 +1,47 @@
+{
+  "status": "pass",
+  "checks": [
+    "Normal-motion GSAP entrance completes",
+    "Right-aligned menu, backdrop dismissal",
+    "Desktop breakpoint closes drawer and releases scroll lock",
+    "Sticky anchor clearance and active section state",
+    "All visible images loaded",
+    "Canonical, robots and sitemap",
+    "Floating CTA hides during form input"
+  ],
+  "images": [
+    {
+      "src": "/_next/image?url=%2Flogo.png&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Frepresentative-earthworks-panorama.webp&w=3840&q=90",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Frepresentative-earthworks.webp&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Fnlc-orangi.webp&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Ffwo-m9.webp&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Fimages%2Fprojects%2Fasf-city.webp&w=3840&q=75",
+      "loaded": true
+    },
+    {
+      "src": "/_next/image?url=%2Flogo.png&w=3840&q=75",
+      "loaded": true
+    }
+  ],
+  "errors": []
+}

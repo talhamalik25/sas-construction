@@ -100,7 +100,7 @@ export function Services() {
                     onClick={() => setActiveId(service.id)}
                     
                     onKeyDown={(e) => handleKeyDown(e, index)}
-                    className={`group relative flex items-center justify-between text-left py-7 px-4 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-primary cursor-pointer border-l-2 ${
+                    className={`group relative flex rounded-xl items-center justify-between text-left py-7 px-4 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-primary cursor-pointer border-l-2 ${
                       isActive
                         ? "bg-background border-primary"
                         : "border-transparent hover:bg-background/60"
@@ -249,7 +249,7 @@ export function Services() {
                     aria-expanded={isOpen}
                     aria-controls={isOpen ? `accordion-panel-${service.id}` : undefined}
                     onClick={() => toggleMobileAccordion(service.id)}
-                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 rounded-[2px] group cursor-pointer"
+                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 rounded-xl group cursor-pointer"
                   >
                     <div className="flex items-center gap-4 min-w-0 pr-3">
                       <span
@@ -268,7 +268,7 @@ export function Services() {
                       </span>
                     </div>
                     <span
-                      className={`size-8 rounded-[2px] flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
+                      className={`size-8 rounded-full flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
                         isOpen ? "bg-primary text-white rotate-180" : "bg-background text-muted"
                       }`}
                       aria-hidden="true"

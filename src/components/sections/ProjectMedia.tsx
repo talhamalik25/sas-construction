@@ -116,7 +116,7 @@ export function ProjectMedia({
                 type="button"
                 onClick={handlePrev}
                 aria-label={`Previous image (${currentIndex === 0 ? images.length : currentIndex} of ${images.length})`}
-                className="pointer-events-auto flex size-11 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                className="pointer-events-auto flex size-11 items-center justify-center rounded-full bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
               >
                 <ChevronLeft size={18} aria-hidden="true" />
               </button>
@@ -124,7 +124,7 @@ export function ProjectMedia({
                 type="button"
                 onClick={handleNext}
                 aria-label={`Next image (${currentIndex === images.length - 1 ? 1 : currentIndex + 2} of ${images.length})`}
-                className="pointer-events-auto flex size-11 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                className="pointer-events-auto flex size-11 items-center justify-center rounded-full bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
               >
                 <ChevronRight size={18} aria-hidden="true" />
               </button>
@@ -169,7 +169,7 @@ export function ProjectMedia({
                       setCurrentIndex(idx);
                     }}
                     aria-label={`View photo ${idx + 1}`}
-                    className="flex min-h-11 min-w-11 items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                    className="flex min-h-11 min-w-11 rounded-full items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
                   >
                     <span
                       className={`h-1.5 rounded-full transition-all ${
@@ -229,7 +229,7 @@ export function ProjectMedia({
                       setCurrentIndex(idx);
                     }}
                     aria-label={`View photo ${idx + 1}`}
-                    className="flex min-h-11 min-w-11 items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                    className="flex min-h-11 min-w-11 rounded-full items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
                   >
                     <span
                       className={`h-1.5 rounded-full transition-all ${

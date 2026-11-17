@@ -53,9 +53,9 @@ export function Projects() {
             <SectionHeading eyebrow="03 / Selected experience" title="The work on the ground." id="projects-heading" />
             <p data-scroll-reveal className="max-w-md text-sm leading-7 text-muted">Roads, earthworks and infrastructure. Explore nine project scopes shared by SAS Construction, with client-approved site photography.</p>
           </div>
-          <div data-scroll-reveal role="group" aria-label="Filter projects by category" className="mt-9 flex flex-wrap gap-x-5 gap-y-1 border-y border-primary/20 py-3 md:mt-12">
+          <div data-scroll-reveal role="group" aria-label="Filter projects by category" className="mt-9 flex flex-wrap gap-2 border-y border-primary/20 py-3 md:mt-12">
             {projectCategories.map((cat) => (
-              <button key={cat.key} type="button" aria-pressed={activeCategory === cat.key} onClick={() => { setActiveCategory(cat.key); setExpandedRowId(null); }} className="min-h-11 border-b-2 border-transparent px-1 text-xs font-medium text-muted transition-colors hover:text-primary aria-pressed:border-primary aria-pressed:text-primary">
+              <button key={cat.key} type="button" aria-pressed={activeCategory === cat.key} onClick={() => { setActiveCategory(cat.key); setExpandedRowId(null); }} className="min-h-11 rounded-full border border-primary/20 px-4 text-xs font-medium text-muted transition-colors hover:border-primary hover:text-primary aria-pressed:border-primary aria-pressed:bg-primary aria-pressed:text-background">
                 {cat.label}<span className="ml-2 font-mono text-[10px]">{cat.key === "all" ? projectsData.length : projectsData.filter(p => p.categoryKey === cat.key).length}</span>
               </button>
             ))}
@@ -72,7 +72,7 @@ export function Projects() {
                       <h3 className={i === 0 ? "font-heading text-section font-semibold text-primary" : "font-heading text-title font-semibold text-primary"}>{project.title}</h3>
                       <p className="mt-3 text-base leading-7 text-foreground">{project.scopeSupplied}</p>
                       <p className="mt-3 flex items-start gap-2 text-xs leading-6 text-muted"><MapPin size={14} className="mt-1 shrink-0" aria-hidden="true" />{project.location}{!project.locationConfirmed && !project.location.includes("pending") ? " · to be confirmed" : ""}</p>
-                      <CTA type="button" variant="link" onClick={() => setSelectedProject(project)} className="mt-5 px-0">View Project Details</CTA>
+                      <CTA type="button" variant="link" onClick={() => setSelectedProject(project)} className="mt-5">View Project Details</CTA>
                     </div>
                   </div>
                 </article>
@@ -87,7 +87,7 @@ export function Projects() {
                   const isExpanded = expandedRowId === project.id;
                   return (
                     <div key={project.id} className="border-b border-primary/20">
-                      <button type="button" aria-expanded={isExpanded} aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined} onClick={() => toggleRow(project.id)} className="group grid w-full grid-cols-[24px_1fr_32px] items-center gap-4 py-6 text-left transition-colors hover:bg-secondary/40 sm:grid-cols-[36px_1fr_1fr_32px] sm:gap-6">
+                      <button type="button" aria-expanded={isExpanded} aria-controls={isExpanded ? `project-row-panel-${project.id}` : undefined} onClick={() => toggleRow(project.id)} className="group grid w-full rounded-xl grid-cols-[24px_1fr_32px] items-center gap-4 py-6 text-left transition-colors hover:bg-secondary/40 sm:grid-cols-[36px_1fr_1fr_32px] sm:gap-6">
                         <span className="font-mono text-xs text-muted">{project.numeral}</span>
                         <span className="font-heading text-lg font-semibold tracking-tight text-primary sm:text-xl">{project.title}<span className="mt-2 block font-sans text-xs font-normal leading-5 tracking-normal text-muted sm:hidden">{project.scopeSupplied}</span></span>
                         <span className="hidden text-sm leading-6 text-muted sm:block">{project.scopeSupplied}</span>
@@ -99,7 +99,7 @@ export function Projects() {
                           <div>
                             <p className="text-sm leading-7 text-muted">{project.description}</p>
                             <p className="mt-3 text-xs leading-6 text-muted">{project.location}{!project.locationConfirmed && !project.location.includes("pending") ? " · to be confirmed" : ""}</p>
-                            <CTA type="button" variant="link" onClick={() => setSelectedProject(project)} className="mt-4 px-0">View Project Details</CTA>
+                            <CTA type="button" variant="link" onClick={() => setSelectedProject(project)} className="mt-4">View Project Details</CTA>
                           </div>
                         </div>
                       )}
@@ -154,7 +154,7 @@ export function Projects() {
                 type="button"
                 onClick={() => setSelectedProject(null)}
                 aria-label="Close project details"
-                className="flex size-11 shrink-0 items-center justify-center rounded-[2px] border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
+                className="flex size-11 shrink-0 items-center justify-center rounded-full border border-primary/20 text-muted hover:text-primary hover:border-primary transition-colors cursor-pointer"
               >
                 <X size={18} aria-hidden="true" />
               </button>
@@ -213,7 +213,7 @@ export function Projects() {
               <button
                 type="button"
                 onClick={() => setSelectedProject(null)}
-                className="inline-flex min-h-11 items-center px-4 py-2 border border-primary/20 rounded-[2px] text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
+                className="inline-flex min-h-11 items-center px-4 py-2 border border-primary/20 rounded-full text-xs font-semibold text-primary hover:bg-primary hover:text-white transition-colors cursor-pointer"
               >
                 Close Details
               </button>

@@ -44,7 +44,7 @@ export function CTA({
     primary: "border-accent bg-accent text-primary hover:border-primary hover:bg-primary hover:text-background focus-visible:outline-primary",
     secondary: "border-primary/30 bg-transparent text-primary hover:border-primary hover:bg-secondary focus-visible:outline-primary",
     dark: "border-accent bg-accent text-primary hover:border-background hover:bg-background focus-visible:outline-accent",
-    link: "border-transparent bg-transparent text-primary underline decoration-primary/30 underline-offset-8 hover:decoration-primary focus-visible:outline-primary",
+    link: "border-primary/20 bg-transparent text-primary hover:border-primary hover:bg-secondary focus-visible:outline-primary",
   }[variant];
   const content = (
     <>
@@ -52,8 +52,8 @@ export function CTA({
       <ArrowUpRight aria-hidden="true" size={18} className="cta-direction shrink-0 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 motion-reduce:transform-none" />
     </>
   );
-  const spacing = variant === "link" ? "gap-3 px-0" : "gap-6 px-5";
-  const baseClasses = `cta cta-${variant} group inline-flex min-h-13 max-w-full items-center justify-between rounded-[2px] border py-3 text-[13px] font-semibold leading-5 transition-colors duration-200 active:opacity-80 disabled:cursor-not-allowed disabled:border-muted/30 disabled:bg-secondary disabled:text-muted ${spacing} ${variantStyles} ${className}`;
+  const spacing = variant === "link" ? "gap-4 px-5" : "gap-6 px-6";
+  const baseClasses = `cta cta-${variant} group inline-flex min-h-13 max-w-full items-center justify-between rounded-full border py-3 text-[13px] font-semibold leading-5 transition-[background-color,border-color,color,box-shadow] duration-200 hover:shadow-sm active:opacity-80 disabled:cursor-not-allowed disabled:border-muted/30 disabled:bg-secondary disabled:text-muted ${spacing} ${variantStyles} ${className}`;
 
   // Navigation CTA
   if ("destination" in props && props.destination) {

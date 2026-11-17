@@ -21,7 +21,7 @@ export function AboutExperience() {
                 SAS Construction is an independent contractor with over two decades in the field. We coordinate the machinery, workforce and everyday decisions behind roadwork, earthworks and site development.
               </p>
               <div data-scroll-reveal className="mt-9 flex items-center gap-6 border-y border-primary/20 py-6">
-                <span className="font-heading text-[clamp(4rem,8vw,6rem)] font-medium leading-none tracking-[-0.06em] text-primary">20<span className="text-[0.65em]">+</span></span>
+                <span className="font-heading text-[clamp(8rem,12vw,8rem)] font-medium leading-none tracking-[-0.06em] text-primary">20<span className="text-[0.65em]">+</span></span>
                 <p className="max-w-40 text-sm leading-6 text-muted">Years of practical<br /><span className="font-medium text-primary">construction experience</span></p>
               </div>
               <dl className="mt-7 divide-y divide-primary/10">
@@ -40,7 +40,7 @@ export function AboutExperience() {
               </div>
               <figcaption className="mt-3 text-[11px] leading-5 text-muted">
                 <p>Representative imagery · Not a SAS project site</p>
-                <a href="https://unsplash.com/photos/a-yellow-excavator-digging-in-dirt-at-a-construction-site-jPsmNCgLghU" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-8 items-center underline underline-offset-4 hover:text-primary">Photography: Defrino Maasy / Unsplash</a>
+                <a href="https://unsplash.com/photos/a-yellow-excavator-digging-in-dirt-at-a-construction-site-jPsmNCgLghU" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-8 items-center underline underline-offset-4 hover:text-primary"></a>
               </figcaption>
             </figure>
           </div>

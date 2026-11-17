@@ -37,3 +37,7 @@ Read-only Chrome request to https://sas-construction.vercel.app/ returned ERR_NE
 Images reserve geometry while loading. Missing photos use branded scope panels. Filters announce result counts. Dialog/menu open, Escape, focus return, focus wrap and scroll locking must work. Form invalid input focuses the first error; valid input opens a reviewable WhatsApp draft; blocked popups retain data and explain recovery. No sent/success claim. No authentication or permission workflow. Reduced motion removes movement; content remains visible without animation.
 
 Validation: all eight sizes, before/after screenshots, full-page and dialog/menu axe, navigation, six services, five filters, nine dialogs, photo selection, form errors/draft/blocked popup, TypeScript, lint and production build. Chromium automation is not physical-device or manual screen-reader certification.
+
+## Latest refinement
+
+The user requested rounded buttons during implementation, superseding the initial geometric-corner direction. All CTA variants now use a pill silhouette; menu/photo/dialog icon controls are circular; service and project index controls use rounded corners. Project filters use rounded pressed-state pills. Brand colours and cohesive single-surface arrows remain.
