@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowUpRight, ChevronDown } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Container } from "@/components/ui/Container";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 import { servicesData } from "@/data/services";
@@ -65,33 +66,14 @@ export function Services() {
   return (
     <section
       id="services"
-      className="bg-surface py-20 md:py-28 lg:py-32 border-t border-primary/15"
+      className="bg-secondary/45 py-20 md:py-28 border-t border-primary/15"
       aria-labelledby="services-heading"
     >
       <Container>
         <ScrollReveal>
-          {/* Section Header */}
-          <div className="max-w-[800px]">
-            <div
-              className="mb-6 flex items-center gap-3 text-[10px] font-semibold tracking-[0.14em] text-primary uppercase md:text-[11px]"
-              data-scroll-reveal
-            >
-              <span className="h-px w-8 shrink-0 bg-accent" aria-hidden="true" />
-              <span>What We Do &middot; Contractor Expertise</span>
-            </div>
-            <h2
-              id="services-heading"
-              className="font-heading text-[clamp(2.1rem,4.4vw,3.6rem)] leading-[1.12] font-semibold tracking-[-0.045em] text-foreground"
-              data-scroll-reveal
-            >
-              Expertise Built on Experience.
-            </h2>
-            <p
-              className="mt-5 max-w-[660px] text-sm leading-[1.85] text-muted md:text-base"
-              data-scroll-reveal
-            >
-              From ground preparation and deep earthmoving to road development and essential infrastructure, SAS Construction delivers dependable, hands-on construction execution.
-            </p>
+          <div className="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-end md:gap-16">
+            <SectionHeading eyebrow="02 / What we do" title="From site preparation to the road ahead." id="services-heading" />
+            <p data-scroll-reveal className="max-w-md text-sm leading-7 text-muted">Six areas of construction expertise, coordinated directly around your site and scope of work.</p>
           </div>
 
           {/* DESKTOP LAYOUT (>= 1024px): Interactive Editorial Index + Dynamic Showcase */}
@@ -116,12 +98,12 @@ export function Services() {
                     aria-selected={isActive}
                     aria-controls="service-panel"
                     onClick={() => setActiveId(service.id)}
-                    onMouseEnter={() => setActiveId(service.id)}
+                    
                     onKeyDown={(e) => handleKeyDown(e, index)}
-                    className={`group relative flex items-center justify-between text-left py-6 xl:py-7 px-5 -mx-5 transition-all duration-200 focus-visible:outline-2 focus-visible:outline-primary cursor-pointer rounded-lg ${
+                    className={`group relative flex items-center justify-between text-left py-7 px-4 transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-primary cursor-pointer border-l-2 ${
                       isActive
-                        ? "bg-secondary/50 border-l-2 border-accent"
-                        : "hover:bg-secondary/25"
+                        ? "bg-background border-primary"
+                        : "border-transparent hover:bg-background/60"
                     }`}
                   >
                     <div className="flex items-baseline gap-5 xl:gap-6 min-w-0 pr-4">
@@ -135,7 +117,7 @@ export function Services() {
                       </span>
                       {/* Title */}
                       <span
-                        className={`font-heading text-lg xl:text-xl font-semibold tracking-tight transition-colors duration-200 ${
+                        className={`font-heading text-xl xl:text-2xl font-semibold tracking-tight transition-colors duration-200 ${
                           isActive ? "text-primary" : "text-foreground group-hover:text-primary"
                         }`}
                       >
@@ -177,7 +159,7 @@ export function Services() {
                 id="service-panel"
                 tabIndex={0}
                 aria-labelledby={`service-tab-${activeService.id}`}
-                className="border border-primary/15 bg-background shadow-xs overflow-hidden relative rounded-[2px]"
+                className="bg-background overflow-hidden relative"
               >
                 {/* Visual Imagery Frame */}
                 <div
@@ -245,7 +227,7 @@ export function Services() {
                     data-showcase-anim
                     className="mt-6 pt-4 border-t border-primary/10 flex items-center justify-between text-[11px] text-muted"
                   >
-                    <span>Representative imagery &middot; Direct on-site management</span>
+                    <span>Representative construction imagery</span>
                     <span className="font-mono font-medium text-primary">
                       {activeService.numeral} / 06
                     </span>
@@ -267,7 +249,7 @@ export function Services() {
                     aria-expanded={isOpen}
                     aria-controls={isOpen ? `accordion-panel-${service.id}` : undefined}
                     onClick={() => toggleMobileAccordion(service.id)}
-                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 rounded-lg group cursor-pointer"
+                    className="w-full flex items-center justify-between text-left py-5 px-1 min-h-14 rounded-[2px] group cursor-pointer"
                   >
                     <div className="flex items-center gap-4 min-w-0 pr-3">
                       <span
@@ -278,7 +260,7 @@ export function Services() {
                         {service.numeral}
                       </span>
                       <span
-                        className={`font-heading text-base sm:text-lg font-semibold tracking-tight transition-colors duration-200 ${
+                        className={`font-heading text-lg sm:text-xl font-semibold tracking-tight transition-colors duration-200 ${
                           isOpen ? "text-primary" : "text-foreground group-hover:text-primary"
                         }`}
                       >
@@ -286,7 +268,7 @@ export function Services() {
                       </span>
                     </div>
                     <span
-                      className={`size-8 rounded-md flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
+                      className={`size-8 rounded-[2px] flex items-center justify-center shrink-0 border border-primary/20 transition-all duration-200 ${
                         isOpen ? "bg-primary text-white rotate-180" : "bg-background text-muted"
                       }`}
                       aria-hidden="true"
@@ -341,7 +323,7 @@ export function Services() {
                       </div>
 
                       <div className="text-[10px] text-muted pt-2 border-t border-primary/10">
-                        <span>Representative imagery &middot; Direct on-site management</span>
+                        <span>Representative construction imagery</span>
                       </div>
                     </div>
                   )}

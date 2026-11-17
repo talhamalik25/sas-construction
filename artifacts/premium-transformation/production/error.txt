@@ -1,0 +1,3 @@
+Error: page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://sas-construction.vercel.app/
+Call log:
+[2m  - navigating to "https://sas-construction.vercel.app/", waiting until "networkidle"[22m

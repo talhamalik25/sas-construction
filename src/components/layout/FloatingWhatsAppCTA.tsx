@@ -31,28 +31,28 @@ export function FloatingWhatsAppCTA() {
       aria-label="Chat with SAS Construction on WhatsApp"
       title="Chat on WhatsApp"
       className="
-        floating-whatsapp
+        floating-whatsapp [body:has(dialog[open])_&]:invisible [body:has(dialog[open])_&]:pointer-events-none
         group
         fixed
         bottom-[calc(20px+env(safe-area-inset-bottom,0px))]
         right-5
         z-40
         flex
-        size-14
+        size-12
         items-center
         justify-center
-        rounded-2xl
+        rounded-full
         border
         border-accent/70
         bg-primary
-        text-[#25D366]
-        shadow-lg shadow-primary/25
+        text-background
+        shadow-sm
         transition-all
         duration-300
-        hover:-translate-y-1
+        hover:-translate-y-0.5
         hover:border-accent
         hover:bg-primary/90
-        hover:shadow-xl hover:shadow-primary/35
+        hover:shadow-md
         focus-visible:outline-2
         focus-visible:outline-offset-4
         focus-visible:outline-accent

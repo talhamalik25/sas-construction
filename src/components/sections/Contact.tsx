@@ -136,7 +136,7 @@ export function Contact() {
   }
 
   const controlClass =
-    "mt-2 block min-h-14 w-full rounded-lg border border-primary/15 bg-white px-4 py-3 text-sm text-foreground shadow-sm transition-[border-color,box-shadow] duration-200 placeholder:text-muted/70 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 aria-invalid:border-primary aria-invalid:ring-2 aria-invalid:ring-primary/15";
+    "mt-2 block min-h-14 w-full rounded-[2px] border border-primary/25 bg-background px-4 py-3 text-sm text-foreground transition-[border-color,box-shadow] duration-200 placeholder:text-muted/70 focus:border-primary focus:outline-none focus:ring-4 focus:ring-primary/10 aria-invalid:border-primary aria-invalid:ring-2 aria-invalid:ring-primary/15";
 
   function errorMessage(id: string) {
     return (
@@ -147,19 +147,19 @@ export function Contact() {
   }
 
   return (
-    <section id="contact" aria-labelledby="contact-heading" className="bg-surface py-20 md:py-28 lg:py-32 border-t border-primary/15">
+    <section id="contact" aria-labelledby="contact-heading" className="bg-background py-20 md:py-28 border-t border-primary/15">
       <Container>
         <ScrollReveal>
           <div className="grid gap-12 lg:grid-cols-12 lg:gap-16 xl:gap-20">
             {/* Left Column — Heading and Offline Status Box */}
             <div className="lg:col-span-5">
               <SectionHeading
-                eyebrow="Initiate Contact"
-                title="Let's Build Something Together."
+                eyebrow="06 / Project enquiries"
+                title="Tell us what you have in mind."
                 id="contact-heading"
               />
               <p className="mt-6 max-w-md text-sm leading-[1.85] text-muted md:text-base" data-scroll-reveal>
-                Share your site location, project requirements, and scope of work. SAS Construction will evaluate how our equipment and teams can support your timeline.
+                Share your site location, project requirements, and scope of work. We’ll discuss the work and how SAS Construction may be able to help.
               </p>
 
             </div>
@@ -170,7 +170,7 @@ export function Contact() {
               aria-describedby="inquiry-channel-info"
               noValidate
               onSubmit={handleSubmit}
-              className="lg:col-span-7 rounded-xl border border-primary/15 bg-white p-6 shadow-lg shadow-primary/5 sm:p-8 md:p-10"
+              className="min-w-0 lg:col-span-7 lg:border-l lg:border-primary/20 lg:pl-10"
             >
               <div className="mb-8 flex flex-col gap-5 border-b border-primary/15 pb-6 sm:flex-row sm:items-start sm:justify-between">
                 <div>
@@ -193,7 +193,7 @@ export function Contact() {
 
               <div className="grid gap-x-5 gap-y-6 sm:grid-cols-2">
                 <div className="flex items-center gap-3 border-b border-primary/10 pb-3 sm:col-span-2">
-                  <span className="grid size-8 shrink-0 place-items-center rounded-md bg-primary font-mono text-xs font-semibold text-white">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-[2px] bg-primary font-mono text-xs font-semibold text-white">
                     01
                   </span>
                   <div>
@@ -237,7 +237,7 @@ export function Contact() {
                 })}
 
                 <div className="flex items-center gap-3 border-b border-primary/10 pb-3 sm:col-span-2 sm:mt-2">
-                  <span className="grid size-8 shrink-0 place-items-center rounded-md bg-primary font-mono text-xs font-semibold text-white">
+                  <span className="grid size-8 shrink-0 place-items-center rounded-[2px] bg-primary font-mono text-xs font-semibold text-white">
                     02
                   </span>
                   <div>
@@ -339,7 +339,7 @@ export function Contact() {
                 >
                   Continue to WhatsApp
                 </CTA>
-                <p className="flex items-start gap-2 text-xs leading-5 text-muted">
+                <p id="inquiry-channel-info" className="flex items-start gap-2 text-xs leading-5 text-muted">
                   <span aria-hidden="true" className="mt-1 size-1.5 shrink-0 rounded-full bg-accent" />
                   WhatsApp opens with a draft for you to review and send. This website does not send messages automatically.
                 </p>

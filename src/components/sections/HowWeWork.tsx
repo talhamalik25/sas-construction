@@ -44,7 +44,7 @@ export function HowWeWork() {
     <section
       id="how-we-work"
       aria-labelledby="approach-heading"
-      className="border-t border-primary/15 bg-secondary/60 py-20 md:py-28 lg:py-32"
+      className="border-t border-primary/15 bg-secondary py-20 md:py-28"
     >
       <Container>
         <ScrollReveal>
@@ -52,15 +52,15 @@ export function HowWeWork() {
             {/* Left Column — Section Lead */}
             <div className="lg:col-span-5 lg:sticky lg:top-28">
               <SectionHeading
-                eyebrow="Our Working Process"
-                title="From Groundwork to Execution."
+                eyebrow="04 / How we work"
+                title="A clear path from brief to site."
                 id="approach-heading"
               />
               <p
                 className="mt-6 max-w-lg text-sm leading-[1.85] text-muted md:text-base"
                 data-scroll-reveal
               >
-                Every construction assignment begins with understanding the physical conditions on site. SAS Construction coordinates machinery, workforce, and day-to-day operations through a methodical, hands-on process.
+                A practical approach to understanding your site, organising the work and coordinating execution. Each assignment starts with an agreed scope.
               </p>
 
               <div
@@ -94,7 +94,7 @@ export function HowWeWork() {
                 {workStages.map((stage, i) => (
                   <li
                     key={stage.title}
-                    className="relative grid grid-cols-[3rem_1fr] md:grid-cols-[4.5rem_1fr] gap-4 md:gap-6 border-b border-primary/20 py-8 pl-6 md:pl-10 first:pt-0 last:border-0 last:pb-0"
+                    className="relative grid grid-cols-[2rem_1fr] md:grid-cols-[3.5rem_1fr] gap-4 md:gap-6 border-b border-primary/20 py-8 pl-5 md:pl-8 first:pt-0 last:border-0 last:pb-0"
                     data-scroll-reveal
                   >
                     {/* Timeline Node Point */}
@@ -111,10 +111,10 @@ export function HowWeWork() {
                         className="font-mono text-xs font-semibold uppercase tracking-wider text-primary/80 mb-1"
                         aria-hidden="true"
                       >
-                        Phase
+                        Step
                       </span>
                       <span
-                        className="font-heading text-4xl md:text-5xl font-medium tracking-tight text-primary select-none"
+                        className="font-heading text-3xl md:text-4xl font-medium tracking-tight text-primary select-none"
                         aria-hidden="true"
                       >
                         0{i + 1}

@@ -81,13 +81,10 @@ const jsonLd = {
   "@type": "HomeAndConstructionBusiness",
   "@id": `${siteUrl}/#organization`,
   name: "SAS Construction",
-  alternateName: "SAS Construction Pakistan",
   url: siteUrl,
   logo: `${siteUrl}/logo.png`,
   image: `${siteUrl}/logo.png`,
   description: siteDescription,
-  telephone: "+923312718673",
-  priceRange: "$$",
   areaServed: [
     {
       "@type": "AdministrativeArea",

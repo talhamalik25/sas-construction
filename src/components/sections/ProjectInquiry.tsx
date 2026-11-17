@@ -13,7 +13,7 @@ export function ProjectInquiry() {
     <section
       id="project-inquiry"
       aria-labelledby="inquiry-heading"
-      className="relative isolate overflow-hidden bg-primary py-20 text-background md:py-28 lg:py-32"
+      className="relative isolate overflow-hidden bg-primary py-16 text-background md:py-24"
     >
       {/* Architectural accent lines */}
       <div
@@ -34,19 +34,19 @@ export function ProjectInquiry() {
               aria-hidden="true"
               className="h-px w-8 bg-accent"
             />
-            <span>Initiate Direct Groundwork</span>
+            <span>Your next project</span>
           </div>
 
           {/* Heading */}
           <h2
             id="inquiry-heading"
-            className="max-w-4xl font-heading text-[clamp(2.4rem,5.5vw,5rem)] font-semibold leading-[1.08] tracking-[-0.05em]"
+            className="max-w-4xl font-heading text-display font-semibold"
             data-scroll-reveal
           >
-            Have a Construction Project in Mind?
+            A site. A plan.
             <br />
             <span className="text-accent">
-              Let&apos;s Discuss the Groundwork.
+              Let’s get to work.
             </span>
           </h2>
 
@@ -56,7 +56,7 @@ export function ProjectInquiry() {
             data-scroll-reveal
           >
             <p className="max-w-lg text-sm leading-[1.85] text-background/85 md:text-base">
-              Planning road development, mass earthworks,
+              Planning road development, earthworks,
               underground utilities, or site preparation?
               Connect directly with SAS Construction to
               evaluate your project scope.

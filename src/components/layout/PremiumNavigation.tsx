@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { X, ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import { navigation } from "@/lib/constants";
+import { navigation, sectionDestinations } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
 import { NavigationAction } from "@/components/ui/NavigationAction";
 import { CTA } from "@/components/ui/CTA";
@@ -12,6 +12,7 @@ import { createWhatsAppLink } from "@/lib/contact";
 
 export function PremiumNavigation() {
   const [open, setOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("Home");
   const dialog = useRef<HTMLDialogElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
   const navigating = useRef(false);
@@ -27,7 +28,7 @@ export function PremiumNavigation() {
   }
 
   useEffect(() => {
-    const desktop = window.matchMedia("(min-width: 960px)");
+    const desktop = window.matchMedia("(min-width: 1024px)");
     const resize = () => {
       if (desktop.matches && dialog.current?.open) {
         navigating.current = true;
@@ -50,9 +51,23 @@ export function PremiumNavigation() {
     };
   }, [open]);
 
+  useEffect(() => {
+    const update = () => {
+      let current = "Home";
+      for (const item of navigation) {
+        const section = document.querySelector(sectionDestinations[item].slice(1));
+        if (section && section.getBoundingClientRect().top <= 160) current = item;
+      }
+      setActiveSection(current);
+    };
+    window.addEventListener("scroll", update, { passive: true });
+    update();
+    return () => window.removeEventListener("scroll", update);
+  }, []);
+
   return (
-    <header className="relative z-20 border-b border-primary/15 bg-surface">
-      <Container className="flex h-16 sm:h-[72px] min-[960px]:h-24 items-center justify-between gap-6">
+    <header className="sticky top-0 z-40 border-b border-primary/15 bg-surface/95 backdrop-blur-md">
+      <Container className="flex h-[72px] lg:h-[88px] items-center justify-between gap-6">
         {/* Brand Logo */}
         <Link
           href="/"
@@ -64,18 +79,18 @@ export function PremiumNavigation() {
             alt="SAS Construction"
             width={1536}
             height={1024}
-            sizes="(min-width: 960px) 150px, 120px"
+            sizes="(min-width: 1024px) 120px, 100px"
             preload
-            className="h-auto w-[112px] sm:w-[126px] min-[960px]:w-[150px] shrink-0 object-contain"
+            className="h-[66px] w-[100px] lg:h-20 lg:w-[120px] shrink-0 object-contain"
           />
         </Link>
 
         {/* Desktop Navigation */}
-        <nav aria-label="Main navigation" className="hidden items-center gap-6 min-[960px]:flex xl:gap-8">
+        <nav aria-label="Main navigation" className="hidden items-center gap-6 min-[1024px]:flex xl:gap-8">
           <Link
             href="/"
-            aria-current="page"
-            className="desktop-nav-link inline-flex items-center min-h-11 text-xs font-semibold uppercase tracking-[0.14em] text-primary relative py-2 after:absolute after:bottom-1.5 after:left-0 after:h-0.5 after:w-full after:bg-accent"
+            aria-current={activeSection === "Home" ? "location" : undefined}
+            className="desktop-nav-link inline-flex items-center min-h-11 text-xs font-semibold uppercase tracking-[0.14em] text-primary relative py-2 after:absolute after:bottom-1.5 after:left-0 after:h-0.5 after:w-0 aria-[current=location]:after:w-full after:bg-accent"
           >
             Home
           </Link>
@@ -83,7 +98,8 @@ export function PremiumNavigation() {
             <NavigationAction
               key={item}
               destination={item}
-              className="desktop-nav-link inline-flex items-center min-h-11 text-xs font-semibold uppercase tracking-[0.14em] text-muted hover:text-primary transition-colors duration-200 relative py-2 after:absolute after:bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-accent after:transition-all after:duration-200"
+              aria-current={activeSection === item ? "location" : undefined}
+              className="desktop-nav-link inline-flex items-center min-h-11 text-xs font-semibold uppercase tracking-[0.14em] text-muted aria-[current=location]:text-primary aria-[current=location]:after:w-full hover:text-primary transition-colors duration-200 relative py-2 after:absolute after:bottom-1.5 after:left-0 after:h-0.5 after:w-0 hover:after:w-full after:bg-accent after:transition-all after:duration-200"
             >
               {item}
             </NavigationAction>
@@ -103,7 +119,7 @@ export function PremiumNavigation() {
         <button
           ref={toggle}
           type="button"
-          className="menu-toggle inline-flex min-h-11 items-center gap-2.5 rounded-[2px] border border-primary/25 bg-background/90 px-3.5 py-2 text-xs font-mono font-medium tracking-[0.16em] uppercase text-primary transition-all duration-200 hover:border-primary hover:bg-secondary cursor-pointer min-[960px]:hidden"
+          className="menu-toggle inline-flex min-h-11 items-center gap-2.5 rounded-[2px] border border-primary/25 bg-background/90 px-3.5 py-2 text-xs font-mono font-medium tracking-[0.16em] uppercase text-primary transition-all duration-200 hover:border-primary hover:bg-secondary cursor-pointer min-[1024px]:hidden"
           aria-expanded={open}
           aria-controls="mobile-navigation"
           aria-haspopup="dialog"
@@ -125,7 +141,7 @@ export function PremiumNavigation() {
         ref={dialog}
         id="mobile-navigation"
         aria-labelledby="mobile-menu-title"
-        className="mobile-menu hidden open:flex fixed inset-y-0 right-0 z-60 m-0 h-dvh max-h-dvh w-[min(400px,calc(100%-24px))] max-w-none flex-col overflow-y-auto overscroll-contain border-0 border-l border-accent bg-background p-6 sm:p-7 text-foreground shadow-2xl"
+        className="mobile-menu hidden open:flex opacity-0 translate-x-6 open:translate-x-0 open:opacity-100 transition-[opacity,transform,display,overlay] transition-discrete duration-200 starting:open:opacity-0 starting:open:translate-x-6 backdrop:bg-foreground/60 backdrop:backdrop-blur-sm motion-reduce:transform-none fixed inset-y-0 left-auto right-0 z-60 m-0 h-dvh max-h-dvh w-[min(460px,calc(100%-16px))] max-w-none flex-col overflow-y-auto overscroll-contain border-0 border-l border-accent bg-background p-6 sm:p-7 text-foreground shadow-2xl"
         onCancel={() => {
           navigating.current = false;
           setOpen(false);
@@ -170,8 +186,8 @@ export function PremiumNavigation() {
               <p id="mobile-menu-title" className="font-heading text-sm font-semibold tracking-tight text-primary">
                 SAS Construction
               </p>
-              <span className="block font-mono text-[9px] tracking-[0.14em] text-muted uppercase">
-                Field Contractor &middot; 20+ Years
+              <span className="block text-[10px] tracking-[0.08em] text-muted uppercase">
+                20+ years of practical experience
               </span>
             </div>
           </div>
@@ -191,9 +207,9 @@ export function PremiumNavigation() {
           <Link
             href="/"
             onClick={() => close(true)}
-            className="mobile-nav-link group flex items-center justify-between min-h-[58px] sm:min-h-[64px] border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
+            className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
           >
-            <span className="mobile-nav-number font-mono text-xs tracking-wider text-accent font-semibold group-hover:text-primary transition-colors" aria-hidden="true">
+            <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-medium group-hover:text-primary transition-colors" aria-hidden="true">
               01
             </span>
             <span className="font-heading">Home</span>
@@ -204,9 +220,9 @@ export function PremiumNavigation() {
               key={item}
               destination={item}
               onNavigate={() => close(true)}
-              className="mobile-nav-link group flex items-center justify-between min-h-[58px] sm:min-h-[64px] border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
+              className="mobile-nav-link group flex items-center gap-5 min-h-[72px] sm:min-h-20 border-b border-primary/10 font-heading text-[clamp(20px,4.5vw,26px)] font-medium tracking-tight text-primary transition-all duration-200 hover:pl-2 hover:text-foreground hover:bg-secondary/30 px-1 rounded-[2px]"
             >
-              <span className="mobile-nav-number font-mono text-xs tracking-wider text-accent font-semibold group-hover:text-primary transition-colors" aria-hidden="true">
+              <span className="mobile-nav-number font-mono text-xs tracking-wider text-muted font-medium group-hover:text-primary transition-colors" aria-hidden="true">
                 0{i + 2}
               </span>
               <span className="font-heading">{item}</span>
@@ -218,7 +234,7 @@ export function PremiumNavigation() {
         {/* Drawer Footer CTA */}
         <div className="mt-auto border-t border-primary/15 pt-5 space-y-3">
           <p className="text-xs leading-relaxed text-muted">
-            Direct on-site contractor coordination, machinery deployment, and execution across Sindh.
+            Tell us about your site and the work you have in mind.
           </p>
           {quoteHref ? (
             <CTA href={quoteHref} onClick={() => close(true)} className="w-full justify-center">

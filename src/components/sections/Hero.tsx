@@ -3,111 +3,52 @@ import { Container } from "@/components/ui/Container";
 import { CTA } from "@/components/ui/CTA";
 import { HeroMotion } from "@/components/ui/HeroMotion";
 import { heroImage } from "@/lib/constants";
+import { createWhatsAppLink } from "@/lib/contact";
 
 export function Hero() {
+  const quote = createWhatsAppLink("Hello SAS Construction, I would like to request a quotation for my project.");
   return (
     <HeroMotion>
-      <section
-        className="pt-8 pb-6 md:pt-12 [@media(min-width:960px)_and_(max-height:850px)]:pt-6"
-        aria-labelledby="hero-heading"
-      >
+      <section aria-labelledby="hero-heading" className="pt-10 pb-8 md:pt-14 md:pb-10">
         <Container>
-          <div className="relative min-w-0">
-            {/* Eyebrow Meta Bar */}
-            <div
-              className="mb-6 flex flex-wrap items-center justify-between gap-x-5 gap-y-3 md:mb-8 [@media(min-width:960px)_and_(max-height:850px)]:mb-5"
-              data-hero-reveal
-            >
-              <p className="flex items-center gap-3 text-[10px] leading-5 font-semibold tracking-[0.14em] text-primary uppercase md:text-xs">
-                <span className="h-px w-8 shrink-0 bg-accent" aria-hidden="true" />
-                Independent Contractor &middot; Hands-on Execution
-              </p>
-              <span className="inline-flex items-center gap-2 font-mono text-[11px] font-medium text-muted max-sm:pl-11">
-                <span className="size-1.5 rounded-full bg-accent" aria-hidden="true" />
-                20+ Years Field Experience
-              </span>
-            </div>
-
-            {/* Display Headline */}
-            <h1
-              id="hero-heading"
-              className="font-heading text-[clamp(2.5rem,7vw,6.3rem)] leading-[1.04] font-semibold tracking-[-0.055em] text-foreground max-sm:text-[clamp(2.4rem,10.2vw,4rem)] max-sm:tracking-[-0.04em] [@media(min-width:960px)_and_(max-height:850px)]:text-[clamp(3.75rem,6.2vw,5.4rem)]"
-              data-hero-reveal
-            >
-              <span className="block">Building Strong</span>{" "}
-              <span className="block">
-                Foundations <span className="text-primary max-sm:block">for Tomorrow.</span>
-              </span>
+          <div data-hero-reveal className="mb-6 flex items-center justify-between gap-5 md:mb-8">
+            <p className="flex items-center gap-3 text-eyebrow font-semibold uppercase text-primary">
+              <span className="h-px w-7 shrink-0 bg-accent" aria-hidden="true" />
+              20+ years. Hands-on experience.
+            </p>
+            <span className="hidden text-xs text-muted md:block">Independent contractor · Pakistan</span>
+          </div>
+          <div className="grid items-end gap-7 lg:grid-cols-[1.55fr_1fr] lg:gap-16">
+            <h1 id="hero-heading" data-hero-reveal className="font-heading text-display font-semibold text-foreground">
+              Building strong<br />
+              <span className="text-primary">foundations.</span>
             </h1>
-
-            {/* Sub-lead & Action Buttons */}
-            <div
-              className="mt-7 mb-8 flex flex-col justify-between gap-6 border-t border-primary/15 pt-6 md:mt-9 md:mb-10 min-[960px]:mt-9 min-[960px]:mb-10 min-[960px]:flex-row min-[960px]:items-center min-[960px]:gap-12 [@media(min-width:960px)_and_(max-height:850px)]:mt-6 [@media(min-width:960px)_and_(max-height:850px)]:mb-7 [@media(min-width:960px)_and_(max-height:850px)]:pt-5"
-              data-hero-reveal
-            >
-              <p className="max-w-[540px] text-sm leading-[1.85] text-muted md:text-base min-[960px]:max-w-[490px]">
-                Over 20 years of experience in road construction, earthworks, infrastructure development and site preparation across Sindh.
+            <div data-hero-reveal className="lg:pb-1">
+              <p className="max-w-md text-sm leading-7 text-muted md:text-base">
+                Roadwork, earthworks and site development. SAS Construction brings practical experience and direct coordination to the work on the ground.
               </p>
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 min-[960px]:shrink-0">
-                <CTA destination="Projects" variant="secondary">
-                  Explore Our Projects
-                </CTA>
-                <CTA destination="Contact">
-                  Get in Touch
-                </CTA>
+              <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-1">
+                <CTA href={quote ?? "/#contact"}>Request a Quote</CTA>
+                <CTA destination="Projects" variant="link" className="">Explore Our Work</CTA>
               </div>
             </div>
           </div>
-        </Container>
-
-        {/* Panoramic Editorial Photography Frame */}
-        <figure className="relative m-0">
-          <div className="hero-photo relative isolate h-[400px] overflow-hidden bg-secondary md:h-[480px] min-[960px]:h-[clamp(380px,50svh,600px)] after:pointer-events-none after:absolute after:inset-0 after:bg-linear-to-t after:from-primary/95 after:via-primary/15 after:to-transparent after:content-['']">
-            <Image
-              src={heroImage.src}
-              alt={heroImage.alt}
-              fill
-              preload
-              quality={90}
-              sizes="100vw"
-              className="object-cover object-[32%_35%]"
-            />
-
-            {/* Corner registration mark */}
-            <div
-              className="pointer-events-none absolute top-6 right-6 sm:top-8 sm:right-8 z-10 h-6 w-6 border-t border-r border-accent"
-              aria-hidden="true"
-            />
-
-            {/* In-photo Editorial Caption Container */}
-            <Container className="photo-caption-container absolute inset-x-0 bottom-6 sm:bottom-8 md:bottom-10 z-10 flex items-end justify-between gap-6">
-              <div className="photo-title min-w-0 border-l border-accent pl-4 sm:pl-5 text-white">
-                <span className="photo-label mb-2 sm:mb-3 block text-[10px] font-mono tracking-[0.16em] uppercase text-accent md:text-xs">
-                  Earthwork &amp; Site Preparation
-                </span>
-                <span className="block font-heading text-[clamp(1.6rem,3.2vw,3rem)] leading-[1.1] font-medium tracking-tight">
-                  Progress starts<br />at ground level.
-                </span>
+          <figure className="mt-8 md:mt-11">
+            <div className="hero-photo relative isolate h-[300px] overflow-hidden bg-secondary sm:h-[380px] lg:h-[clamp(320px,40vw,460px)]">
+              <Image src={heroImage.src} alt={heroImage.alt} fill preload quality={90} sizes="(min-width: 1400px) 1272px, 100vw" className="object-cover object-[40%_45%]" />
+              <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-foreground/75 to-transparent px-5 pt-20 pb-6 text-background sm:px-8 sm:pb-8">
+                <div className="flex items-end justify-between gap-6">
+                  <p className="font-heading text-[clamp(1.5rem,2.6vw,2.4rem)] font-medium leading-tight tracking-tight">Progress starts<br />at ground level.</p>
+                  <span className="hidden border-l border-accent pl-5 text-xs leading-6 sm:block">Machinery. Workforce.<br />Direct site coordination.</span>
+                </div>
               </div>
-              <p className="photo-scope hidden text-right text-xs leading-6 text-white/90 md:block font-mono">
-                Machinery &middot; Workforce<br />Site Management &middot; Execution
-              </p>
-            </Container>
-          </div>
-
-          {/* Mandatory Provenance & Photo Attribution */}
-          <Container className="flex flex-col justify-between gap-1 pt-3 text-[10px] leading-5 text-muted sm:flex-row sm:gap-4 sm:text-xs">
-            <span>Representative imagery &middot; Not a SAS project site</span>
-            <a
-              href={heroImage.source}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex w-fit items-center gap-1 underline decoration-primary/30 underline-offset-4 hover:text-primary"
-            >
-              Photography: {heroImage.photographer} / Unsplash
-            </a>
-          </Container>
-        </figure>
+            </div>
+            <figcaption className="mt-3 flex flex-wrap justify-between gap-2 text-[11px] leading-5 text-muted">
+              <span>Representative imagery · Not a SAS project site</span>
+              <span className="hidden sm:inline">Earthwork &amp; site preparation</span>
+            </figcaption>
+          </figure>
+        </Container>
       </section>
     </HeroMotion>
   );

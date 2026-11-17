@@ -69,7 +69,7 @@ export function ProjectMedia({
           </p>
         </div>
         <div className="pt-4 text-[11px] leading-relaxed text-muted">
-          Physical execution record documented in contractor register. Site photography pending verified permission.
+          Project scope supplied by SAS Construction. Site photography is not available.
         </div>
       </div>
     );
@@ -87,7 +87,7 @@ export function ProjectMedia({
     >
       <div
         className={`relative w-full aspect-[16/10] overflow-hidden ${
-          isDialog ? "bg-charcoal/95" : "bg-secondary"
+          isDialog ? "bg-foreground/95" : "bg-secondary"
         }`}
       >
         <Image
@@ -96,9 +96,8 @@ export function ProjectMedia({
           fill
           sizes={sizes}
           className={`${
-            isDialog ? "object-contain" : "object-cover object-center"
+            isDialog || currentPhoto.classification === "B" ? "object-contain" : "object-cover object-center"
           } transition-transform duration-500 hover:scale-[1.01]`}
-          priority={currentIndex === 0 && project.featured}
         />
 
         {/* Architectural corner registration mark for card mode */}
@@ -117,7 +116,7 @@ export function ProjectMedia({
                 type="button"
                 onClick={handlePrev}
                 aria-label={`Previous image (${currentIndex === 0 ? images.length : currentIndex} of ${images.length})`}
-                className="pointer-events-auto flex size-8 sm:size-9 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                className="pointer-events-auto flex size-11 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
               >
                 <ChevronLeft size={18} aria-hidden="true" />
               </button>
@@ -125,7 +124,7 @@ export function ProjectMedia({
                 type="button"
                 onClick={handleNext}
                 aria-label={`Next image (${currentIndex === images.length - 1 ? 1 : currentIndex + 2} of ${images.length})`}
-                className="pointer-events-auto flex size-8 sm:size-9 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                className="pointer-events-auto flex size-11 items-center justify-center rounded-[2px] bg-primary/85 text-white hover:bg-foreground border border-accent/40 shadow-sm transition-all duration-150 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
               >
                 <ChevronRight size={18} aria-hidden="true" />
               </button>
@@ -143,7 +142,7 @@ export function ProjectMedia({
         {/* Honest, concise badge ONLY for Location References (not actual SAS project photo) */}
         {currentPhoto.classification === "B" && (
           <div className="absolute top-3 left-3 z-10 pointer-events-none">
-            <span className="text-[10px] font-mono font-medium uppercase tracking-wider text-amber-200 bg-charcoal/90 px-2.5 py-1 rounded-[2px] border border-amber-300/30 backdrop-blur-xs">
+            <span className="text-[10px] font-mono font-medium uppercase tracking-wider text-accent bg-foreground/90 px-2.5 py-1 rounded-[2px] border border-accent/30 backdrop-blur-xs">
               Location Reference
             </span>
           </div>
@@ -157,7 +156,7 @@ export function ProjectMedia({
             <p className="font-semibold text-primary">
               {currentPhoto.classification === "B"
                 ? "Location Reference — not evidence of SAS execution"
-                : "Authentic Project Photography"}
+                : "SAS Construction project photography"}
             </p>
             {hasMultiple && (
               <div className="flex items-center gap-1" role="group" aria-label="Photo selection">
@@ -170,7 +169,7 @@ export function ProjectMedia({
                       setCurrentIndex(idx);
                     }}
                     aria-label={`View photo ${idx + 1}`}
-                    className="flex min-h-[24px] min-w-[24px] items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                    className="flex min-h-11 min-w-11 items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
                   >
                     <span
                       className={`h-1.5 rounded-full transition-all ${
@@ -214,7 +213,7 @@ export function ProjectMedia({
           </p>
         </figcaption>
       ) : (
-        <figcaption className="shrink-0 border-t border-primary/10 bg-surface px-4 py-2.5 text-[11px] leading-relaxed text-muted">
+        <figcaption className="shrink-0 border-t border-primary/10 bg-background px-0 py-2.5 text-[11px] leading-relaxed text-muted">
           <div className="flex items-center justify-between gap-2">
             <p className="font-medium text-foreground/80 leading-normal">
               {currentPhoto.caption}
@@ -230,7 +229,7 @@ export function ProjectMedia({
                       setCurrentIndex(idx);
                     }}
                     aria-label={`View photo ${idx + 1}`}
-                    className="flex min-h-[24px] min-w-[24px] items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
+                    className="flex min-h-11 min-w-11 items-center justify-center p-1 cursor-pointer focus-visible:outline-2 focus-visible:outline-accent"
                   >
                     <span
                       className={`h-1.5 rounded-full transition-all ${
