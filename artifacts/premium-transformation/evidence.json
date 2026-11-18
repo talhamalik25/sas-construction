@@ -1,0 +1,89 @@
+{
+  "contract": "VISUAL_AUDIT.md; latest rounded-button request and client-confirmed project photography supersede earlier directions.",
+  "targetViewports": [
+    "1920x1080",
+    "1440x900",
+    "1366x768",
+    "1024x768",
+    "768x1024",
+    "390x844",
+    "375x812",
+    "320x740"
+  ],
+  "accessibility": {
+    "status": "pass",
+    "evidence": "Full-page, all nine project dialogs, and mobile menu axe scans: zero violations at eight viewports. Keyboard focus wrap, Escape/return, form errors and ARIA references pass. See validation/results.json."
+  },
+  "responsive": {
+    "status": "pass",
+    "evidence": "All eight target sizes have matching screenshots and document scrollWidth equals viewport width. Desktop, tablet and narrow-phone compositions inspected; 1024px hero proportions refined."
+  },
+  "contentStates": {
+    "loading": {
+      "status": "pass",
+      "evidence": "Images reserve fill/aspect-ratio geometry; visible images complete with naturalWidth > 0 in validation/extras.json. Content remains visible during GSAP entrance."
+    },
+    "empty": {
+      "status": "not-applicable",
+      "reason": "Static nine-record portfolio and fixed categories; each available filter has records. No remote empty-results state."
+    },
+    "error": {
+      "status": "pass",
+      "evidence": "Empty required input and invalid phone focus the failing field; simulated popup blocking reports recovery instructions and retains entered data."
+    },
+    "partial": {
+      "status": "pass",
+      "evidence": "M9 location-only image retains disclosure, credit, license and uncropped presentation; uncertain locations remain labeled and details retain role notes."
+    },
+    "success": {
+      "status": "pass",
+      "evidence": "Intercepted window.open receives correctly encoded WhatsApp draft with verified number. Feedback says review and press Send; no delivery success or actual sending asserted."
+    },
+    "permission": {
+      "status": "not-applicable",
+      "reason": "No visitor authentication or permission workflow. Photo usage authorization was explicitly confirmed by the user and recorded in project documentation."
+    }
+  },
+  "renderedEvidence": [
+    {
+      "viewport": "1920x1080",
+      "artifact": "after/fullpage-1920.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "1440x900",
+      "artifact": "after/fullpage-1440.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "1366x768",
+      "artifact": "after/fullpage-1366.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "1024x768",
+      "artifact": "after/fullpage-1024.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "768x1024",
+      "artifact": "after/fullpage-768.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "390x844",
+      "artifact": "after/fullpage-390.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "375x812",
+      "artifact": "after/fullpage-375.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    },
+    {
+      "viewport": "320x740",
+      "artifact": "after/fullpage-320.png",
+      "observation": "Final production render: light palette, rounded controls, responsive section layout; no document overflow. Corresponding interaction and axe results in validation/results.json."
+    }
+  ]
+}

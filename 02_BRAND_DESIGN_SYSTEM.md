@@ -46,3 +46,13 @@ Dependable, practical, established, field-experienced, clean, quietly premium. A
 
 ## Recommended hero direction
 Light editorial presentation; large headline left, strong relevant road/earthwork photo right or in a full-bleed image band. Use one gold micro-accent, primary green CTA, and an understated 20+ years line. Do not claim project counts beyond the nine client-supplied examples.
+
+## Current refinement — 18 November 2026
+
+The premium transformation request and subsequent explicit request for rounded buttons supersede earlier CTA geometry/colour suggestions. Use pill-shaped gold primary CTAs with forest-green text and a cohesive directional arrow; outlined rounded secondary actions; the same gold surface on the green inquiry section. Menu, gallery and dialog icon buttons are circular. Service/project row controls use rounded corners. Do not reintroduce divided arrow blocks.
+
+Retain local Manrope headings and Inter body. Tailwind theme tokens `text-display`, `text-section`, `text-title`, and `text-eyebrow` define the shared hierarchy. The Container has a 1400px outer maximum, with 20/40/64px responsive gutters. The sticky header switches to desktop at 1024px; section anchors reserve clearance. Body content stays predominantly warm white, with restrained sand service/process/footer surfaces and one forest-green inquiry band.
+
+The user confirmed that the nine SAS project photographs were supplied and approved for website use. Services reuse these approved photographs. The separate M9 Commons photograph remains a location reference with its credit, CC BY-SA link and conversion disclosure; it must not be treated as proof of SAS execution. The representative Hero/About photographs retain their non-project disclosures. Project role/location questions are not resolved by photo approval.
+
+Implementation and verification details: `artifacts/premium-transformation/FINAL_TRANSFORMATION_REPORT.md`.

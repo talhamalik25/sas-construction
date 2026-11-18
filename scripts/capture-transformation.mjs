@@ -25,6 +25,8 @@ for (const [width, height] of [[1920,1080],[1440,900],[1366,768],[1024,768],[768
   }
   if (width < 1024) {
     await page.locator('.menu-toggle').click();
+    await page.mouse.move(0, 0);
+    await page.waitForTimeout(250);
     await page.screenshot({ path: `${dir}/menu-${width}.png` });
     await page.keyboard.press('Escape');
   }
